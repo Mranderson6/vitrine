@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+  <defs>
+    <style>.bedefcd3-a210-4261-b1a1-96326798a05c{fill:none;stroke:#ffd002;stroke-miterlimit:10;stroke-width:4px;}.b9cbe9f1-979a-477f-9739-bc8ea98e720e{fill:#edbf02;}.bc094055-d817-4724-ad15-033f7a2a531f{fill:#fff03e;}</style>
+  </defs>
+  <g id="e3ea9096-ed2a-401e-87f6-60c0497a7124" data-name="autres riques">
+    <circle class="bedefcd3-a210-4261-b1a1-96326798a05c" cx="45.18" cy="45.5" r="34.5"></circle>
+    <polygon class="b9cbe9f1-979a-477f-9739-bc8ea98e720e" points="45.27 16.35 67.2 66.13 20.41 54.42 45.27 16.35"></polygon>
+    <path class="bc094055-d817-4724-ad15-033f7a2a531f" d="M42.47,17.68,17.61,55.76l46.78,11.7ZM39.16,30.41l4.22.74V51.72L39.16,51Zm-.51,24.93c0-3.4,5.16-2.49,5.16.91S38.65,58.74,38.65,55.34Z"></path>
+  </g>
+</svg>

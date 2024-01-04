@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="ECLAT_DART" data-name="ECLAT DART" viewBox="0 0 120 120">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Dégradé_sans_nom_16-3);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#Dégradé_sans_nom_21-2);
+      }
+
+      .cls-3 {
+        fill: url(#Dégradé_sans_nom_21-3);
+      }
+
+      .cls-4 {
+        fill: url(#Dégradé_sans_nom_21);
+      }
+
+      .cls-5 {
+        fill: url(#Dégradé_sans_nom_16-2);
+      }
+
+      .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-7 {
+        fill: url(#Dégradé_sans_nom_16);
+      }
+
+      .cls-8 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: .18px;
+      }
+    </style>
+    <linearGradient id="Dégradé_sans_nom_16" data-name="Dégradé sans nom 16" x1="11.04" y1="63.94" x2="42.65" y2="63.94" gradientTransform="translate(6.15 -22.17) rotate(-6.42)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#181a30"></stop>
+      <stop offset=".36" stop-color="#223869"></stop>
+      <stop offset=".77" stop-color="#3660a3"></stop>
+      <stop offset="1" stop-color="#00518b"></stop>
+    </linearGradient>
+    <radialGradient id="Dégradé_sans_nom_21" data-name="Dégradé sans nom 21" cx="-93.07" cy="164.19" fx="-93.07" fy="164.19" r="15.42" gradientTransform="translate(-1.43 -146.18) rotate(-41.82)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f6ee8a"></stop>
+      <stop offset=".19" stop-color="#f6ee8a"></stop>
+      <stop offset=".45" stop-color="#eed36d"></stop>
+      <stop offset=".74" stop-color="#edc968"></stop>
+      <stop offset=".88" stop-color="#dab553"></stop>
+      <stop offset="1" stop-color="#cea845"></stop>
+    </radialGradient>
+    <linearGradient id="Dégradé_sans_nom_16-2" data-name="Dégradé sans nom 16" x1="20.81" y1="111.33" x2="52.41" y2="111.33" xlink:href="#Dégradé_sans_nom_16"></linearGradient>
+    <radialGradient id="Dégradé_sans_nom_21-2" data-name="Dégradé sans nom 21" cx="-112.56" cy="208.47" fx="-112.56" fy="208.47" r="15.42" xlink:href="#Dégradé_sans_nom_21"></radialGradient>
+    <linearGradient id="Dégradé_sans_nom_16-3" data-name="Dégradé sans nom 16" x1="51.89" y1="76.59" x2="83.49" y2="76.59" xlink:href="#Dégradé_sans_nom_16"></linearGradient>
+    <radialGradient id="Dégradé_sans_nom_21-3" data-name="Dégradé sans nom 21" cx="-67.1" cy="198.15" fx="-67.1" fy="198.15" r="15.42" xlink:href="#Dégradé_sans_nom_21"></radialGradient>
+  </defs>
+  <g>
+    <polygon class="cls-7" points="38.3 23.43 44.26 32.72 55.29 33.07 48.3 41.61 51.37 52.21 41.09 48.2 31.95 54.39 32.59 43.38 23.88 36.61 34.55 33.81 38.3 23.43"></polygon>
+    <polygon class="cls-4" points="28.66 27.04 38.9 31.15 48.09 25.06 47.34 36.07 55.98 42.93 45.28 45.61 41.42 55.95 35.56 46.6 24.54 46.13 31.62 37.67 28.66 27.04"></polygon>
+    <g>
+      <g>
+        <line class="cls-8" x1="37.58" y1="40.75" x2="42.13" y2="38.13"></line>
+        <path class="cls-6" d="m37.11,39.94c.45-.26,1.03-.11,1.29.35.26.45.11,1.03-.35,1.29-.45.26-1.03.11-1.29-.35-.26-.45-.11-1.03.35-1.29Z"></path>
+        <path class="cls-6" d="m41.66,37.31c.45-.26,1.03-.11,1.29.35.26.45.11,1.03-.35,1.29-.45.26-1.03.11-1.29-.35-.26-.45-.11-1.03.35-1.29Z"></path>
+      </g>
+      <g>
+        <line class="cls-8" x1="37.58" y1="38.13" x2="42.13" y2="40.76"></line>
+        <path class="cls-6" d="m38.05,37.31c.45.26.61.84.35,1.29-.26.45-.84.61-1.29.35-.45-.26-.61-.84-.35-1.29.26-.45.84-.61,1.29-.35Z"></path>
+        <path class="cls-6" d="m42.61,39.93c.45.26.61.84.35,1.29-.26.45-.84.61-1.29.35-.45-.26-.61-.84-.35-1.29.26-.45.84-.61,1.29-.35Z"></path>
+      </g>
+      <g>
+        <line class="cls-8" x1="39.86" y1="36.81" x2="39.86" y2="42.07"></line>
+        <path class="cls-6" d="m40.8,36.81c0,.52-.42.95-.95.95s-.94-.42-.94-.95.42-.95.94-.95.95.42.95.95Z"></path>
+        <path class="cls-6" d="m40.8,42.07c0,.52-.42.95-.95.95s-.94-.42-.94-.95.42-.95.94-.95.95.42.95.95Z"></path>
+      </g>
+    </g>
+  </g>
+  <g>
+    <polygon class="cls-5" points="53.3 69.43 59.26 78.72 70.29 79.07 63.3 87.61 66.37 98.21 56.09 94.2 46.95 100.39 47.59 89.38 38.88 82.61 49.55 79.81 53.3 69.43"></polygon>
+    <polygon class="cls-2" points="43.66 73.04 53.9 77.15 63.09 71.06 62.34 82.07 70.98 88.93 60.28 91.61 56.42 101.95 50.56 92.6 39.54 92.13 46.62 83.67 43.66 73.04"></polygon>
+    <g>
+      <g>
+        <line class="cls-8" x1="52.58" y1="86.75" x2="57.13" y2="84.13"></line>
+        <path class="cls-6" d="m52.11,85.94c.45-.26,1.03-.11,1.29.35.26.45.11,1.03-.35,1.29-.45.26-1.03.11-1.29-.35-.26-.45-.11-1.03.35-1.29Z"></path>
+        <path class="cls-6" d="m56.66,83.31c.45-.26,1.03-.11,1.29.35.26.45.11,1.03-.35,1.29-.45.26-1.03.11-1.29-.35-.26-.45-.11-1.03.35-1.29Z"></path>
+      </g>
+      <g>
+        <line class="cls-8" x1="52.58" y1="84.13" x2="57.13" y2="86.76"></line>
+        <path class="cls-6" d="m53.05,83.31c.45.26.61.84.35,1.29-.26.45-.84.61-1.29.35-.45-.26-.61-.84-.35-1.29.26-.45.84-.61,1.29-.35Z"></path>
+        <path class="cls-6" d="m57.61,85.93c.45.26.61.84.35,1.29-.26.45-.84.61-1.29.35-.45-.26-.61-.84-.35-1.29.26-.45.84-.61,1.29-.35Z"></path>
+      </g>
+      <g>
+        <line class="cls-8" x1="54.86" y1="82.81" x2="54.86" y2="88.07"></line>
+        <path class="cls-6" d="m55.8,82.81c0,.52-.42.95-.95.95s-.94-.42-.94-.95.42-.95.94-.95.95.42.95.95Z"></path>
+        <path class="cls-6" d="m55.8,88.07c0,.52-.42.95-.95.95s-.94-.42-.94-.95.42-.95.94-.95.95.42.95.95Z"></path>
+      </g>
+    </g>
+  </g>
+  <g>
+    <polygon class="cls-1" points="80.3 31.43 86.26 40.72 97.29 41.07 90.3 49.61 93.37 60.21 83.09 56.2 73.95 62.39 74.59 51.38 65.88 44.61 76.55 41.81 80.3 31.43"></polygon>
+    <polygon class="cls-3" points="70.66 35.04 80.9 39.15 90.09 33.06 89.34 44.07 97.98 50.93 87.28 53.61 83.42 63.95 77.56 54.6 66.54 54.13 73.62 45.67 70.66 35.04"></polygon>
+    <g>
+      <g>
+        <line class="cls-8" x1="79.58" y1="48.75" x2="84.13" y2="46.13"></line>
+        <path class="cls-6" d="m79.11,47.94c.45-.26,1.03-.11,1.29.35.26.45.11,1.03-.35,1.29-.45.26-1.03.11-1.29-.35-.26-.45-.11-1.03.35-1.29Z"></path>
+        <path class="cls-6" d="m83.66,45.31c.45-.26,1.03-.11,1.29.35.26.45.11,1.03-.35,1.29-.45.26-1.03.11-1.29-.35-.26-.45-.11-1.03.35-1.29Z"></path>
+      </g>
+      <g>
+        <line class="cls-8" x1="79.58" y1="46.13" x2="84.13" y2="48.76"></line>
+        <path class="cls-6" d="m80.05,45.31c.45.26.61.84.35,1.29-.26.45-.84.61-1.29.35-.45-.26-.61-.84-.35-1.29.26-.45.84-.61,1.29-.35Z"></path>
+        <path class="cls-6" d="m84.61,47.93c.45.26.61.84.35,1.29-.26.45-.84.61-1.29.35-.45-.26-.61-.84-.35-1.29.26-.45.84-.61,1.29-.35Z"></path>
+      </g>
+      <g>
+        <line class="cls-8" x1="81.86" y1="44.81" x2="81.86" y2="50.07"></line>
+        <path class="cls-6" d="m82.8,44.81c0,.52-.42.95-.95.95s-.94-.42-.94-.95.42-.95.94-.95.95.42.95.95Z"></path>
+        <path class="cls-6" d="m82.8,50.07c0,.52-.42.95-.95.95s-.94-.42-.94-.95.42-.95.94-.95.95.42.95.95Z"></path>
+      </g>
+    </g>
+  </g>
+</svg>

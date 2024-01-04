@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Calque_3" data-name="Calque 3" viewBox="0 0 120 120">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: url(#Dégradé_sans_nom_7);
+      }
+
+      .cls-3 {
+        fill: #d50f33;
+        stroke: #d50f34;
+        stroke-miterlimit: 10;
+        stroke-width: 1.48px;
+      }
+
+      .cls-4 {
+        fill: url(#Dégradé_sans_nom_7-3);
+      }
+
+      .cls-5 {
+        fill: url(#Dégradé_sans_nom_7-4);
+      }
+
+      .cls-6 {
+        fill: url(#Dégradé_sans_nom_7-2);
+      }
+    </style>
+    <linearGradient id="Dégradé_sans_nom_7" data-name="Dégradé sans nom 7" x1="61.84" y1="37.74" x2="102.05" y2="37.74" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d49f49"></stop>
+      <stop offset="1" stop-color="#fbf3b3"></stop>
+    </linearGradient>
+    <linearGradient id="Dégradé_sans_nom_7-2" data-name="Dégradé sans nom 7" x1="19.96" y1="37.56" x2="59.45" y2="37.56" xlink:href="#Dégradé_sans_nom_7"></linearGradient>
+    <linearGradient id="Dégradé_sans_nom_7-3" data-name="Dégradé sans nom 7" x1="61.16" y1="58.82" y2="58.82" xlink:href="#Dégradé_sans_nom_7"></linearGradient>
+    <linearGradient id="Dégradé_sans_nom_7-4" data-name="Dégradé sans nom 7" x1="19.96" y1="58.75" x2="61.16" y2="58.75" xlink:href="#Dégradé_sans_nom_7"></linearGradient>
+  </defs>
+  <rect class="cls-3" x=".35" y=".4" width="119.6" height="119.6"></rect>
+  <polyline class="cls-2" points="94.39 47.63 102.05 34.66 69.03 27.85 61.84 39.98 94.39 47.63"></polyline>
+  <polygon class="cls-6" points="59.45 41.87 59.33 37.74 53.3 27.49 19.96 33.91 27.94 47.63 59.45 41.87"></polygon>
+  <polygon class="cls-4" points="61.16 56.17 68.35 70.02 102.05 60.2 94.39 47.63 61.16 56.17"></polygon>
+  <polygon class="cls-5" points="61.16 56.17 52.85 69.88 19.96 60.89 27.94 47.63 61.16 56.17"></polygon>
+  <g>
+    <polyline class="cls-1" points="27.94 47.43 55.86 55.24 61.16 56.73"></polyline>
+    <polyline class="cls-1" points="61.16 67.06 61.16 101.92 27.94 92.62 27.94 68.47"></polyline>
+    <polyline class="cls-1" points="94.39 47.43 66.46 55.24 61.16 56.73"></polyline>
+    <polyline class="cls-1" points="94.39 68.47 94.39 92.62 61.16 101.92 61.16 67.06"></polyline>
+    <polyline class="cls-1" points="94.39 47.43 61.16 40.78 27.94 47.43"></polyline>
+    <polyline class="cls-1" points="94.39 47.43 102.36 60.72 69.14 70.02 61.16 56.73"></polyline>
+    <polyline class="cls-1" points="27.94 47.43 19.96 60.72 53.19 70.02 61.16 56.73"></polyline>
+    <g>
+      <polyline class="cls-1" points="94.39 47.43 102.36 34.14 69.14 27.49 61.16 40.78"></polyline>
+      <polyline class="cls-1" points="27.94 47.43 19.96 34.14 53.19 27.49 61.16 40.78"></polyline>
+    </g>
+  </g>
+</svg>

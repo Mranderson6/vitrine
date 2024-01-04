@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+* {
+  box-sizing: border-box;
+}
+html,
+body{
+	margin:0;
+	padding:0;	
+}
+.body{
+	height:100vh;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.grad{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color:rgba(0,0,0,0.5);
+	z-index: 1;
+	opacity: 0.7;
+}
+.ns-protect-site-page{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	z-index: 1;
+	    max-width: 500px;
+    width: 100%;
+    padding: 0 15px;
+}
+.ns-protect-site-page .login{
+    padding: 30px;
+    border: 1px solid white;
+    background:rgba(0,0,0,0.5);
+        text-align: center;
+}
+input{
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 10px;
+	font-family: 'Exo', sans-serif;	
+	margin-top: 10px;
+	border-radius: 2px;	
+	border: 1px solid rgba(255,255,255,0.6);
+}
+.login input[type=password]{
+	background: transparent;	
+	color: #fff;	
+	width: 63%;
+}
+.login-btn, .login input[type=button]{
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;	
+	color: #a18d6c;
+	width: 30%;
+	margin-left: 5%;
+}
+.login-btn:hover,
+.login-btn:active,
+.login-btn:focus{
+	opacity: 0.8;
+	outline: none;
+	color: #fff;
+	background: none;
+}
+.login input[type=password]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+.error{
+    color: red;
+    font-weight: 300;
+    font-family: 'Exo', sans-serif;
+}
+.login-first{
+    color: white;
+    font-weight: 400;
+    font-family: 'Exo', sans-serif;
+}
+.fontstyle{
+    color: white;
+    font-family: 'Exo', sans-serif;
+    margin-top: 20px;      
+    transition: all ease-in-out 0.2s; 
+}
+.fontstyle > .fontstyle {
+    	color: #a18d6c;
+    }
+.fontstyle > .fontstyle:hover{
+    	color: #fff;
+};

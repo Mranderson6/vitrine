@@ -1,0 +1,2 @@
+$(document).bind("_js_ready",(function(){$(".bloc_slider_documents .slider_documents").slick({slidesToShow:1,slidesToScroll:1,infinite:!0,arrows:!0,centerMode:!0,centerPadding:0,prevArrow:"<button type='button' aria-label='Précédent' title='Précédent' class='slick-prev slick-arrow'><span class='show-for-sr'>Précédent</span></button>",nextArrow:"<button type='button' aria-label='Suivant' title='Suivant' class='slick-next slick-arrow'><span class='show-for-sr'>Suivant</span></button>"})}));
+//# sourceMappingURL=slider_documents.min.js.map

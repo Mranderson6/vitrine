@@ -1,0 +1,1146 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+{% block head %}
+<head>
+    <base href="#">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <link rel="stylesheet" type="text/css"
+        href="{% static 'typo3conf/ext/photoswipe/Resources/Public/Css/photoswipe.min0e9f.css' %}" media="all" />
+    <link rel="stylesheet" type="text/css"
+        href="{% static 'typo3conf/ext/photoswipe/Resources/Public/Css/photoswipe-default-skin.min0e9f.css' %}"
+        media="all" />
+
+    <link rel="stylesheet" type="text/css"
+        href="{% static 'typo3conf/ext/femanager/Resources/Public/Css/Main.minac89.css' %}" media="all" />
+    <link rel="stylesheet" type="text/css"
+        href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/app_site.min1122.css' %}" media="all" />
+    <link rel="stylesheet" type="text/css"
+        href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/app.minf691.css' %}" media="all" />
+    <link rel="stylesheet" type="text/css"
+        href="{% static 'fileadmin/templates/master/assets/assets_common/css/tools.min87b5.css' %}" media="all" />
+    <link rel="stylesheet" type="text/css"
+        href="{% static 'fileadmin/templates/master/assets/assets_common/css/print.min87b5.css' %}" media="print" />
+    <link rel="stylesheet" type="text/css"
+        href="{% static 'fileadmin/templates/master/assets/assets_common/css/cim_rgpd.minbf3a.css' %}" media="all" />
+    <link media="print" rel="stylesheet"
+        href="{% static 'fileadmin/templates/master/assets/assets_common/css/slick.min87b5.css' %}" type="text/css" />
+    <link media="print" rel="stylesheet"
+        href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/modules/slick_common.min0167.css' %}"
+        type="text/css" />
+    <link media="print" rel="stylesheet"
+        href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/modules/bloc_alaune.min0034.css' %}"
+        type="text/css" />
+    <link media="print" rel="stylesheet"
+        href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/modules/recherche_generale_decli.min0167.css' %}"
+        type="text/css" />
+    <link media="print" rel="stylesheet"
+        href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/modules/bloc_agenda_culturel.min0034.css' %}"
+        type="text/css" />
+    <link media="print" rel="stylesheet"
+        href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/modules/social_wall.min0167.css' %}"
+        type="text/css" />
+
+    <script src="{% static 'fileadmin/templates/master/assets/assets_common/js/vendor/jquery.min1d41.js' %}"></script>
+    <script src="{% static 'typo3conf/ext/cim_news/Resources/Public/JavaScript/SubscribeWidget0d2a.js' %}"></script>
+    <script src="{% static 'typo3conf/ext/cim_socialwall/Resources/Public/JavaScript/SocialwallWidget4e2f.js' %}"></script>
+    <script src="{% static 'typo3temp/assets/js/e9e07c5ca07fda.js' %}"></script>
+
+
+    <link rel="icon" type="image/x-icon" href="#" />
+    <link rel="icon" type="image/png" href="#" />
+
+
+    <link rel="preload" href="{% static 'fileadmin/templates/master/assets/assets_common/css/font/firasans-regular-webfont.woff2' %}"
+        as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="{% static 'fileadmin/templates/master/assets/assets_common/css/font/firasans-light-webfont.woff2' %}"
+        as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="{% static 'fileadmin/templates/master/assets/assets_common/css/font/firasans-medium-webfont.woff2' %}"
+        as="font" type="font/woff2" crossorigin />
+
+    <link rel="stylesheet"
+        href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/fonts/firasans-regular-webfont.min.css' %}"
+        media="print" onload="this.media='all'" />
+    <link rel="stylesheet"
+        href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/fonts/firasans-light-webfont.min.css' %}"
+        media="print" onload="this.media='all'" />
+    <link rel="stylesheet"
+        href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/fonts/firasans-medium-webfont.min.css' %}"
+        media="print" onload="this.media='all'" />
+
+<title>{%block title %} {% endblock %}</title>
+    
+</head>
+{% endblock %}
+
+{% block navbar %}
+	<body>
+  <!-- [START] fileadmin/templates/master/fluid_template/Layouts/Main.html -->
+
+  <div class="off-canvas-wrapper">
+    <div id="top" data-magellan-target="top"></div>
+
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      <div id="offCanvasLeft" class="off-canvas position-left hide-for-large" data-off-canvas data-force-top="false">
+        <button type="button" id="btn_close_menu_smart" class="close-button hide-for-large"
+          aria-label="Fermer la navigation principale" data-close="offCanvasLeft">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <div id="leftmenu_cont">
+          <nav id="smart_menu" role="navigation" aria-label="Menu principal">
+            <ul class="menu vertical" data-drilldown data-close-on-click="true"
+              data-back-button="<li class='js-drilldown-back'><a tabindex='0'>Retour</a></li>"
+              data-back-button-position="top" data-parent-link="true" data-scroll-top="true">
+              <li>
+                <a href="#"> Sous menu 1 </a>
+
+                <ul class="sous_menu menu vertical">
+                  <li class="level2">
+                    <a href="#">
+                      Élément sous-menu 1
+                    </a>
+
+                    <ul class="sm">
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 1
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 1
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 1
+                        </a>
+                      </li>
+
+                    </ul>
+                  </li>
+
+                  <li class="level2">
+                    <a href="#">
+                      Élément sous-menu 1
+                    </a>
+
+                     <ul class="sm">
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 1
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 1
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 1
+                        </a>
+                      </li>
+
+                    </ul>
+                  </li>
+
+                   <li class="level2">
+                    <a href="#">
+                      Élément sous-menu 1
+                    </a>
+
+                     <ul class="sm">
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 1
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 1
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 1
+                        </a>
+                      </li>
+
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+               <li>
+                <a href="#"> Sous menu 2 </a>
+
+                <ul class="sous_menu menu vertical">
+                  <li class="level2">
+                    <a href="#">
+                      Élément sous-menu 2
+                    </a>
+
+                    <ul class="sm">
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 2
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 2
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 2
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 2
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="level2">
+                    <a href="#">
+                      Élément sous-menu 2
+                    </a>
+
+                     <ul class="sm">
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 2
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 2
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 2
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 2
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                   <li class="level2">
+                    <a href="#">
+                      Élément sous-menu 2
+                    </a>
+
+                    <ul class="sm">
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 2
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 2
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 2
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 2
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+                <li>
+                <a href="#"> Sous menu 3 </a>
+
+                <ul class="sous_menu menu vertical">
+                  <li class="level2">
+                    <a href="#">
+                      Élément sous-menu 3
+                    </a>
+
+                    <ul class="sm">
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 3
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 3
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 3
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 3
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="level2">
+                    <a href="#">
+                      Élément sous-menu 3
+                    </a>
+
+                    <ul class="sm">
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 3
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 3
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 3
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 3
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                   <li class="level2">
+                    <a href="#">
+                      Élément sous-menu 3
+                    </a>
+
+                    <ul class="sm">
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 3
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 3
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 3
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 3
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+                <li>
+                <a href="#"> Sous menu 4 </a>
+
+                <ul class="sous_menu menu vertical">
+                  <li class="level2">
+                    <a href="#">
+                      Élément sous-menu 4
+                    </a>
+
+                    <ul class="sm">
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 4
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 4
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 4
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 4
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="level2">
+                    <a href="#">
+                      Élément sous-menu 4
+                    </a>
+
+                   <ul class="sm">
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 4
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 4
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 4
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 4
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                   <li class="level2">
+                    <a href="#">
+                      Élément sous-menu 4
+                    </a>
+
+                    <ul class="sm">
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 4
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 4
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 4
+                        </a>
+                      </li>
+
+                      <li class="level3">
+                        <a href="#">
+                          sous-element sous menu 4
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+         <div id="home" class="off-canvas-content" data-off-canvas-content>
+        <header id="header" role="banner" data-sticky-container>
+          <nav id="accessi" class="cell shrink" aria-label="Menu de liens d'évitement">
+            <ul>
+              <li>
+                <a class="show-on-focus" href="#menu_principal">Aller au menu</a>
+              </li>
+              <li>
+                <a class="show-on-focus" href="#anchor_skip_link">Aller au contenu</a>
+              </li>
+            </ul>
+            <div class="clear"></div>
+          </nav>
+
+
+          <div id="data-sticky-header" class="" data-margin-top="0" data-sticky data-top-anchor="data-sticky-header" style="background-color: #3c763d;">
+            <div class="grid-container grid-x align-middle align-justify">
+              <div class="grid-x grid-padding-x align-middle cell shrink">
+
+                <div id="logo" class="logo cell shrink">
+                  <h1>
+                    <a href="#"><center>
+                      <img src="" alt="LOGO" style="color:white; width: 500; height:auto; font-weight: 900" />
+                    </center>
+                    </a>
+                  </h1>
+                </div>
+
+                <div class="hamburger_container cell shrink hide-for-large">
+                  <button type="button" data-toggle="offCanvasLeft" class="hamburger hamburger--spring js-hamburger">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                      <span class="menu_title">menu</span>
+                    </span>
+                  </button>
+                </div>
+
+                <div class="hamburger_container cell shrink show-for-large">
+                  <button type="button" data-toggle="popin_menu"
+                    class="hamburger hamburger--spring js-hamburger show-for-large">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                      <span class="menu_title">menu</span>
+                    </span>
+                  </button>
+                </div>
+
+                <div id="popin_menu" data-reveal class="full reveal show-for-large" data-animation-in="fade-in"
+                  aria-label="Fenêtre de navigation principale">
+                  <div class="wrap_popin grid-container">
+                    <button type="button" class="close-button" data-close aria-label="Fermer le menu principal">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+
+                    <nav id="menu_principal" role="navigation" aria-label="Menu principal">
+                      <ul class="grid-x grid-padding-x" data-accordion-menu data-submenu-toggle="true"
+                        data-submenu-toggle-text="Accès au sous-menu de">
+                        <li class="cell large-3 small-12">
+                          <a href="#" style="color:red;">
+                           Sous menu 1
+                          </a>
+                          <div>
+                            <ul class="sous_menu menu vertical">
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Élément de sous-menu 1</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Élément de sous-menu 1</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Élément de sous-menu 1</span></a>
+                              </li>
+
+
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="cell large-3 small-12">
+                          <a href="#" style="color:red;">
+                           Sous menu 2
+                          </a>
+                          <div>
+                            <ul class="sous_menu menu vertical">
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Élément de sous-menu 2</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Élément de sous-menu 2</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Élément de sous-menu 2</span></a>
+                              </li>
+
+
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="cell large-3 small-12">
+                          <a href="#" style="color:red;">
+                           Sous menu 3
+                          </a>
+                          <div>
+                            <ul class="sous_menu menu vertical">
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Élément de sous-menu 3</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Élément de sous-menu 3</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Élément de sous-menu 3</span></a>
+                              </li>
+
+
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="cell large-3 small-12">
+                          <a href="#" style="color:red;">
+                           Sous menu 4
+                          </a>
+                          <div>
+                            <ul class="sous_menu menu vertical">
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Élément de sous-menu 4</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Élément de sous-menu 4</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Élément de sous-menu 4</span></a>
+                              </li>
+
+
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="cell large-3 small-12">
+                         <a href="#" style="color:red;">
+                           Sous menu 5
+                          </a>
+                          <div>
+                            <ul class="sous_menu menu vertical">
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Élément de sous-menu 5</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Élément de sous-menu 5</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Élément de sous-menu 5</span></a>
+                              </li>
+
+
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="cell large-3 small-12">
+                          <a href="#" style="color:red;">
+                           Sous menu 6
+                          </a>
+                          <div>
+                            <ul class="sous_menu menu vertical">
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Élément de sous-menu 6</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Élément de sous-menu 6</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Élément de sous-menu 6</span></a>
+                              </li>
+
+
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="cell large-3 small-12">
+                          <a href="#" style="color:red;">
+                           Sous menu 7
+                          </a>
+                          <div>
+                            <ul class="sous_menu menu vertical">
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Élément de sous-menu 7</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Élément de sous-menu 7</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Élément de sous-menu 7</span></a>
+                              </li>
+
+
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="cell large-3 small-12">
+                          <a href="#" style="color:red;">    
+                           Sous menu 8
+                          </a>
+                          <div>
+                            <ul class="sous_menu menu vertical">
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Élément de sous-menu 8</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Élément de sous-menu 8</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Élément de sous-menu 8</span></a>
+                              </li>
+
+
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="grid-x grid-padding-x align-middle cell shrink">
+                <div class="cell shrink reseaux_sociaux show-for-large">
+
+                  <ul class="grid-x align-middle">
+                    <li class="cell shrink reseau_facebook" >
+                      <a href="#"
+                        title="Suivez-nous sur Facebook (nouvelle fenêtre)" target="_blank" rel="noreferrer" style="background-color:#ffffff;">
+                        <span class="show-for-sr">
+                          Suivez-nous sur Facebook
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="cell shrink reseau_twitter" >
+                      <a href="#" title="Suivez-nous sur Twitter (nouvelle fenêtre)"
+                        target="_blank" rel="noreferrer" style="background-color:#ffffff;">
+                        <span class="show-for-sr">
+                          Suivez-nous sur Twitter
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="cell shrink reseau_instagram" >
+                      <a href="#"
+                        title="Suivez-nous sur Instagram (nouvelle fenêtre)" target="_blank" rel="noreferrer" style="background-color:#ffffff;">
+                        <span class="show-for-sr">
+                          Suivez-nous sur Instagram
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="cell shrink reseau_tiktok" >
+                      <a href="#" title="Suivez-nous sur TikTok (nouvelle fenêtre)"
+                        target="_blank" rel="noreferrer" style="background-color:#ffffff;">
+                        <span class="show-for-sr">
+                          Suivez-nous sur TikTok
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="cell shrink reseau_linkedin" >
+                      <a href="#"
+                        title="Suivez-nous sur LinkedIn (nouvelle fenêtre)" target="_blank" rel="noreferrer" style="background-color:#ffffff;">
+                        <span class="show-for-sr">
+                          Suivez-nous sur LinkedIn
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="cell shrink reseau_youtube" >
+                      <a href="#"
+                        title="Suivez-nous sur Youtube (nouvelle fenêtre)" target="_blank" rel="noreferrer" style="background-color:#ffffff;">
+                        <span class="show-for-sr">
+                          Suivez-nous sur Youtube
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+
+                </div>
+                <!-- [START] fileadmin/templates/master/fluid_template/Partials/Navigation/ContactButton.html -->
+
+                <div id="bloc_contact_container" class="cell shrink">
+
+                    <span class="menu_title" data-toggle="header_bloc_contact" id="btn_contact">
+                     <a style=" color:white; font-weight: 1000; width: 600px;height: 600px;" class="menu_title">
+                      CONTACT
+                       </a>
+                    </span>
+
+
+                  <div class="dropdown-pane contenu_bloc bottom has-position-bottom has-alignment-left bloc_contact"
+                    id="header_bloc_contact" data-dropdown data-hover="false" data-close-on-click="true"
+                    data-position="bottom" data-alignment="right">
+                    <!-- [START] fileadmin/templates/master/ext/dce/Layouts/None.html -->
+
+                    <!-- [START] Bloc répété - Bloc Contact -->
+
+                    <div class="bloc_contact_content text-center">
+                      <p>
+                        <strong>Par téléphone</strong> du lundi au vendredi de
+                        8h30 à 12h et de 13h à 17h30 (17h le vendredi)
+                      </p>
+
+                      <p class="button_like">
+                        <a href="tel:999999999" style="color:#3c763d;">99 99 99 99 99</a>
+                      </p>
+
+                      <p><strong>Via le portail usagers</strong> :</p>
+
+                      <p class="btn_all">
+                        <a href="#"
+                          title="Envoyez un e-mail (nouvelle fenêtre)" target="_blank" rel="noreferrer">Accéder au
+                          formulaire</a>
+                      </p>
+
+                      <p>
+                        <strong>Par courrier</strong> à l'adresse suivante,
+                        <strong>Adresse Complète </strong>
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </header>
+{% endblock %}
+
+{% block banner %}
+
+{% endblock %}
+
+
+{% block central %}
+
+{% endblock %}
+
+
+{% block footer %}
+
+	<footer id="footer" role="contentinfo">
+
+                    <div id="bloc_contact_info" class="grid-container">
+                        <div id="info_footer" class="grid-x grid-padding-x">
+                            <div class="cell large-3 large-offset-1 medium-12 small-12">
+                                <img class="lazy"
+                                    src=""
+                                    data-src=""
+                                    width="238" height="72" alt="LOGO" />
+
+                                <div class="cell shrink reseaux_sociaux">
+
+                                    <ul class="grid-x align-middle">
+                                        <li class="cell shrink reseau_facebook">
+                                            <a href=
+                                                title="Suivez-nous sur Facebook (nouvelle fenêtre)" target="_blank"
+                                                rel="noreferrer">
+                                                <span class="show-for-sr">
+                                                    Suivez-nous sur Facebook
+                                                </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="cell shrink reseau_twitter">
+                                            <a href="#"
+                                                title="Suivez-nous sur Twitter (nouvelle fenêtre)" target="_blank"
+                                                rel="noreferrer">
+                                                <span class="show-for-sr">
+                                                    Suivez-nous sur Twitter
+                                                </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="cell shrink reseau_instagram">
+                                            <a href="#"
+                                                title="Suivez-nous sur Instagram (nouvelle fenêtre)" target="_blank"
+                                                rel="noreferrer">
+                                                <span class="show-for-sr">
+                                                    Suivez-nous sur Instagram
+                                                </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="cell shrink reseau_tiktok">
+                                            <a href="#"
+                                                title="Suivez-nous sur TikTok (nouvelle fenêtre)" target="_blank"
+                                                rel="noreferrer">
+                                                <span class="show-for-sr">
+                                                    Suivez-nous sur TikTok
+                                                </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="cell shrink reseau_linkedin">
+                                            <a href="#"
+                                                title="Suivez-nous sur LinkedIn (nouvelle fenêtre)" target="_blank"
+                                                rel="noreferrer">
+                                                <span class="show-for-sr">
+                                                    Suivez-nous sur LinkedIn
+                                                </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="cell shrink reseau_youtube">
+                                            <a href="#"
+                                                title="Suivez-nous sur Youtube (nouvelle fenêtre)" target="_blank"
+                                                rel="noreferrer">
+                                                <span class="show-for-sr">
+                                                    Suivez-nous sur Youtube
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            <div class="cell large-4 medium-6 small-12">
+                                <p class="titre_footer" style="color:red;">Titre de sous section Contact</p>
+                                <p>Boite postale </p>
+                                <p>Adresse</p>
+
+                                <p class="tel">
+                                    <a href="tel:99999999" style="color:#3c763d;"> 99 99 99 99 99</a>
+                                </p>
+
+                                <p class="mail">
+                                    <a href="#"
+                                        title="Contacter nous par mail (nouvelle fenêtre)" target="_blank" rel="noreferrer" style="color:#3c763d;">
+                                        Contacter nous
+                                    </a>
+                                </p>
+
+                            </div>
+
+                            <div class="cell large-4 medium-6 small-12 map">
+                                <p class="titre_footer" style="color:red;">Sous Section de localisation </p>
+                                <p>
+                                    <a href="#"
+                                        title="Dans votre quartier (nouvelle fenêtre)" target="_blank" rel="noreferrer">
+                                        <img class="lazy"
+                                            src=""
+                                            data-src=""
+                                            width="153" height="178" alt="Carte de localisant le service" />
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="back_to_top">
+                        <p>
+                            <a href="#main" title="Retourner en haut de la page">
+                                <span class="show-for-sr">Retourner en haut de la page</span>
+                            </a>
+                        </p>
+                    </div>
+
+
+                    <div id="galaxie_partenaires" class="grid-container">
+                        <div class="grid-x grid-padding-x align-center">
+                            <div class="cell large-10 medium-12 small-12">
+                                <p class="titre_footer" style="color: red;">Les partenariats</p>
+                            </div>
+
+                            <div class="grid-x cell large-10 medium-12 small-12">
+                                <div class="cell shrink">
+                                    <a href="#" title="Les bibliothèques (nouvelle fenêtre)"
+                                        target="_blank" rel="noreferrer">
+                                        <img class="lazy"
+                                            src=""
+                                            data-src=""
+                                            width="178" height="79" alt="Partenaire 1" />
+                                    </a>
+                                </div>
+
+                                <div class="cell shrink">
+                                    <a href="#"
+                                        title="Site de l'Eau du Grand reims (nouvelle fenêtre)" target="_blank"
+                                        rel="noreferrer">
+                                        <img class="lazy"
+                                            src=""
+                                            data-src="" width="178" height="79" alt="Partenaire 2" />
+
+                                    </a>
+                                </div>
+
+                                <div class="cell shrink">
+                                    <a href="#"
+                                        title="École supérieure d'art et de design de reims (nouvelle fenêtre)"
+                                        target="_blank" rel="noreferrer">
+                                        <img class="lazy"
+                                            src=""
+                                            data-src="" width="178" height="79"
+                                            alt="Partenaire 3" />
+                                    </a>
+                                </div>
+
+                                <div class="cell shrink">
+                                    <a href="#" title="Grand reims (nouvelle fenêtre)"
+                                        target="_blank">
+                                        <img class="lazy"
+                                            src=""
+                                            data-src="" width="178" height="79" alt="Partenaire 4" />
+                                    </a>
+                                </div>
+
+                                <div class="cell shrink">
+                                    <a href="#" title="reims Légend'r (nouvelle fenêtre)"
+                                        target="_blank">
+                                        <img class="lazy"
+                                           src=""
+                                            data-src="" width="178" height="79" alt="Partenaire 5" />
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="menu_footer" class="grid-container grid-x grid-padding-x align-center" >
+                        <ul class="cell xxlarge-10 xlarge-11 large-12 medium-12 small-12">
+                            <li>
+                                <a href="#" style="color:white;">Mentions légales</a>
+                            </li>
+
+                            <li>
+                                <a href="#" style="color:white;">Politique de
+                                    confidentialité</a>
+                            </li>
+
+                            <li>
+                                <a href="#" style="color:white;">Accessibilité</a>
+                            </li>
+
+                            <li>
+                                <a href="#" style="color:white;">Plan du site</a>
+                            </li>
+
+                            <li>
+                                <a href="#" style="color:white;">Marchés
+                                    publics</a>
+                            </li>
+
+                            <li>
+                                <a href="#" style="color:white;">Espace Presse</a>
+                            </li>
+
+                            <li>
+                                <a href="#"
+                                    target="_blank" rel="noreferrer" style="color:white;"> Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+ 		</div>
+	</div>
+</div>
+
+{% endblock %}
+
+
+
+	<div class="pswp" id="pswp-wrapper" data-init="ce-gallery" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button><button
+                        class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button><button
+                        class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button><button
+                    class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% block script %}
+
+		<script src="{% static 'typo3conf/ext/cim_base/Resources/Public/JavaScript/app-dev2407.js' %}"></script>
+		<script src="{% static 'typo3conf/ext/cim_elastic/Resources/Public/JavaScript/countViewsfe64.js' %}"
+			async="async"></script>
+		<script src="{% static 'typo3conf/ext/cim_search_elastic/Resources/Public/JavaScript/List898b.js' %}"></script>
+		<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+		<script src="{% static 'typo3conf/ext/cim_quality/Resources/Public/JavaScript/QualityWidget3170.js' %}"></script>
+		<script src="{% static 'typo3conf/ext/photoswipe/Resources/Public/JavaScript/photoswipe.min0e9f.js' %}"></script>
+		<script
+			src="{% static 'typo3conf/ext/photoswipe/Resources/Public/JavaScript/photoswipe-ui-default.min0e9f.js' %}"></script>
+		<script src="{% static 'typo3conf/ext/cim_base/Resources/Public/JavaScript/photoswipe-init8034.js' %}"></script>
+		<script src="{% static 'fileadmin/templates/master/assets/assets_common/js/vendor/what-input.min1d41.js' %}"></script>
+		<script src="{% static 'fileadmin/templates/master/assets/assets_common/js/vendor/foundation.min1d41.js' %}"></script>
+		<script
+			src="{% static 'fileadmin/templates/master/assets/assets_common/js/foundation-datepicker.minf68d.js' %}"></script>
+		<script
+			src="{% static 'fileadmin/templates/master/assets/assets_common/js/foundation-datepicker.fr.minf68d.js' %}"></script>
+		<script src="{% static 'fileadmin/templates/master/assets/assets_common/js/hunt.min092d.js' %}"></script>
+		<script src="{% static 'fileadmin/templates/master/assets/assets_common/js/app.min5197.js' %}"></script>
+		<script src="{% static 'fileadmin/templates/master/assets/assets_site_reims/js/app.min036f.js' %}"></script>
+		<script src="{% static 'fileadmin/templates/master/assets/assets_common/js/icheck.min50b4.js' %}"></script>
+		<script src="{% static 'fileadmin/templates/master/assets/assets_common/js/jquery-ui.min3d6c.js' %}"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/fr.js"></script>
+
+		<script
+			src="{% static 'typo3conf/ext/powermail/Resources/Public/JavaScript/Libraries/jquery.datetimepicker.min9cd0.js' %}"></script>
+		<script src="{% static 'typo3conf/ext/powermail/Resources/Public/JavaScript/Powermail/Tabs.min9cd0.js' %}"></script>
+		<script src="{% static 'typo3conf/ext/powermail/Resources/Public/JavaScript/Powermail/Form.min9cd0.js' %}"></script>
+		<script
+			src="{% static 'typo3conf/ext/powermail_cond/Resources/Public/JavaScript/PowermailCondition.min7535.js' %}"></script>
+		<script src="{% static 'typo3conf/ext/cim_base/Resources/Public/JavaScript/parsley/parsley.min7fde.js' %}"></script>
+		<script src="{% static 'typo3conf/ext/cim_base/Resources/Public/JavaScript/parsley/frb366.js' %}"></script>
+		<script defer="defer" src="{% static 'fileadmin/templates/master/assets/assets_common/js/slick.min50b4.js' %}"></script>
+		<script defer="defer"
+			src="{% static 'fileadmin/templates/master/assets/assets_common/js/modules/bloc_alaune.min5dc8.js' %}"></script>
+		<script defer="defer"
+			src="{% static 'fileadmin/templates/master/assets/assets_common/js/modules/recherche/placeholderTypewriter.min0c36.js' %}"></script>
+		<script defer="defer"
+			src="{% static 'fileadmin/templates/master/assets/assets_common/js/modules/recherche/section_recherche_decli.min5306.js' %}"></script>
+		<script defer="defer"
+			src="{% static 'fileadmin/templates/master/assets/assets_common/js/modules/bloc_agenda_culturel.mine8bb.js' %}"></script>
+		<script defer="defer"
+			src="{% static 'fileadmin/templates/master/assets/assets_common/js/modules/social_wall_decli.minecbf.js' %}"></script>
+	</body>
+
+</html>
+
+{% endblock %}
