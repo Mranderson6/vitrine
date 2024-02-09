@@ -1,0 +1,4297 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{%block title %} A la Une {% endblock %}
+
+{% block banner %}
+<main role="main" id="main">
+    <div id="global" class="">
+
+        <div id="anchor_header"></div>
+
+        <div id="head_page" class="head_page grid-y align-justify">
+            <div class="grid-x grid-padding-x align-middle share_print_container">
+
+                <div id="fil_ariane" class="cell auto">
+                    <nav role="navigation" aria-label="Vous êtes ici">
+
+                        <ul class="breadcrumbs" vocab="http://schema.org/" typeof="BreadcrumbList">
+
+                            <li property="itemListElement" typeof="ListItem">
+
+
+                                <a href="index.html" property="item" typeof="WebPage">
+                                    <span property="name">Accueil</span>
+                                </a>
+
+                                <meta property="position" content="1">
+
+                            </li>
+
+                            <li property="itemListElement" typeof="ListItem">
+
+
+                                <span class="show-for-sr">Page active : </span>
+                                <span property="name">À la une</span>
+                                 <meta property="position" content="2">
+
+                            </li>
+
+                        </ul>
+
+                    </nav>
+                </div>
+
+
+                <div class="social_share_print cell shrink">
+                    <ul class="grid-x grid-padding-x btns_container">
+
+                        <li class="cell shrink print_btn">
+                            <a class="print" title="Imprimer cette page" role="button" href="javascript:window.print()">
+                                <span class="show-for-sr">
+                                    Imprimer
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="cell shrink share_btn sticky-container">
+
+
+                            <span class="tac_addtoanyshare"></span>
+
+                            <button type="button" title="Partager cette page" data-toggle="share_container">
+                                <span class="show-for-sr">
+                                    Partager
+                                </span>
+                            </button>
+
+                            <div id="share_container"
+                                class="dropdown-pane share_container a2a_kit a2a_kit_size_32 a2a_default_style"
+                                data-dropdown data-close-on-click="true" data-position="bottom" data-alignment="center">
+                                <ul>
+
+                                    <li class="button_facebook">
+                                        <a class="a2a_button_facebook" rel="nofollow" target="_blank"
+                                            href="index.html#facebook" title="Partager sur Facebook (nouvelle fenêtre)">
+                                            <span class="show-for-sr">
+                                                Partager sur Facebook
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="button_twitter">
+                                        <a class="a2a_button_twitter" rel="nofollow" target="_blank"
+                                            href="index.html#twitter" title="Partager sur Twitter (nouvelle fenêtre)">
+                                            <span class="show-for-sr">
+                                                Partager sur Twitter
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="button_linkedin">
+                                        <a class="a2a_button_linkedin" rel="nofollow" target="_blank"
+                                            href="index.html#linkedin" title="Partager sur LinkedIn (nouvelle fenêtre)">
+                                            <span class="show-for-sr">
+                                                Partager sur LinkedIn
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="grid-container grid-x cell">
+                <!-- [START] fileadmin/templates/master/fluid_template/Partials/Page/Title.html -->
+
+
+                <div id="titre_page" class="titre_page cell shrink">
+
+                    <h1>À la une</h1>
+
+
+            </div>
+        </div>
+   <div class="quote grid-container grid-x grid-padding-x align-center">
+
+            <div class="grid-x grid-padding-x large-11 medium-12 small-12">
+
+
+            </div>
+        </div>
+
+        <div id="anchor_skip_link"></div>
+
+        <div id="content_page" class="content_page grid-container">
+
+            <span id="c100143"></span>
+
+
+            <link rel="stylesheet"
+                href="fileadmin/templates/master/assets/assets_common/js/vendor/cimeos_mapbox/mapbox-gl-generic-geocoder.min.css"
+                media="print" onload="this.media='all'" />
+            <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.css" media="print"
+                onload="this.media='all'" />
+            <link rel="stylesheet"
+                href="fileadmin/templates/master/assets/assets_site_reims/scss/modules/cim_mapbox.min.css" media="print"
+                onload="this.media='all'" />
+
+            <script async src="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.js"></script>
+            <script async
+                src="fileadmin/templates/master/assets/assets_common/js/vendor/cimeos_mapbox/cimeos-mapbox.min.js"></script>
+
+
+
+
+            <div id="cimeos-list-config-list" class="hide" data-id-map="zone_map"
+                data-url-geo="/a-la-une?contentElements=11&amp;elementId=100143&amp;no_cache=1&amp;tx_cimsearchelastic_displaysearch%5Baction%5D=geo&amp;tx_cimsearchelastic_displaysearch%5Bcontroller%5D=Listing&amp;type=99991&amp;cHash=f0264226785c66a250118a962ceec2d3"
+                data-url-scroll="/a-la-une?contentElements=11&amp;elementId=100143&amp;no_cache=1&amp;tx_cimsearchelastic_displaysearch%5Baction%5D=scroll&amp;tx_cimsearchelastic_displaysearch%5Bcontroller%5D=Listing&amp;tx_cimsearchelastic_displaysearch%5Bformat%5D=html&amp;type=99992&amp;cHash=d36b2f606bd2c536c14520011697f599"
+                data-url-show="/a-la-une?no_cache=1&amp;tx_cimsearchelastic_displaysearch%5Baction%5D=show&amp;tx_cimsearchelastic_displaysearch%5Bcontroller%5D=Listing&amp;tx_cimsearchelastic_displaysearch%5Bformat%5D=html&amp;type=99990&amp;cHash=9c3ff6de3e340839442a432006652370"
+                data-content-elements="11" data-active-content-element="0" data-current-element-id="100143"
+                data-form="tx_cimsearch_form_11" data-categories-form="tx_cimsearch_categories_form"
+                data-total-records="106" data-shouldload="1"
+                data-picto-base-url="/fileadmin/templates/master/assets/assets_site_reims/img/" data-auto-send="1"
+                data-mapbox-rootpath="https://www.reims.fr/fileadmin/templates/master/assets/assets_common/js/vendor/cimeos_mapbox/"
+                data-site-id="Ville" data-showResults="1"></div>
+
+            <div class="wrap_result align-center grid-x grid-padding-x form_vertical">
+
+                <div id="top_anchor"></div>
+
+                <div id="active_filters" class="is-hidden hide">
+                    <div class="wrap">
+                        <p class="titre">
+                            Filtres actifs
+                        </p>
+                        <div id="active_filters_container"></div>
+                    </div>
+                </div>
+
+                <div id="moteur" data-sticky-container class="moteur cell large-4 medium-12 small-12">
+                    <div id="line_tools_moteur" class="grid-x grid-padding-x" data-sticky data-sticky-on="small"
+                        data-top-anchor="top_anchor:top" data-btm-anchor="bottom_anchor:bottom"
+                        data-options="marginTop:0;">
+
+                        <div id="top_moteur">
+                            <div class="grid-x grid-padding-x align-bottom align-justify">
+
+                                <p class="nb_result cell shrink" aria-atomic="true">
+                                    <span class="nb_number" aria-live="polite">106 </span>
+                                    <span class="nb_text">résultats
+                                    </span>
+                                </p>
+
+                                <div class="cell shrink">
+
+                                    <button type="button" id="switch_display" class="btn_moteur show_map"
+                                        data-toggle="first_display second_display">Afficher la carte</button>
+
+                                    <button type="button" id="switch_filters" class="btn_moteur hide-for-large"
+                                        data-toggle="filters">Afficher les filtres</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- ZONE FILTRES -->
+                        <div id="filters" class="show-for-large" data-toggler="show-for-large">
+                            <form id="tx_cimsearch_form_11">
+                                <fieldset>
+                                    <legend class="show-for-sr">
+                                        Filtrer les résultats
+                                    </legend>
+
+
+
+                                    <div class="ligne_form">
+
+
+                                        <label for="motcle">Mot-clé</label>
+
+                                        <input id="motcle"
+                                            name="tx_cimsearchelastic_displaysearch[fieldset_11][text][8][suggest_description]"
+                                            placeholder="Mot-clé" type="text" value="" />
+
+                                    </div>
+
+
+                                    <div class="ligne_form">
+                                        <fieldset id="2a32e494" class="input-group grid-x">
+                                            <legend class="label_like">Thématiques</legend>
+
+
+                                            <div class="tag cell grid-x">
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_195"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="195">
+                                                    <label for="check_2a32e494_195">Aménagement urbain</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_3316"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="3316">
+                                                    <label for="check_2a32e494_3316">Appel à projet</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_196"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="196">
+                                                    <label for="check_2a32e494_196">Attractivité</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_208"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="208">
+                                                    <label for="check_2a32e494_208">Citoyenneté &amp; Démocratie</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_213"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="213">
+                                                    <label for="check_2a32e494_213">Culture</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_215"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="215">
+                                                    <label for="check_2a32e494_215">Déchets - Propreté</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_218"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="218">
+                                                    <label for="check_2a32e494_218">Déplacements - Transports</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_219"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="219">
+                                                    <label for="check_2a32e494_219">Développement Durable</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_220"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="220">
+                                                    <label for="check_2a32e494_220">Eau - Assainissement</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_221"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="221">
+                                                    <label for="check_2a32e494_221">Économie - Emploi</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_222"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="222">
+                                                    <label for="check_2a32e494_222">Enfance - Jeunesse -
+                                                        Éducation</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_67"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="67">
+                                                    <label for="check_2a32e494_67">Enseignement Supérieur</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_224"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="224">
+                                                    <label for="check_2a32e494_224">Espaces verts</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_744"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="744">
+                                                    <label for="check_2a32e494_744">Événements - manifestations</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_227"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="227">
+                                                    <label for="check_2a32e494_227">Gestion des déchets</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_229"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="229">
+                                                    <label for="check_2a32e494_229">Habitat et logement</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_230"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="230">
+                                                    <label for="check_2a32e494_230">Information</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_232"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="232">
+                                                    <label for="check_2a32e494_232">Jeunesse</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_330"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="330">
+                                                    <label for="check_2a32e494_330">Magazine</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_3105"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="3105">
+                                                    <label for="check_2a32e494_3105">Offre d&#039;emploi</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_244"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="244">
+                                                    <label for="check_2a32e494_244">Santé</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_245"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="245">
+                                                    <label for="check_2a32e494_245">Scolarité</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_246"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="246">
+                                                    <label for="check_2a32e494_246">Sécurité</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_248"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="248">
+                                                    <label for="check_2a32e494_248">Seniors</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_251"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="251">
+                                                    <label for="check_2a32e494_251">Solidarité</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_252"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="252">
+                                                    <label for="check_2a32e494_252">Solidarité - Santé - Seniors</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_253"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="253">
+                                                    <label for="check_2a32e494_253">Sport</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_254"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="254">
+                                                    <label for="check_2a32e494_254">Sports - Loisirs</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_259"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="259">
+                                                    <label for="check_2a32e494_259">Travaux</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_264"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="264">
+                                                    <label for="check_2a32e494_264">Urbanisme - Grands Projets</label>
+                                                </div>
+
+                                                <div class="sticky-container">
+                                                    <input id="check_2a32e494_709"
+                                                        name="tx_cimsearchelastic_displaysearch[fieldset_11][categories_parent][9][categories.uid][]"
+                                                        type="checkbox" value="709">
+                                                    <label for="check_2a32e494_709">Vie institutionnelle</label>
+                                                </div>
+
+                                            </div>
+
+
+
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="ligne_form cell">
+                                        <label for="period_agenda">Dates</label>
+                                        <select id="period_agenda"
+                                            name="tx_cimsearchelastic_displaysearch[fieldset_11][periods][13][cimNewsStartDate,cimNewsEndDate|datetime,datetime][period]">
+                                            <option value="">Sélectionner une date</option>
+                                            <option value="today">
+                                                Aujourd&#039;hui
+                                            </option>
+                                            <option value="thisweek">
+                                                Cette semaine
+                                            </option>
+                                            <option value="thisweekend">
+                                                Ce week-end
+                                            </option>
+                                            <option value="thismonth">
+                                                Ce mois-ci
+                                            </option>
+                                            <option value="period">
+                                                Pendant la période
+                                            </option>
+                                        </select>
+
+                                        <div class="ligne_form date is-hidden">
+                                            <fieldset>
+                                                <legend class="show-for-sr">Définir la période</legend>
+                                                <div class="ligne_form grid-x grid-padding-x small-12 text-left">
+                                                    <div class="ligne_form cell medium-6 small-12">
+                                                        <label for="date_from">Du</label>
+                                                        <input class="dp1" id="date_from"
+                                                            name="tx_cimsearchelastic_displaysearch[fieldset_11][periods][13][cimNewsStartDate,cimNewsEndDate|datetime,datetime][startDate]"
+                                                            type="text" value="">
+                                                        <p id="format-date-debut_" class="show-for-sr">jj/mm/aaaa</p>
+                                                    </div>
+                                                    <div class="ligne_form cell medium-6 small-12">
+                                                        <label for="date_to">Au</label>
+                                                        <input class="dp1" id="date_to"
+                                                            name="tx_cimsearchelastic_displaysearch[fieldset_11][periods][13][cimNewsStartDate,cimNewsEndDate|datetime,datetime][endDate]"
+                                                            type="text" value="">
+                                                        <p id="format-date-fin_" class="show-for-sr">jj/mm/aaaa</p>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+
+                                    <!--[END] /fileadmin/templates/master/ext/cim_search_elastic/List/Partials/Form/Form.html -->
+
+
+
+
+                                    <input type="hidden" name="tx_cimsearchelastic_displaysearch[content_element_id]"
+                                        value="11" />
+                                    <div class="ligne_form btn_submit grid-x grid-padding-x small-12 align-middle">
+
+                                        <div class="cell shrink">
+
+                                            <input class="cell shrink show-for-large" data-content-element-id="11"
+                                                type="submit" value="Filtrer" data-close="popin_filters" />
+
+                                            <input id="btn_filtrer_rwd" class="cell shrink hide-for-large"
+                                                data-content-element-id="11" type="submit" value="Filtrer"
+                                                title="Filtrer et fermer les filtres" />
+
+                                        </div>
+
+                                        <button id="reset_search" class="btn_reset reset_search_popin cell shrink hide">
+                                            <span class="effet_border border_bleu">
+                                                Réinitialiser
+                                                <span class="show-for-sr">les filtres</span></span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <!--[END] /fileadmin/templates/master/ext/cim_search_elastic/List/Partials/Form/HorizontalForm.html -->
+
+
+
+                <div id="second_display" class="cell large-8 medium-12 small-12 is-hidden" data-sticky-container
+                    data-toggler="is-hidden">
+                    <div id="zone_map_cont" data-sticky data-sticky-on="small" data-top-anchor="top_anchor:top"
+                        data-btm-anchor="bottom_anchor:bottom" data-options="marginTop:0;">
+                        <div id="zone_map" class="cim_mapbox">
+
+
+                            <div class="cs-loader hide cell small-12">
+                                <div class="cs-loader-inner" aria-hidden="true">
+                                    <div>●</div>
+                                    <div>●</div>
+                                    <div>●</div>
+                                    <div>●</div>
+                                    <div>●</div>
+                                    <div>●</div>
+                                </div>
+                            </div>
+                            <div id="map_list" class="the_map"></div>
+                        </div>
+                        <div id="loader_filters" style="visibility:hidden;">
+                            <div class="sk-circle">
+                                <div class="sk-circle1 sk-child"></div>
+                                <div class="sk-circle2 sk-child"></div>
+                                <div class="sk-circle3 sk-child"></div>
+                                <div class="sk-circle4 sk-child"></div>
+                                <div class="sk-circle5 sk-child"></div>
+                                <div class="sk-circle6 sk-child"></div>
+                                <div class="sk-circle7 sk-child"></div>
+                                <div class="sk-circle8 sk-child"></div>
+                                <div class="sk-circle9 sk-child"></div>
+                                <div class="sk-circle10 sk-child"></div>
+                                <div class="sk-circle11 sk-child"></div>
+                                <div class="sk-circle12 sk-child"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div id="first_display" class="cell large-8 medium-12 small-12 " data-toggler="is-hidden">
+                    <div id="list_items">
+                        <div id="zone_results" class="grid-x small-up-1">
+
+                            <div class="no_result hide">
+                                <p>Aucun résultat ne correspond à votre recherche, essayez de modifier les critères de
+                                    recherche.</p>
+                            </div>
+
+
+
+
+
+                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Results.html -->
+
+
+
+
+
+
+                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+                            <article
+                                data-counter-url-search="/a-la-une?tx_cimelastic_viewcount%5Baction%5D=count&amp;tx_cimelastic_viewcount%5Bcontroller%5D=ViewCount&amp;tx_cimelastic_viewcount%5BcountType%5D=search&amp;tx_cimelastic_viewcount%5Bpid%5D=20159&amp;tx_cimelastic_viewcount%5Btable%5D=events&amp;tx_cimelastic_viewcount%5Buid%5D=9082&amp;type=1597406382&amp;cHash=c1cffa77f9307187edf548dd0288f357"
+                                data-slick-filter-item="agenda" data-popin-id="" data-content-element-id="1"
+                                data-pid="20159" data-uid="9082" data-title="Que faire à Reims ce week-end ?" class="list_item article sticky-container
+
+                
+                no_popin
+                bandeau_item
+                
+                category
+                
+                agenda
+                horizontal
+                
+         ">
+
+                                <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+
+                                <div class="link grid-x grid-padding-x align-middle flex-dir-row-reverse">
+                                    <div class="txt cell auto">
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <h2 class="titre">
+                                            <a href="a-la-une/une/que-faire-a-reims-ce-week-end-1.html">
+                                                <span>Que faire à Reims ce week-end ?</span>
+                                            </a>
+                                        </h2>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+                                        <div class="date_container">
+                                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+
+
+
+
+
+
+                                            <p class="date">
+                                                <span class="contain">
+
+
+
+
+                                                    <span class="txt_moment">Du </span>
+                                                    <span class="startdate">
+                                                        <span class="txt_day_nb">29 </span>
+                                                        <span class="txt_month">déc. </span>
+
+                                                    </span>
+                                                    <span class="txt_moment"> au </span>
+                                                    <span class="enddate">
+                                                        <span class="txt_day_nb">31 </span>
+                                                        <span class="txt_month">déc. </span>
+                                                        <span class="txt_year">2023 </span>
+                                                    </span>
+
+
+                                                </span>
+                                            </p>
+
+
+
+
+                                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+                                        </div>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+                                        <div class="thumb-desc ">
+
+                                            <p>Comme chaque vendredi, voici une sélection des sorties. Très bon week-end
+                                                à tous !</p>
+
+                                        </div>
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <p class="cat"><span class="show-for-sr">Catégorie(s) : </span>Loisirs</p>
+
+
+
+
+
+                                    </div>
+
+                                    <div class="cell shrink">
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="img list"><img class="lazy"
+                                                src="fileadmin/templates/master/assets/assets_common/img/default_img/default_lazy.png"
+                                                data-src="https://www.reims.fr/fileadmin/_processed_/9/a/csm_Que_faire_a_Reims_format_regalia_b38ed6954a.jpg"
+                                                width="210" height="200" alt="" /></div>
+
+
+                                        <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+                            </article>
+
+                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+
+
+
+                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+                            <article
+                                data-counter-url-search="/a-la-une?tx_cimelastic_viewcount%5Baction%5D=count&amp;tx_cimelastic_viewcount%5Bcontroller%5D=ViewCount&amp;tx_cimelastic_viewcount%5BcountType%5D=search&amp;tx_cimelastic_viewcount%5Bpid%5D=20159&amp;tx_cimelastic_viewcount%5Btable%5D=events&amp;tx_cimelastic_viewcount%5Buid%5D=2735&amp;type=1597406382&amp;cHash=99793eb3fc8a3aa16cfbe6ee5e372553"
+                                data-slick-filter-item="agenda" data-popin-id="" data-content-element-id="1"
+                                data-pid="20159" data-uid="2735"
+                                data-title="Le Reims Patinage de Vitesse durant les vacances" class="list_item article sticky-container
+
+                
+                no_popin
+                bandeau_item
+                
+                category
+                
+                agenda
+                horizontal
+                
+         ">
+
+                                <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+
+                                <div class="link grid-x grid-padding-x align-middle flex-dir-row-reverse">
+                                    <div class="txt cell auto">
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <h2 class="titre">
+                                            <a
+                                                href="a-la-une/une/le-reims-patinage-de-vitesse-durant-les-vacances.html">
+                                                <span>Le Reims Patinage de Vitesse durant les vacances</span>
+                                            </a>
+                                        </h2>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+                                        <div class="date_container">
+                                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+
+
+
+
+
+
+                                            <p class="date">
+                                                <span class="contain">
+
+
+
+
+                                                    <span class="txt_moment">Du </span>
+                                                    <span class="startdate">
+                                                        <span class="txt_day_nb">26 </span>
+                                                        <span class="txt_month">déc. </span>
+
+                                                        <span class="txt_year">2023 </span>
+
+                                                    </span>
+                                                    <span class="txt_moment"> au </span>
+                                                    <span class="enddate">
+                                                        <span class="txt_day_nb">06 </span>
+                                                        <span class="txt_month">janv. </span>
+                                                        <span class="txt_year">2024 </span>
+                                                    </span>
+
+
+                                                </span>
+                                            </p>
+
+
+
+
+                                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+                                        </div>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+                                        <div class="thumb-desc ">
+
+                                            <p>Voici les séances d'essai proposées par le Reims Patinage de Vitesse à la
+                                                patinoire Barot</p>
+
+                                        </div>
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <p class="cat"><span class="show-for-sr">Catégorie(s) : </span>Sports - Loisirs
+                                        </p>
+
+
+
+
+
+                                    </div>
+
+                                    <div class="cell shrink">
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="img list"><img class="lazy"
+                                                src="fileadmin/templates/master/assets/assets_common/img/default_img/default_lazy.png"
+                                                data-src="https://www.reims.fr/fileadmin/_processed_/1/e/csm_ReimsPatinageVitesse-Activites_e2b4c0d3d6.jpg"
+                                                width="210" height="200" alt="" /></div>
+
+
+                                        <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+                            </article>
+
+                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+
+
+
+                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+                            <article
+                                data-counter-url-search="/a-la-une?tx_cimelastic_viewcount%5Baction%5D=count&amp;tx_cimelastic_viewcount%5Bcontroller%5D=ViewCount&amp;tx_cimelastic_viewcount%5BcountType%5D=search&amp;tx_cimelastic_viewcount%5Bpid%5D=20159&amp;tx_cimelastic_viewcount%5Btable%5D=events&amp;tx_cimelastic_viewcount%5Buid%5D=44691&amp;type=1597406382&amp;cHash=d1d59f43a392527bcb03d01299feb263"
+                                data-slick-filter-item="agenda" data-popin-id="" data-content-element-id="1"
+                                data-pid="20159" data-uid="44691" data-title="Reims Polar a besoin de vous !" class="list_item article sticky-container
+
+                
+                no_popin
+                bandeau_item
+                
+                category
+                
+                agenda
+                horizontal
+                
+         ">
+
+                                <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+
+                                <div class="link grid-x grid-padding-x align-middle flex-dir-row-reverse">
+                                    <div class="txt cell auto">
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <h2 class="titre">
+                                            <a href="a-la-une/une/reims-polar-a-besoin-de-vous.html">
+                                                <span>Reims Polar a besoin de vous !</span>
+                                            </a>
+                                        </h2>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+                                        <div class="date_container">
+                                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+
+
+
+
+
+
+                                            <p class="date">
+                                                <span class="contain">
+
+
+
+
+
+                                                    <span class="txt_moment">Jusqu'au </span>
+                                                    <span class="enddate">
+                                                        <span class="txt_day_nb">19 </span>
+                                                        <span class="txt_month">janv. </span>
+                                                    </span>
+
+
+
+                                                </span>
+                                            </p>
+
+
+
+
+                                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+                                        </div>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+                                        <div class="thumb-desc ">
+
+                                            <p>La 4e édition de Reims Polar, le festival du film policier, se tiendra du
+                                                9 au 14 avril 2024 à l’Opéraims.</p>
+
+                                        </div>
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+
+                                    <div class="cell shrink">
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="img list"><img class="lazy"
+                                                src="fileadmin/templates/master/assets/assets_common/img/default_img/default_lazy.png"
+                                                data-src="https://www.reims.fr/fileadmin/_processed_/d/3/csm_1080x1080-ReimsPolar23-sansdate_0218b09923.png"
+                                                width="210" height="200" alt="" /></div>
+
+
+                                        <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+                            </article>
+
+                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+
+
+
+                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+                            <article
+                                data-counter-url-search="/a-la-une?tx_cimelastic_viewcount%5Baction%5D=count&amp;tx_cimelastic_viewcount%5Bcontroller%5D=ViewCount&amp;tx_cimelastic_viewcount%5BcountType%5D=search&amp;tx_cimelastic_viewcount%5Bpid%5D=20159&amp;tx_cimelastic_viewcount%5Btable%5D=events&amp;tx_cimelastic_viewcount%5Buid%5D=44685&amp;type=1597406382&amp;cHash=c384325480c35b714c9f3a5b5b95092d"
+                                data-slick-filter-item="agenda" data-popin-id="" data-content-element-id="1"
+                                data-pid="20159" data-uid="44685"
+                                data-title="« Un Nouveau Chapitre » de Florent LENICE, réalisateur rémois" class="list_item article sticky-container
+
+                
+                no_popin
+                bandeau_item
+                
+                category
+                
+                agenda
+                horizontal
+                
+         ">
+
+                                <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+
+                                <div class="link grid-x grid-padding-x align-middle flex-dir-row-reverse">
+                                    <div class="txt cell auto">
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <h2 class="titre">
+                                            <a href="a-la-une/une/un-nouveau-chapitre-de-florent-lenice-1.html">
+                                                <span>« Un Nouveau Chapitre » de Florent LENICE, réalisateur
+                                                    rémois</span>
+                                            </a>
+                                        </h2>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+                                        <div class="date_container">
+                                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+                                        </div>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+                                        <div class="thumb-desc ">
+
+                                            <p>Florent Lenice, directeur artistique de la Compagnie PASTEL, a réalisé un
+                                                court métrage inspiré de faits réels, afin de raconter une page
+                                                d’histoire sur la&hellip;</p>
+
+                                        </div>
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <p class="cat"><span class="show-for-sr">Catégorie(s) : </span>Culture</p>
+
+
+
+
+
+                                    </div>
+
+                                    <div class="cell shrink">
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="img list"><img class="lazy"
+                                                src="fileadmin/templates/master/assets/assets_common/img/default_img/default_lazy.png"
+                                                data-src="https://www.reims.fr/fileadmin/_processed_/0/5/csm_Un_Nouveau_Chapitre_1080_c70ce11606.png"
+                                                width="210" height="200" alt="" /></div>
+
+
+                                        <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+                            </article>
+
+                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+
+
+
+                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+                            <article
+                                data-counter-url-search="/a-la-une?tx_cimelastic_viewcount%5Baction%5D=count&amp;tx_cimelastic_viewcount%5Bcontroller%5D=ViewCount&amp;tx_cimelastic_viewcount%5BcountType%5D=search&amp;tx_cimelastic_viewcount%5Bpid%5D=20159&amp;tx_cimelastic_viewcount%5Btable%5D=events&amp;tx_cimelastic_viewcount%5Buid%5D=44681&amp;type=1597406382&amp;cHash=ab7d8f60be73f5d020bf81c2ef0bd1ed"
+                                data-slick-filter-item="agenda" data-popin-id="" data-content-element-id="1"
+                                data-pid="20159" data-uid="44681"
+                                data-title="Reims reçoit le prix national stratégique d’aménagement paysager 2023."
+                                class="list_item article sticky-container
+
+                
+                no_popin
+                bandeau_item
+                
+                category
+                
+                agenda
+                horizontal
+                
+         ">
+
+                                <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+
+                                <div class="link grid-x grid-padding-x align-middle flex-dir-row-reverse">
+                                    <div class="txt cell auto">
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <h2 class="titre">
+                                            <a
+                                                href="a-la-une/une/reims-recoit-le-prix-national-strategique-damenagement-paysager-2023-1.html">
+                                                <span>Reims reçoit le prix national stratégique d’aménagement paysager
+                                                    2023.</span>
+                                            </a>
+                                        </h2>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+                                        <div class="date_container">
+                                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+                                        </div>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+                                        <div class="thumb-desc ">
+
+                                            <p>Sur les 93 communes visitées par le jury du Conseil national des Villes
+                                                et Villages Fleuris, seules 17 communes ont reçu un prix national. La
+                                                ville de Reims se&hellip;</p>
+
+                                        </div>
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <p class="cat"><span class="show-for-sr">Catégorie(s) : </span>Espaces verts</p>
+
+
+
+
+
+                                    </div>
+
+                                    <div class="cell shrink">
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="img list"><img class="lazy"
+                                                src="fileadmin/templates/master/assets/assets_common/img/default_img/default_lazy.png"
+                                                data-src="https://www.reims.fr/fileadmin/_processed_/b/0/csm_Reims_Berges_support_restitution_ESQ-Vue_terrasse_1__b4201c0cb7.png"
+                                                width="210" height="200" alt="" /></div>
+
+
+                                        <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+                            </article>
+
+                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+
+
+
+                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+                            <article
+                                data-counter-url-search="/a-la-une?tx_cimelastic_viewcount%5Baction%5D=count&amp;tx_cimelastic_viewcount%5Bcontroller%5D=ViewCount&amp;tx_cimelastic_viewcount%5BcountType%5D=search&amp;tx_cimelastic_viewcount%5Bpid%5D=20159&amp;tx_cimelastic_viewcount%5Btable%5D=events&amp;tx_cimelastic_viewcount%5Buid%5D=44677&amp;type=1597406382&amp;cHash=c9de3d31f1f8fc3a5618e9612ad3093c"
+                                data-slick-filter-item="agenda" data-popin-id="" data-content-element-id="1"
+                                data-pid="20159" data-uid="44677"
+                                data-title="Recherche de figurants pour le tournage d’un clip" class="list_item article sticky-container
+
+                
+                no_popin
+                bandeau_item
+                
+                category
+                
+                agenda
+                horizontal
+                
+         ">
+
+                                <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+
+                                <div class="link grid-x grid-padding-x align-middle flex-dir-row-reverse">
+                                    <div class="txt cell auto">
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <h2 class="titre">
+                                            <a
+                                                href="a-la-une/une/recherche-de-figurants-pour-le-tournage-dun-clip.html">
+                                                <span>Recherche de figurants pour le tournage d’un clip</span>
+                                            </a>
+                                        </h2>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+                                        <div class="date_container">
+                                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+                                        </div>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+                                        <div class="thumb-desc ">
+
+                                            <p>Envie de participer au tournage d’un clip ? La société de production
+                                                "Animal Animal", va réaliser prochainement sur Reims le clip de
+                                                l’artiste "Chien Noir",&hellip;</p>
+
+                                        </div>
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <p class="cat"><span class="show-for-sr">Catégorie(s) : </span>Culture</p>
+
+
+
+
+
+                                    </div>
+
+                                    <div class="cell shrink">
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="img list"><img class="lazy"
+                                                src="fileadmin/templates/master/assets/assets_common/img/default_img/default_lazy.png"
+                                                data-src="https://www.reims.fr/fileadmin/_processed_/2/1/csm_Tournage_Reims_98a8a40231.jpg"
+                                                width="210" height="200" alt="" /></div>
+
+
+                                        <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+                            </article>
+
+                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+
+
+
+                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+                            <article
+                                data-counter-url-search="/a-la-une?tx_cimelastic_viewcount%5Baction%5D=count&amp;tx_cimelastic_viewcount%5Bcontroller%5D=ViewCount&amp;tx_cimelastic_viewcount%5BcountType%5D=search&amp;tx_cimelastic_viewcount%5Bpid%5D=20159&amp;tx_cimelastic_viewcount%5Btable%5D=events&amp;tx_cimelastic_viewcount%5Buid%5D=44674&amp;type=1597406382&amp;cHash=d2db7348b48268407bd1ff32c14c0186"
+                                data-slick-filter-item="agenda" data-popin-id="" data-content-element-id="1"
+                                data-pid="20159" data-uid="44674"
+                                data-title="Les tapisseries de saint Remi restaurées grâce au mécénat" class="list_item article sticky-container
+
+                
+                no_popin
+                bandeau_item
+                
+                category
+                
+                agenda
+                horizontal
+                
+         ">
+
+                                <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+
+                                <div class="link grid-x grid-padding-x align-middle flex-dir-row-reverse">
+                                    <div class="txt cell auto">
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <h2 class="titre">
+                                            <a
+                                                href="a-la-une/une/les-tapisseries-de-saint-remi-restaurees-grace-au-mecenat.html">
+                                                <span>Les tapisseries de saint Remi restaurées grâce au mécénat</span>
+                                            </a>
+                                        </h2>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+                                        <div class="date_container">
+                                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+                                        </div>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+                                        <div class="thumb-desc ">
+
+                                            <p>Après une campagne de restauration d’envergure, trois des dix tapisseries
+                                                de la vie de saint Remi sont de nouveau visibles au musée éponyme.
+                                                Preuve que le&hellip;</p>
+
+                                        </div>
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <p class="cat"><span class="show-for-sr">Catégorie(s) : </span>Culture</p>
+
+
+
+
+
+
+
+                                    </div>
+
+                                    <div class="cell shrink">
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="img list"><img class="lazy"
+                                                src="fileadmin/templates/master/assets/assets_common/img/default_img/default_lazy.png"
+                                                data-src="https://www.reims.fr/fileadmin/_processed_/1/e/csm_Les_tapisseries_de_saint_Remi_restaurees_24a2cc6a7c.jpg"
+                                                width="210" height="200" alt="" /></div>
+
+
+                                        <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+                            </article>
+
+                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+
+
+
+                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+                            <article
+                                data-counter-url-search="/a-la-une?tx_cimelastic_viewcount%5Baction%5D=count&amp;tx_cimelastic_viewcount%5Bcontroller%5D=ViewCount&amp;tx_cimelastic_viewcount%5BcountType%5D=search&amp;tx_cimelastic_viewcount%5Bpid%5D=20159&amp;tx_cimelastic_viewcount%5Btable%5D=events&amp;tx_cimelastic_viewcount%5Buid%5D=44673&amp;type=1597406382&amp;cHash=f6a53e21e6c65c0cfa71f6ebcd0d8fa5"
+                                data-slick-filter-item="agenda" data-popin-id="" data-content-element-id="1"
+                                data-pid="20159" data-uid="44673" data-title="La place Colin, métamorphose en cours"
+                                class="list_item article sticky-container
+
+                
+                no_popin
+                bandeau_item
+                
+                category
+                
+                agenda
+                horizontal
+                
+         ">
+
+                                <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+
+                                <div class="link grid-x grid-padding-x align-middle flex-dir-row-reverse">
+                                    <div class="txt cell auto">
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <h2 class="titre">
+                                            <a href="a-la-une/une/la-place-colin-metamorphose-en-cours.html">
+                                                <span>La place Colin, métamorphose en cours</span>
+                                            </a>
+                                        </h2>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+                                        <div class="date_container">
+                                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+                                        </div>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+                                        <div class="thumb-desc ">
+
+                                            <p>A deux pas des grues qui dominent les immeubles du futur quartier Rives
+                                                de Vesle, le chantier de la place Colin se poursuit jusqu’au 1er
+                                                trimestre 2024. Plus&hellip;</p>
+
+                                        </div>
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <p class="cat"><span class="show-for-sr">Catégorie(s) : </span>Travaux</p>
+
+
+
+
+
+                                    </div>
+
+                                    <div class="cell shrink">
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="img list"><img class="lazy"
+                                                src="fileadmin/templates/master/assets/assets_common/img/default_img/default_lazy.png"
+                                                data-src="https://www.reims.fr/fileadmin/_processed_/8/7/csm_Place_Colin_2ab7756204.jpg"
+                                                width="210" height="200" alt="" /></div>
+
+
+                                        <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+                            </article>
+
+                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+
+
+
+                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+                            <article
+                                data-counter-url-search="/a-la-une?tx_cimelastic_viewcount%5Baction%5D=count&amp;tx_cimelastic_viewcount%5Bcontroller%5D=ViewCount&amp;tx_cimelastic_viewcount%5BcountType%5D=search&amp;tx_cimelastic_viewcount%5Bpid%5D=20159&amp;tx_cimelastic_viewcount%5Btable%5D=events&amp;tx_cimelastic_viewcount%5Buid%5D=44672&amp;type=1597406382&amp;cHash=d04fb199b7f95df919ced45be533cab0"
+                                data-slick-filter-item="agenda" data-popin-id="" data-content-element-id="1"
+                                data-pid="20159" data-uid="44672"
+                                data-title="1er feu de la chaudière bois-énergie  du quartier Orgeval à Reims" class="list_item article sticky-container
+
+                
+                no_popin
+                bandeau_item
+                
+                category
+                
+                agenda
+                horizontal
+                
+         ">
+
+                                <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+
+                                <div class="link grid-x grid-padding-x align-middle flex-dir-row-reverse">
+                                    <div class="txt cell auto">
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <h2 class="titre">
+                                            <a
+                                                href="a-la-une/une/1er-feu-de-la-chaudiere-bois-energie-du-quartier-orgeval-a-reims.html">
+                                                <span>1er feu de la chaudière bois-énergie du quartier Orgeval à
+                                                    Reims</span>
+                                            </a>
+                                        </h2>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+                                        <div class="date_container">
+                                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+                                        </div>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+                                        <div class="thumb-desc ">
+
+                                            <p>80 % ! C’est le taux d’énergie renouvelable (EnR) et locale que la
+                                                nouvelle chaudière de la chaufferie du quartier Orgeval va atteindre
+                                                grâce à une campagne de&hellip;</p>
+
+                                        </div>
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <p class="cat"><span class="show-for-sr">Catégorie(s) : </span>Développement
+                                            Durable</p>
+
+
+
+
+
+                                    </div>
+
+                                    <div class="cell shrink">
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="img list"><img class="lazy"
+                                                src="fileadmin/templates/master/assets/assets_common/img/default_img/default_lazy.png"
+                                                data-src="https://www.reims.fr/fileadmin/_processed_/f/1/csm_Chaufferie_Orgeval_437430ca7d.jpg"
+                                                width="210" height="200" alt="" /></div>
+
+
+                                        <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+                            </article>
+
+                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+
+
+
+                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+                            <article
+                                data-counter-url-search="/a-la-une?tx_cimelastic_viewcount%5Baction%5D=count&amp;tx_cimelastic_viewcount%5Bcontroller%5D=ViewCount&amp;tx_cimelastic_viewcount%5BcountType%5D=search&amp;tx_cimelastic_viewcount%5Bpid%5D=20159&amp;tx_cimelastic_viewcount%5Btable%5D=events&amp;tx_cimelastic_viewcount%5Buid%5D=44669&amp;type=1597406382&amp;cHash=db55c6c8486e4c7ae21b3012482c859a"
+                                data-slick-filter-item="agenda" data-popin-id="" data-content-element-id="1"
+                                data-pid="20159" data-uid="44669" data-title="Venez donner votre sang" class="list_item article sticky-container
+
+                
+                no_popin
+                bandeau_item
+                
+                category
+                
+                agenda
+                horizontal
+                
+         ">
+
+                                <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+
+                                <div class="link grid-x grid-padding-x align-middle flex-dir-row-reverse">
+                                    <div class="txt cell auto">
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <h2 class="titre">
+                                            <a href="a-la-une/une/venez-donner-votre-sang.html">
+                                                <span>Venez donner votre sang</span>
+                                            </a>
+                                        </h2>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+                                        <div class="date_container">
+                                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+
+
+
+
+
+
+                                            <p class="date">
+                                                <span class="contain">
+
+
+
+
+                                                    <span class="txt_moment">Le </span>
+                                                    <span class="startdate">
+                                                        <span class="txt_day_nb">03 </span>
+                                                        <span class="txt_month">janv. </span>
+                                                        <span class="txt_year">2024 </span>
+                                                    </span>
+
+
+                                                </span>
+                                            </p>
+
+
+
+
+                                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+                                        </div>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+                                        <div class="thumb-desc ">
+
+                                            <p>Le mercredi 3 janvier 2024 à l'hôtel de ville de Reims. Une heure pour
+                                                sauver 3 vies !</p>
+
+                                        </div>
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <p class="cat"><span class="show-for-sr">Catégorie(s) : </span>Solidarité</p>
+
+
+
+
+
+                                    </div>
+
+                                    <div class="cell shrink">
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="img list"><img class="lazy"
+                                                src="fileadmin/templates/master/assets/assets_common/img/default_img/default_lazy.png"
+                                                data-src="https://www.reims.fr/fileadmin/_processed_/f/d/csm_Visuel-RS_Facebook-Instagram_Generique_1__be79d43d4c.png"
+                                                width="210" height="200" alt="" /></div>
+
+
+                                        <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+                            </article>
+
+                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+
+
+
+                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+                            <article
+                                data-counter-url-search="/a-la-une?tx_cimelastic_viewcount%5Baction%5D=count&amp;tx_cimelastic_viewcount%5Bcontroller%5D=ViewCount&amp;tx_cimelastic_viewcount%5BcountType%5D=search&amp;tx_cimelastic_viewcount%5Bpid%5D=20159&amp;tx_cimelastic_viewcount%5Btable%5D=events&amp;tx_cimelastic_viewcount%5Buid%5D=44668&amp;type=1597406382&amp;cHash=d441933b438765c74cb0d054d1d6a146"
+                                data-slick-filter-item="agenda" data-popin-id="" data-content-element-id="1"
+                                data-pid="20159" data-uid="44668"
+                                data-title="Reims compte désormais 300 caméras de vidéoprotection" class="list_item article sticky-container
+
+                
+                no_popin
+                bandeau_item
+                
+                category
+                
+                agenda
+                horizontal
+                
+         ">
+
+                                <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+
+                                <div class="link grid-x grid-padding-x align-middle flex-dir-row-reverse">
+                                    <div class="txt cell auto">
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <h2 class="titre">
+                                            <a
+                                                href="a-la-une/une/reims-compte-desormais-300-cameras-de-videoprotection.html">
+                                                <span>Reims compte désormais 300 caméras de vidéoprotection</span>
+                                            </a>
+                                        </h2>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+                                        <div class="date_container">
+                                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+                                        </div>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+                                        <div class="thumb-desc ">
+
+                                            <p>De 36 caméras en 2014, la ville de Reims est passée à 300 caméras de
+                                                vidéoprotection depuis peu.</p>
+
+                                        </div>
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <p class="cat"><span class="show-for-sr">Catégorie(s) : </span>Sécurité</p>
+
+
+
+
+
+                                    </div>
+
+                                    <div class="cell shrink">
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="img list"><img class="lazy"
+                                                src="fileadmin/templates/master/assets/assets_common/img/default_img/default_lazy.png"
+                                                data-src="https://www.reims.fr/fileadmin/_processed_/b/2/csm_Vide__oprotection_b0c15f14ea.jpg"
+                                                width="210" height="200" alt="" /></div>
+
+
+                                        <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+                            </article>
+
+                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+
+
+
+                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+                            <article
+                                data-counter-url-search="/a-la-une?tx_cimelastic_viewcount%5Baction%5D=count&amp;tx_cimelastic_viewcount%5Bcontroller%5D=ViewCount&amp;tx_cimelastic_viewcount%5BcountType%5D=search&amp;tx_cimelastic_viewcount%5Bpid%5D=20159&amp;tx_cimelastic_viewcount%5Btable%5D=events&amp;tx_cimelastic_viewcount%5Buid%5D=44662&amp;type=1597406382&amp;cHash=79a6f2382053f2e8e2f8097ac7da1dd1"
+                                data-slick-filter-item="agenda" data-popin-id="" data-content-element-id="1"
+                                data-pid="20159" data-uid="44662"
+                                data-title="Appel à projet - Animation de l&#039;intérieur de la Basilique Saint-Remi de Reims"
+                                class="list_item article sticky-container
+
+                
+                no_popin
+                bandeau_item
+                
+                category
+                
+                agenda
+                horizontal
+                
+         ">
+
+                                <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+
+                                <div class="link grid-x grid-padding-x align-middle flex-dir-row-reverse">
+                                    <div class="txt cell auto">
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <h2 class="titre">
+                                            <a
+                                                href="a-la-une/une/appel-a-projet-interieur-de-la-basilique-saint-remi-de-reims.html">
+                                                <span>Appel à projet - Animation de l&#039;intérieur de la Basilique
+                                                    Saint-Remi&hellip;</span>
+                                            </a>
+                                        </h2>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+                                        <div class="date_container">
+                                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+
+
+
+
+
+
+                                            <p class="date">
+                                                <span class="contain">
+
+
+
+
+
+                                                    <span class="txt_moment">Jusqu'au </span>
+                                                    <span class="enddate">
+                                                        <span class="txt_day_nb">19 </span>
+                                                        <span class="txt_month">janv. </span>
+                                                    </span>
+
+
+
+                                                </span>
+                                            </p>
+
+
+
+
+                                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+                                        </div>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+                                        <div class="thumb-desc ">
+
+                                            <p>Exploitation commerciale d’un spectacle sons et lumières mettant en
+                                                valeur l’histoire et l’architecture intérieure du lieu sur des temps
+                                                nocturnes.</p>
+
+                                        </div>
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <p class="cat"><span class="show-for-sr">Catégorie(s) : </span>Appel à projet
+                                        </p>
+
+
+
+
+
+
+
+                                    </div>
+
+                                    <div class="cell shrink">
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="img list"><img class="lazy"
+                                                src="fileadmin/templates/master/assets/assets_common/img/default_img/default_lazy.png"
+                                                data-src="https://www.reims.fr/fileadmin/_processed_/1/d/csm_2018-basilque-stremi01_a47bee618f.jpg"
+                                                width="210" height="200" alt="" /></div>
+
+
+                                        <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+                            </article>
+
+                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+
+
+
+                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+                            <article
+                                data-counter-url-search="/a-la-une?tx_cimelastic_viewcount%5Baction%5D=count&amp;tx_cimelastic_viewcount%5Bcontroller%5D=ViewCount&amp;tx_cimelastic_viewcount%5BcountType%5D=search&amp;tx_cimelastic_viewcount%5Bpid%5D=20159&amp;tx_cimelastic_viewcount%5Btable%5D=events&amp;tx_cimelastic_viewcount%5Buid%5D=11141&amp;type=1597406382&amp;cHash=5c26b800b6ac90994792807c59196d25"
+                                data-slick-filter-item="agenda" data-popin-id="" data-content-element-id="1"
+                                data-pid="20159" data-uid="11141"
+                                data-title="Activités pour les enfants pendant les vacances de Noël" class="list_item article sticky-container
+
+                
+                no_popin
+                bandeau_item
+                
+                category
+                
+                agenda
+                horizontal
+                
+         ">
+
+                                <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+
+                                <div class="link grid-x grid-padding-x align-middle flex-dir-row-reverse">
+                                    <div class="txt cell auto">
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <h2 class="titre">
+                                            <a href="a-la-une/une/pendant-les-vacances-de-noel.html">
+                                                <span>Activités pour les enfants pendant les vacances de Noël</span>
+                                            </a>
+                                        </h2>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+                                        <div class="date_container">
+                                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+
+
+
+
+
+
+                                            <p class="date">
+                                                <span class="contain">
+
+
+
+
+                                                    <span class="txt_moment">Du </span>
+                                                    <span class="startdate">
+                                                        <span class="txt_day_nb">23 </span>
+                                                        <span class="txt_month">déc. </span>
+
+                                                        <span class="txt_year">2023 </span>
+
+                                                    </span>
+                                                    <span class="txt_moment"> au </span>
+                                                    <span class="enddate">
+                                                        <span class="txt_day_nb">08 </span>
+                                                        <span class="txt_month">janv. </span>
+                                                        <span class="txt_year">2024 </span>
+                                                    </span>
+
+
+                                                </span>
+                                            </p>
+
+
+
+
+                                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+                                        </div>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+                                        <div class="thumb-desc ">
+
+                                            <p>Des activités sont proposées pour vos enfants durant les vacances de
+                                                Noël, du 23 décembre au 7 janvier 2023 inclus. Voici le programme…</p>
+
+                                        </div>
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <p class="cat"><span class="show-for-sr">Catégorie(s) : </span>Jeunesse</p>
+
+
+
+
+
+                                    </div>
+
+                                    <div class="cell shrink">
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="img list"><img class="lazy"
+                                                src="fileadmin/templates/master/assets/assets_common/img/default_img/default_lazy.png"
+                                                data-src="https://www.reims.fr/fileadmin/_processed_/3/e/csm_2023-vacnoelenfants-1080x1080_ba46818ae3.png"
+                                                width="210" height="200" alt="" /></div>
+
+
+                                        <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+                            </article>
+
+                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+
+
+
+                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+                            <article
+                                data-counter-url-search="/a-la-une?tx_cimelastic_viewcount%5Baction%5D=count&amp;tx_cimelastic_viewcount%5Bcontroller%5D=ViewCount&amp;tx_cimelastic_viewcount%5BcountType%5D=search&amp;tx_cimelastic_viewcount%5Bpid%5D=20159&amp;tx_cimelastic_viewcount%5Btable%5D=events&amp;tx_cimelastic_viewcount%5Buid%5D=44645&amp;type=1597406382&amp;cHash=b235180f2e2496310b0d6fe83611d948"
+                                data-slick-filter-item="agenda" data-popin-id="" data-content-element-id="1"
+                                data-pid="20159" data-uid="44645"
+                                data-title="Reims reçoit l’Equerre d’argent 2023 pour le projet des promenades Jean-Louis Schneiter"
+                                class="list_item article sticky-container
+
+                
+                no_popin
+                bandeau_item
+                
+                category
+                
+                agenda
+                horizontal
+                
+         ">
+
+                                <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+
+                                <div class="link grid-x grid-padding-x align-middle flex-dir-row-reverse">
+                                    <div class="txt cell auto">
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <h2 class="titre">
+                                            <a
+                                                href="a-la-une/une/reims-recoit-lequerre-dargent-2023-pour-le-projet-des-promenades-jean-louis-schneiter.html">
+                                                <span>Reims reçoit l’Equerre d’argent 2023 pour le projet des
+                                                    promenades&hellip;</span>
+                                            </a>
+                                        </h2>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+                                        <div class="date_container">
+                                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+                                        </div>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+                                        <div class="thumb-desc ">
+
+                                            <p>Les rédactions du Moniteur et d’AMC ont effectué une sélection pour le
+                                                prix de l’Equerre d’argent 2023 sur près de 240 dossiers de
+                                                candidatures. Celle de Reims&hellip;</p>
+
+                                        </div>
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <p class="cat"><span class="show-for-sr">Catégorie(s) : </span>Aménagement
+                                            urbain</p>
+
+
+
+
+
+                                    </div>
+
+                                    <div class="cell shrink">
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="img list"><img class="lazy"
+                                                src="fileadmin/templates/master/assets/assets_common/img/default_img/default_lazy.png"
+                                                data-src="https://www.reims.fr/fileadmin/_processed_/9/6/csm_Les_Basses-Promenades-_c_AD_Reims_f9fb42e8f2.jpg"
+                                                width="210" height="200" alt="" /></div>
+
+
+                                        <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+                            </article>
+
+                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+
+
+
+                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+                            <article
+                                data-counter-url-search="/a-la-une?tx_cimelastic_viewcount%5Baction%5D=count&amp;tx_cimelastic_viewcount%5Bcontroller%5D=ViewCount&amp;tx_cimelastic_viewcount%5BcountType%5D=search&amp;tx_cimelastic_viewcount%5Bpid%5D=20159&amp;tx_cimelastic_viewcount%5Btable%5D=events&amp;tx_cimelastic_viewcount%5Buid%5D=35589&amp;type=1597406382&amp;cHash=ffa934ba57a6458418644c6f6cbe4832"
+                                data-slick-filter-item="agenda" data-popin-id="" data-content-element-id="1"
+                                data-pid="20159" data-uid="35589"
+                                data-title="Reims Attractive, le magazine de la ville de Reims est en ligne" class="list_item article sticky-container
+
+                
+                no_popin
+                bandeau_item
+                
+                category
+                
+                agenda
+                horizontal
+                
+         ">
+
+                                <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+
+                                <div class="link grid-x grid-padding-x align-middle flex-dir-row-reverse">
+                                    <div class="txt cell auto">
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <h2 class="titre">
+                                            <a
+                                                href="a-la-une/une/reims-attractive-le-magazine-de-la-ville-de-reims-est-en-ligne.html">
+                                                <span>Reims Attractive, le magazine de la ville de Reims est en
+                                                    ligne</span>
+                                            </a>
+                                        </h2>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+                                        <div class="date_container">
+                                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+                                        </div>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+                                        <div class="thumb-desc ">
+
+                                            <p>Découvrez le nouveau numéro du Reims Attractive et son dossier spécial
+                                                sur les festivités de Noël à Reims.</p>
+
+                                        </div>
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <p class="cat"><span class="show-for-sr">Catégorie(s) : </span>Magazine</p>
+
+
+
+
+
+                                    </div>
+
+                                    <div class="cell shrink">
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="img list"><img class="lazy"
+                                                src="fileadmin/templates/master/assets/assets_common/img/default_img/default_lazy.png"
+                                                data-src="https://www.reims.fr/fileadmin/_processed_/4/1/csm_373_RA_nov_dec_2023_1080_4400bd9456.png"
+                                                width="210" height="200" alt="" /></div>
+
+
+                                        <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+                            </article>
+
+                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+
+
+
+                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+                            <article
+                                data-counter-url-search="/a-la-une?tx_cimelastic_viewcount%5Baction%5D=count&amp;tx_cimelastic_viewcount%5Bcontroller%5D=ViewCount&amp;tx_cimelastic_viewcount%5BcountType%5D=search&amp;tx_cimelastic_viewcount%5Bpid%5D=20159&amp;tx_cimelastic_viewcount%5Btable%5D=events&amp;tx_cimelastic_viewcount%5Buid%5D=44634&amp;type=1597406382&amp;cHash=26be090a388301fc7b123e3cf03d7dac"
+                                data-slick-filter-item="agenda" data-popin-id="" data-content-element-id="1"
+                                data-pid="20159" data-uid="44634"
+                                data-title="Reims rentre dans le top 10 des villes les plus vertes de France" class="list_item article sticky-container
+
+                
+                no_popin
+                bandeau_item
+                
+                category
+                
+                agenda
+                horizontal
+                
+         ">
+
+                                <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+
+                                <div class="link grid-x grid-padding-x align-middle flex-dir-row-reverse">
+                                    <div class="txt cell auto">
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <h2 class="titre">
+                                            <a
+                                                href="a-la-une/une/reims-rentre-dans-le-top-10-des-villes-les-plus-vertes-de-france.html">
+                                                <span>Reims rentre dans le top 10 des villes les plus vertes de
+                                                    France</span>
+                                            </a>
+                                        </h2>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+                                        <div class="date_container">
+                                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+                                        </div>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+                                        <div class="thumb-desc ">
+
+                                            <p>L’Observatoire des villes vertes de France vient de l’annoncer : Reims
+                                                devient la 8e ville la plus verte de France et rentre dans le top 10 des
+                                                villes les plus&hellip;</p>
+
+                                        </div>
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <p class="cat"><span class="show-for-sr">Catégorie(s) : </span>Espaces verts</p>
+
+
+
+
+
+                                    </div>
+
+                                    <div class="cell shrink">
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="img list"><img class="lazy"
+                                                src="fileadmin/templates/master/assets/assets_common/img/default_img/default_lazy.png"
+                                                data-src="https://www.reims.fr/fileadmin/_processed_/b/b/csm_Reims_ville_verte_9caf55eaa2.jpg"
+                                                width="210" height="200" alt="" /></div>
+
+
+                                        <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+                            </article>
+
+                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+
+
+
+                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+                            <article
+                                data-counter-url-search="/a-la-une?tx_cimelastic_viewcount%5Baction%5D=count&amp;tx_cimelastic_viewcount%5Bcontroller%5D=ViewCount&amp;tx_cimelastic_viewcount%5BcountType%5D=search&amp;tx_cimelastic_viewcount%5Bpid%5D=20159&amp;tx_cimelastic_viewcount%5Btable%5D=events&amp;tx_cimelastic_viewcount%5Buid%5D=44631&amp;type=1597406382&amp;cHash=9d6f395e709bdf973c5a68eb18169cf4"
+                                data-slick-filter-item="agenda" data-popin-id="" data-content-element-id="1"
+                                data-pid="20159" data-uid="44631"
+                                data-title="Le projet de réaménagement des Berges de Reims révélé" class="list_item article sticky-container
+
+                
+                no_popin
+                bandeau_item
+                
+                category
+                
+                agenda
+                horizontal
+                
+         ">
+
+                                <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+
+                                <div class="link grid-x grid-padding-x align-middle flex-dir-row-reverse">
+                                    <div class="txt cell auto">
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <h2 class="titre">
+                                            <a
+                                                href="a-la-une/une/le-projet-de-reamenagement-des-berges-de-reims-revele.html">
+                                                <span>Le projet de réaménagement des Berges de Reims révélé</span>
+                                            </a>
+                                        </h2>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+                                        <div class="date_container">
+                                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+                                        </div>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+                                        <div class="thumb-desc ">
+
+                                            <p>Ce lundi 13 novembre, une réunion publique a permis de restituer la
+                                                concertation, de présenter le projet global, des esquisses, dont la
+                                                future passerelle. </p>
+
+                                        </div>
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <p class="cat"><span class="show-for-sr">Catégorie(s) : </span>Urbanisme -
+                                            Grands Projets</p>
+
+
+
+
+
+                                    </div>
+
+                                    <div class="cell shrink">
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="img list"><img class="lazy"
+                                                src="fileadmin/templates/master/assets/assets_common/img/default_img/default_lazy.png"
+                                                data-src="https://www.reims.fr/fileadmin/_processed_/b/0/csm_Reims_Berges_support_restitution_ESQ-Vue_terrasse_1__b4201c0cb7.png"
+                                                width="210" height="200" alt="" /></div>
+
+
+                                        <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+                            </article>
+
+                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+
+
+
+                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+                            <article
+                                data-counter-url-search="/a-la-une?tx_cimelastic_viewcount%5Baction%5D=count&amp;tx_cimelastic_viewcount%5Bcontroller%5D=ViewCount&amp;tx_cimelastic_viewcount%5BcountType%5D=search&amp;tx_cimelastic_viewcount%5Bpid%5D=20159&amp;tx_cimelastic_viewcount%5Btable%5D=events&amp;tx_cimelastic_viewcount%5Buid%5D=44629&amp;type=1597406382&amp;cHash=96112529f1876e7f14331acd5fb7afbc"
+                                data-slick-filter-item="agenda" data-popin-id="" data-content-element-id="1"
+                                data-pid="20159" data-uid="44629"
+                                data-title="Expérimentation de la piétonnisation de rues dans le secteur de la place Godinot"
+                                class="list_item article sticky-container
+
+                
+                no_popin
+                bandeau_item
+                
+                category
+                
+                agenda
+                horizontal
+                
+         ">
+
+                                <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+
+                                <div class="link grid-x grid-padding-x align-middle flex-dir-row-reverse">
+                                    <div class="txt cell auto">
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <h2 class="titre">
+                                            <a
+                                                href="a-la-une/une/experimentation-de-la-pietonnisation-de-rues-dans-le-secteur-de-la-place-godinot-1.html">
+                                                <span>Expérimentation de la piétonnisation de rues dans le secteur de
+                                                    la&hellip;</span>
+                                            </a>
+                                        </h2>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+                                        <div class="date_container">
+                                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+                                        </div>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+                                        <div class="thumb-desc ">
+
+                                            <p>A partir du lundi 13 novembre jusqu'à début 2024, une expérimentation de
+                                                la piétonisation, de 7h20 à 8h30 et de 16h15 à 17h, est en place dans
+                                                les rues des&hellip;</p>
+
+                                        </div>
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <p class="cat"><span class="show-for-sr">Catégorie(s) : </span>Déplacements -
+                                            Transports</p>
+
+
+
+
+
+                                    </div>
+
+                                    <div class="cell shrink">
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="img list"><img class="lazy"
+                                                src="fileadmin/templates/master/assets/assets_common/img/default_img/default_lazy.png"
+                                                data-src="https://www.reims.fr/fileadmin/_processed_/4/0/csm_Rues_des_e__coles_dc77bc8498.jpg"
+                                                width="210" height="200" alt="" /></div>
+
+
+                                        <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+                            </article>
+
+                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+
+
+
+                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+                            <article
+                                data-counter-url-search="/a-la-une?tx_cimelastic_viewcount%5Baction%5D=count&amp;tx_cimelastic_viewcount%5Bcontroller%5D=ViewCount&amp;tx_cimelastic_viewcount%5BcountType%5D=search&amp;tx_cimelastic_viewcount%5Bpid%5D=20159&amp;tx_cimelastic_viewcount%5Btable%5D=events&amp;tx_cimelastic_viewcount%5Buid%5D=44615&amp;type=1597406382&amp;cHash=4326238ee754aec3d57a61b5f495929e"
+                                data-slick-filter-item="agenda" data-popin-id="" data-content-element-id="1"
+                                data-pid="20159" data-uid="44615" data-title="La maison du vélo, accueil et animations"
+                                class="list_item article sticky-container
+
+                
+                no_popin
+                bandeau_item
+                
+                category
+                
+                agenda
+                horizontal
+                
+         ">
+
+                                <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+
+                                <div class="link grid-x grid-padding-x align-middle flex-dir-row-reverse">
+                                    <div class="txt cell auto">
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <h2 class="titre">
+                                            <a href="a-la-une/une/la-maison-du-velo-accueil-et-animations-1.html">
+                                                <span>La maison du vélo, accueil et animations</span>
+                                            </a>
+                                        </h2>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+                                        <div class="date_container">
+                                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+                                        </div>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+                                        <div class="thumb-desc ">
+
+                                            <p>L'association Vél'Oxygène accueille en plein centre ville, les cyclistes
+                                                de tous les jours et ceux du week-end.</p>
+
+                                        </div>
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <p class="cat"><span class="show-for-sr">Catégorie(s) : </span>Déplacements -
+                                            Transports</p>
+
+
+
+
+
+
+
+                                    </div>
+
+                                    <div class="cell shrink">
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="img list"><img class="lazy"
+                                                src="fileadmin/templates/master/assets/assets_common/img/default_img/default_lazy.png"
+                                                data-src="https://www.reims.fr/fileadmin/_processed_/f/7/csm_1080x1080-DD-maison-du-velo_e0299c2240.png"
+                                                width="210" height="200" alt="" /></div>
+
+
+                                        <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+                            </article>
+
+                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+
+
+
+                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+                            <article
+                                data-counter-url-search="/a-la-une?tx_cimelastic_viewcount%5Baction%5D=count&amp;tx_cimelastic_viewcount%5Bcontroller%5D=ViewCount&amp;tx_cimelastic_viewcount%5BcountType%5D=search&amp;tx_cimelastic_viewcount%5Bpid%5D=20159&amp;tx_cimelastic_viewcount%5Btable%5D=events&amp;tx_cimelastic_viewcount%5Buid%5D=6167&amp;type=1597406382&amp;cHash=e82ca8a477f10005dd180a06b340aff4"
+                                data-slick-filter-item="agenda" data-popin-id="" data-content-element-id="1"
+                                data-pid="20159" data-uid="6167" data-title="La gendarmerie recrute" class="list_item article sticky-container
+
+                
+                no_popin
+                bandeau_item
+                
+                category
+                
+                agenda
+                horizontal
+                
+         ">
+
+                                <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+
+                                <div class="link grid-x grid-padding-x align-middle flex-dir-row-reverse">
+                                    <div class="txt cell auto">
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <h2 class="titre">
+                                            <a href="a-la-une/une/la-gendarmerie-recrute-1.html">
+                                                <span>La gendarmerie recrute</span>
+                                            </a>
+                                        </h2>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+
+                                        <div class="date_container">
+                                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+                                        </div>
+
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+                                        <div class="thumb-desc ">
+
+                                            <p>Intégrez la Gendarmerie avec ou sans diplôme, pour une carrière
+                                                opérationnelle ou administrative et technique.</p>
+
+                                        </div>
+
+
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <p class="cat"><span class="show-for-sr">Catégorie(s) : </span>Économie - Emploi
+                                        </p>
+
+
+
+
+
+                                    </div>
+
+                                    <div class="cell shrink">
+
+                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="img list"><img class="lazy"
+                                                src="fileadmin/templates/master/assets/assets_common/img/default_img/default_lazy.png"
+                                                data-src="https://www.reims.fr/fileadmin/_processed_/9/5/csm_GendarmerieRecrute-aout22_0a894f2b1f.jpg"
+                                                width="210" height="200" alt="" /></div>
+
+
+                                        <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+                            </article>
+
+                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemList.html -->
+
+
+
+                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Results.html -->
+
+                            <span id="more_results_append"></span>
+
+
+                            <div id="searchLoader" class="loader">&nbsp;</div>
+
+                            <button type="button" id="btn_more_results" class="show-on-focus">
+                                Afficher plus de résultats
+                            </button>
+
+                        </div>
+
+                        <button type="button" class="wrap_arrow to_left is-hidden slick-arrow slick-prev"><span
+                                class="arrows">Résultat précédent</span></button>
+                        <button type="button" class="wrap_arrow to_right is-hidden slick-arrow slick-next"><span
+                                class="arrows">Résultat suivant</span></button>
+
+                    </div>
+                </div>
+
+
+                <div id="bottom_anchor" class="row small-12"></div>
+
+                <div id="popin_detail" class="popin_detail reveal popin_list" data-reveal aria-label="Vue détaillée de"
+                    data-ariaLabel="Vue détaillée de">
+                    <div class="wrap_popin"></div>
+                </div>
+
+                <script>
+                    var list;
+                    $(document).on('_page_ready', function () {
+                        console.log('_page_ready');
+                        list = cimeosList({
+                            config: 'cimeos-list-config-list',
+                        });
+
+                        list.loydBenz();
+
+
+                    });
+                </script>
+
+
+            </div>
+
+            <!-- [END] fileadmin/templates/master/ext/cim_search_elastic/List/Templates/Listing/List.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- [END] fileadmin/templates/master/ext/fluid_styled_content/Layouts/Default.html -->
+        </div>
+
+        <!-- [END] fileadmin/templates/master/fluid_template/Templates/page_liste.html -->
+
+    </div>
+</main>
+{% endblock %}
