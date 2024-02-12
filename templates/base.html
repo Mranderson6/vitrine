@@ -23,14 +23,11 @@
 <link onload="this.media='all'" media="print" rel="stylesheet" href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/modules/bloc_alaune.min0034.css' %}" type="text/css" >
 <link onload="this.media='all'" media="print" rel="stylesheet" href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/modules/recherche_generale_decli.min0167.css' %}" type="text/css" >
 <link onload="this.media='all'" media="print" rel="stylesheet" href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/modules/bloc_agenda_culturel.min0034.css' %}" type="text/css" >
-<link onload="this.media='all'" media="print" rel="stylesheet" href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/modules/social_wall.min0167.css' %}" type="text/css" >
 
 
 
 <script src="{% static 'fileadmin/templates/master/assets/assets_common/js/vendor/jquery.min1d41.js' %}"></script>
 <script src="{% static 'typo3conf/ext/cim_news/Resources/Public/JavaScript/SubscribeWidget0d2a.js' %}"></script>
-<script src="{% static 'typo3conf/ext/cim_socialwall/Resources/Public/JavaScript/SocialwallWidget4e2f.js' %}"></script>
-<script src="{% static 'typo3temp/assets/js/e9e07c5ca0.js?1636992466' %}"></script>
 
    <link rel="icon" type="image/x-icon" href="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/newLogo.jpeg' %}" />
     <link rel="icon" type="image/jpeg" href="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/newLogo.jpeg' %}" />
@@ -3407,10 +3404,6 @@ button a {
         </header>
 {% endblock %}
 
-{% block banner %}
-
-{% endblock %}
-
 
 {% block central %}
 
@@ -3419,217 +3412,209 @@ button a {
 
 {% block footer %}
 
-	<footer id="footer" role="contentinfo">
 
-                    <div id="bloc_contact_info" class="grid-container">
-                        <div id="info_footer" class="grid-x grid-padding-x">
-                            <div class="cell large-3 large-offset-1 medium-12 small-12">
-                                <img class="lazy"
-                                    src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/newLogo.jpeg' %}"
-                                    data-src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/newLogo.jpeg' %}"
-                                    width="238" height="72" alt="LOGO" />
+ 		<footer>
 
-                                <div class="cell shrink reseaux_sociaux">
+  <div id="bloc_contact_info" class="grid-container">
+      <div id="info_footer" class="grid-x grid-padding-x">
+          <div class="cell large-3 large-offset-1 medium-12 small-12">
+              <img class="lazy"
+                  src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/newLogo.jpeg' %}"
+                  data-src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/newLogo.jpeg' %}"
+                  width="238" height="72" alt="LOGO" />
 
-                                    <ul class="grid-x align-middle">
-                                        <li class="cell shrink reseau_facebook">
-                                            <a href=
-                                                title="Suivez-nous sur Facebook (nouvelle fenêtre)" target="_blank"
-                                                rel="noreferrer">
-                                                <span class="show-for-sr">
-                                                    Suivez-nous sur Facebook
-                                                </span>
-                                            </a>
-                                        </li>
+              <div class="cell shrink reseaux_sociaux">
 
-                                        <li class="cell shrink reseau_twitter">
-                                            <a href="#"
-                                                title="Suivez-nous sur Twitter (nouvelle fenêtre)" target="_blank"
-                                                rel="noreferrer">
-                                                <span class="show-for-sr">
-                                                    Suivez-nous sur Twitter
-                                                </span>
-                                            </a>
-                                        </li>
+                  <ul class="grid-x align-middle">
+                      <li class="cell shrink reseau_facebook">
+                          <a href="#"title="Suivez-nous sur Facebook (nouvelle fenêtre)" target="_blank"
+                              rel="noreferrer">
+                              <span class="show-for-sr">
+                                  Suivez-nous sur Facebook
+                              </span>
+                          </a>
+                      </li>
 
-                                        <li class="cell shrink reseau_instagram">
-                                            <a href="#"
-                                                title="Suivez-nous sur Instagram (nouvelle fenêtre)" target="_blank"
-                                                rel="noreferrer">
-                                                <span class="show-for-sr">
-                                                    Suivez-nous sur Instagram
-                                                </span>
-                                            </a>
-                                        </li>
+                      <li class="cell shrink reseau_twitter">
+                          <a href="#"
+                              title="Suivez-nous sur Twitter (nouvelle fenêtre)" target="_blank"
+                              rel="noreferrer">
+                              <span class="show-for-sr">
+                                  Suivez-nous sur Twitter
+                              </span>
+                          </a>
+                      </li>
 
-                                        <li class="cell shrink reseau_tiktok">
-                                            <a href="#"
-                                                title="Suivez-nous sur TikTok (nouvelle fenêtre)" target="_blank"
-                                                rel="noreferrer">
-                                                <span class="show-for-sr">
-                                                    Suivez-nous sur TikTok
-                                                </span>
-                                            </a>
-                                        </li>
+                      <li class="cell shrink reseau_instagram">
+                          <a href="#"
+                              title="Suivez-nous sur Instagram (nouvelle fenêtre)" target="_blank"
+                              rel="noreferrer">
+                              <span class="show-for-sr">
+                                  Suivez-nous sur Instagram
+                              </span>
+                          </a>
+                      </li>
 
-                                        <li class="cell shrink reseau_linkedin">
-                                            <a href="#"
-                                                title="Suivez-nous sur LinkedIn (nouvelle fenêtre)" target="_blank"
-                                                rel="noreferrer">
-                                                <span class="show-for-sr">
-                                                    Suivez-nous sur LinkedIn
-                                                </span>
-                                            </a>
-                                        </li>
+                      <li class="cell shrink reseau_tiktok">
+                          <a href="#"
+                              title="Suivez-nous sur TikTok (nouvelle fenêtre)" target="_blank"
+                              rel="noreferrer">
+                              <span class="show-for-sr">
+                                  Suivez-nous sur TikTok
+                              </span>
+                          </a>
+                      </li>
 
-                                        <li class="cell shrink reseau_youtube">
-                                            <a href="#"
-                                                title="Suivez-nous sur Youtube (nouvelle fenêtre)" target="_blank"
-                                                rel="noreferrer">
-                                                <span class="show-for-sr">
-                                                    Suivez-nous sur Youtube
-                                                </span>
-                                            </a>
-                                        </li>
-                                    </ul>
+                      <li class="cell shrink reseau_linkedin">
+                          <a href="#"
+                              title="Suivez-nous sur LinkedIn (nouvelle fenêtre)" target="_blank"
+                              rel="noreferrer">
+                              <span class="show-for-sr">
+                                  Suivez-nous sur LinkedIn
+                              </span>
+                          </a>
+                      </li>
 
-                                </div>
-                            </div>
+                      <li class="cell shrink reseau_youtube">
+                          <a href="#"
+                              title="Suivez-nous sur Youtube (nouvelle fenêtre)" target="_blank"
+                              rel="noreferrer">
+                              <span class="show-for-sr">
+                                  Suivez-nous sur Youtube
+                              </span>
+                          </a>
+                      </li>
+                  </ul>
 
-                            <div class="cell large-4 medium-6 small-12">
-                                <p class="titre_footer" style="color:#7C976A;">Contact</p>
-                                <p>Boite postale </p>
-                                <p>Adresse</p>
+              </div>
+          </div>
 
-                                <p class="tel">
-                                    <a href="tel:99999999" style="color:#3c763d;"> 99 99 99 99 99</a>
-                                </p>
+          <div class="cell large-4 medium-6 small-12">
+              <p class="titre_footer" style="color:#7C976A;">Contact</p>
+              <p>Boite postale </p>
+              <p>Adresse</p>
 
-                                <p class="mail">
-                                    <a href="#"
-                                        title="Contacter nous par mail (nouvelle fenêtre)" target="_blank" rel="noreferrer" style="color:#3c763d;">
-                                        Contacter nous
-                                    </a>
-                                </p>
+              <p class="tel">
+                  <a href="tel:99999999" style="color:#3c763d;"> 99 99 99 99 99</a>
+              </p>
 
-                            </div>
+              <p class="mail">
+                  <a href="#"
+                      title="Contacter nous par mail (nouvelle fenêtre)" target="_blank" rel="noreferrer" style="color:#3c763d;">
+                      Contacter nous
+                  </a>
+              </p>
 
-                            <div class="cell large-4 medium-6 small-12 map">
-                                <p class="titre_footer" style="color:#7C976A;">Localisation </p>
-                                <p>
-                                    <a href="#"
-                                        title="Dans votre quartier (nouvelle fenêtre)" target="_blank" rel="noreferrer">
-                                        <img class="lazy"
-                                            src=""
-                                            data-src=""
-                                            width="153" height="178" alt="Carte de localisant le service" />
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+
+          <div class="cell large-4 medium-6 small-12 map">
+              <p class="titre_footer" style="color:#7C976A;">Localisation </p>
+
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15923.40953986857!2d11.5412476!3d3.8418485!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bc5c7d6082079%3A0x6603be3fb50f4825!2sMairie%20de%20Yaound%C3%A9%20IV%20-%20Ekounou!5e0!3m2!1sen!2scm!4v1707741587204!5m2!1sen!2scm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      </div>
+  </div>
 
 
 
 
 
-                    <div id="galaxie_partenaires" class="grid-container">
-                        <div class="grid-x grid-padding-x align-center">
-                            <div class="cell large-10 medium-12 small-12">
-                                <p class="titre_footer" style="color: #7C976A;">Nos Partenaires</p>
-                            </div>
+  <div id="galaxie_partenaires" class="grid-container">
+      <div class="grid-x grid-padding-x align-center">
+          <div class="cell large-10 medium-12 small-12">
+              <p class="titre_footer" style="color: #7C976A;">Nos Partenaires</p>
+          </div>
 
-                            <div class="grid-x cell large-10 medium-12 small-12">
-                                <div class="cell shrink">
-                                    <a href="#" title="Les bibliothèques (nouvelle fenêtre)"
-                                        target="_blank" rel="noreferrer">
-                                        <img class="lazy"
-                                            src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/minpostel.jpg' %}"
-                                            data-src=""
-                                            width="178" height="79" alt="Partenaire 1" />
-                                    </a>
-                                </div>
+          <div class="grid-x cell large-10 medium-12 small-12">
+              <div class="cell shrink">
+                  <a href="#" title="Les bibliothèques (nouvelle fenêtre)"
+                      target="_blank" rel="noreferrer">
+                      <img class="lazy"
+                          src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/minpostel.jpg' %}"
+                          data-src=""
+                          width="178" height="79" alt="Partenaire 1" />
+                  </a>
+              </div>
 
-                                <div class="cell shrink">
-                                    <a href="#"
-                                        title="Site de l'Eau du Grand reims (nouvelle fenêtre)" target="_blank"
-                                        rel="noreferrer">
-                                        <img class="lazy"
-                                           src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/minsante.png' %}"
-                                            data-src="" width="178" height="79" alt="Partenaire 2" />
+              <div class="cell shrink">
+                  <a href="#"
+                      title="Site de l'Eau du Grand reims (nouvelle fenêtre)" target="_blank"
+                      rel="noreferrer">
+                      <img class="lazy"
+                         src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/minsante.png' %}"
+                          data-src="" width="178" height="79" alt="Partenaire 2" />
 
-                                    </a>
-                                </div>
+                  </a>
+              </div>
 
-                                <div class="cell shrink">
-                                    <a href="#"
-                                        title="École supérieure d'art et de design de reims (nouvelle fenêtre)"
-                                        target="_blank" rel="noreferrer">
-                                        <img class="lazy"
-                                           src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/minrex.jpeg' %}"
-                                            data-src="" width="178" height="79"
-                                            alt="Partenaire 3" />
-                                    </a>
-                                </div>
+              <div class="cell shrink">
+                  <a href="#"
+                      title="École supérieure d'art et de design de reims (nouvelle fenêtre)"
+                      target="_blank" rel="noreferrer">
+                      <img class="lazy"
+                         src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/minrex.jpeg' %}"
+                          data-src="" width="178" height="79"
+                          alt="Partenaire 3" />
+                  </a>
+              </div>
 
-                                <div class="cell shrink">
-                                    <a href="#" title="Grand reims (nouvelle fenêtre)"
-                                        target="_blank">
-                                        <img class="lazy"
-                                           src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/minfi.png' %}"
-                                            data-src="" width="178" height="79" alt="Partenaire 4" />
-                                    </a>
-                                </div>
+              <div class="cell shrink">
+                  <a href="#" title="Grand reims (nouvelle fenêtre)"
+                      target="_blank">
+                      <img class="lazy"
+                         src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/minfi.png' %}"
+                          data-src="" width="178" height="79" alt="Partenaire 4" />
+                  </a>
+              </div>
 
-                                <div class="cell shrink">
-                                    <a href="#" title="reims Légend'r (nouvelle fenêtre)"
-                                        target="_blank">
-                                        <img class="lazy"
-                                           src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/mindef.jpeg' %}"
-                                            data-src="" width="178" height="79" alt="Partenaire 5" />
-                                    </a>
-                                </div>
+              <div class="cell shrink">
+                  <a href="#" title="reims Légend'r (nouvelle fenêtre)"
+                      target="_blank">
+                      <img class="lazy"
+                         src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/mindef.jpeg' %}"
+                          data-src="" width="178" height="79" alt="Partenaire 5" />
+                  </a>
+              </div>
 
-                            </div>
-                        </div>
-                    </div>
+          </div>
+      </div>
+  </div>
 
-                    <div id="menu_footer" class="grid-container grid-x grid-padding-x align-center" >
-                        <ul class="cell xxlarge-10 xlarge-11 large-12 medium-12 small-12">
-                            <li>
-                                <a href="#" style="color:black;">Mentions légales</a>
-                            </li>
+  <div id="menu_footer" class="grid-container grid-x grid-padding-x align-center" >
+      <ul class="cell xxlarge-10 xlarge-11 large-12 medium-12 small-12">
+          <li>
+              <a href="#" style="color:black;">Mentions légales</a>
+          </li>
 
-                            <li>
-                                <a href="#" style="color:black;">Politique de
-                                    confidentialité</a>
-                            </li>
+          <li>
+              <a href="#" style="color:black;">Politique de
+                  confidentialité</a>
+          </li>
 
-                            <li>
-                                <a href="#" style="color:black;">Accessibilité</a>
-                            </li>
+          <li>
+              <a href="#" style="color:black;">Accessibilité</a>
+          </li>
 
-                            <li>
-                                <a href="#" style="color:black;">Plan du site</a>
-                            </li>
+          <li>
+              <a href="#" style="color:black;">Plan du site</a>
+          </li>
 
-                            <li>
-                                <a href="#" style="color:black;">Marchés
-                                    publics</a>
-                            </li>
+          <li>
+              <a href="#" style="color:black;">Marchés
+                  publics</a>
+          </li>
 
-                            <li>
-                                <a href="#" style="color:black;">Espace Presse</a>
-                            </li>
+          <li>
+              <a href="#" style="color:black;">Espace Presse</a>
+          </li>
 
-                            <li>
-                                <a href="#"
-                                    target="_blank" rel="noreferrer" style="color:black;"> Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </footer>
- 		</div>
+          <li>
+              <a href="#"
+                  target="_blank" rel="noreferrer" style="color:black;"> Contact</a>
+          </li>
+      </ul>
+  </div>
+</footer>
 	</div>
 </div>
 
@@ -3638,30 +3623,16 @@ button a {
 	<div class="pswp" id="pswp-wrapper" data-init="ce-gallery" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="pswp__bg"></div>
         <div class="pswp__scroll-wrap">
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
+
             <div class="pswp__ui pswp__ui--hidden">
                 <div class="pswp__top-bar">
                     <div class="pswp__counter"></div>
                     <button class="pswp__button pswp__button--close" title="Close (Esc)"></button><button
                         class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button><button
                         class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
-                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button><button
-                    class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
+
             </div>
         </div>
     </div>

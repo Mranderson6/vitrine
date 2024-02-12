@@ -3,10 +3,11 @@
 
 {%block title %} TEST {% endblock %}
 
-{% block banner %}
-	<main role="main" id="main">
-                    <div id="global" class="" style="background-image: url('{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/bg1.png' %}');">
-                       <div id="alaune" class="bloc_home grid-container" >
+
+{% block central %}
+  <main role="main" id="main">
+         <div id="global" class="" style="background-image: url('{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/bg1.png' %}');">
+                       <div  class="bloc_home grid-container" >
                           <div class="grid-x grid-padding-x">
                             <div class="content cell">
                               <div class="big_item_container">
@@ -54,15 +55,8 @@
                           </div>
                        </div>
                     </div>
-
-
-{% endblock %}
-
-
-{% block central %}
-                         <span id="c110649"></span>
-
-						 <div id="bloc_contact" class="bloc_home grid-container">
+    <span id="c110649"></span>
+    <div  class="bloc_home grid-container">
                             <div class="grid-x grid-padding-x">
                                 <div class="titre_btn_bloc grid-x grid-padding-x align-middle cell">
                                     <div class="titre_bloc cell shrink">
@@ -110,9 +104,7 @@
                             </div>
                         </div>
 
-                        <span id="c110649"></span>
-
-                        <div  class="bloc_home grid-container">
+    <div id="alaune"  class="bloc_home grid-container">
                             <div class="grid-x grid-padding-x">
                                 <div class="titre_btn_bloc grid-x grid-padding-x align-middle cell">
                                     <div class="titre_bloc cell shrink">
@@ -260,9 +252,7 @@
                             </div>
                         </div>
 
-                        <span id="c110649"></span>
-
-	                 <div id="bloc_contact" class="bloc_home grid-container">
+    <div id="bloc_contact" class="bloc_home grid-container">
                             <div class="grid-x grid-padding-x">
                                 <div class="titre_btn_bloc grid-x grid-padding-x align-middle cell">
                                     <div class="titre_bloc cell shrink">
@@ -479,9 +469,7 @@
                             </div>
                         </div>
 
-                         <span id="c110649"></span>
-
-						 <div id="agenda_culturel" class="bloc_home grid-container">
+    <div id="agenda_culturel" class="bloc_home grid-container">
                             <div class="grid-x grid-padding-x">
                                 <div class="titre_btn_bloc grid-x grid-padding-x align-middle cell">
                                     <div class="titre_bloc cell shrink">
@@ -803,9 +791,7 @@
                             </div>
                         </div>
 
-                        <span id="c110139"></span>
-
-						 <div id="projets" class="bloc_home grid-container">
+    <div id="projets" class="bloc_home grid-container">
                             <div class="grid-x grid-padding-x">
                                 <div class="titre_btn_bloc grid-x grid-padding-x align-middle cell">
                                     <div class="titre_bloc cell shrink">
@@ -896,46 +882,15 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <span id="c110162"></span>
-
-						<div id="social_wall" class="bloc_home grid-container" data-metro-count="8">
-                            <div class="grid-x grid-padding-x">
-                                <div class="titre_btn_bloc grid-x grid-padding-x align-middle cell">
-                                    <div class="titre_bloc cell shrink">
-                                        <h2 class="bloc_home_title" style="color:#7C976A;">Sur les réseaux</h2>
-                                    </div>
-                                </div>
-
-                                <div class="content grid-x cell">
-                                    <!-- [START] fileadmin/templates/master/ext/cim_socialwall/Partials/Pages/Pages.html -->
-
-                                    <div id="sw_links" class="grid-x grid-padding-x xlarge-up-3 medium-up-3 small-up-1">
 
 
-
-                                        <div class="cell shrink facebook">
-                                            <p class="sticky-container">
-                                                <a href="#"
-                                                    title="Suivez-nous sur Facebook (nouvelle fenêtre)" target="_blank"
-                                                    rel="noreferrer">
-                                                    <span class="show-for-sr">@sitevitrine</span>
-                                                </a>
-                                                <span class="title">@sitevitrine</span>
-                                                <span class="desc"> </span>
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <!-- [START] fileadmin/templates/master/ext/cim_socialwall/Partials/Pages/Pages.html -->
-
-                                    <div id="sw_flux" class="grid-x grid-padding-x unfiltered"></div>
-                                </div>
-                            </div>
-                        </div>
-                              <span id="c110162"></span>
 
                     </div>
-                </main>
+
+    <span id="c110139"></span>
+
+
+
+    <span id="c110162"></span>
+          </main>
 {% endblock %}
