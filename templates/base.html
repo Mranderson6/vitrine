@@ -3,155 +3,182 @@
 <html lang="zxx">
 
 {% block head %}
+
 <head>
 
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" type="text/css" href="{% static 'typo3conf/ext/photoswipe/Resources/Public/Css/photoswipe.min0e9f.css' %}" media="all">
-<link rel="stylesheet" type="text/css" href="{% static 'typo3conf/ext/photoswipe/Resources/Public/Css/photoswipe-default-skin.min0e9f.css' %}" media="all">
+  <link rel="stylesheet" type="text/css"
+    href="{% static 'typo3conf/ext/photoswipe/Resources/Public/Css/photoswipe.min0e9f.css' %}" media="all">
+  <link rel="stylesheet" type="text/css"
+    href="{% static 'typo3conf/ext/photoswipe/Resources/Public/Css/photoswipe-default-skin.min0e9f.css' %}" media="all">
 
-<link rel="stylesheet" type="text/css" href="{% static 'typo3conf/ext/femanager/Resources/Public/Css/Main.minac89.css' %}" media="all">
-<link rel="stylesheet" type="text/css" href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/app_site.min1122.css' %}" media="all">
-<link rel="stylesheet" type="text/css" href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/app.minf691.css' %}" media="all">
-<link rel="stylesheet" type="text/css" href="{% static 'fileadmin/templates/master/assets/assets_common/css/tools.min87b5.css' %}" media="all">
-<link rel="stylesheet" type="text/css" href="{% static 'fileadmin/templates/master/assets/assets_common/css/print.min87b5.css' %}" media="print">
-<link rel="stylesheet" type="text/css" href="{% static 'fileadmin/templates/master/assets/assets_common/css/cim_rgpd.minbf3a.css' %}" media="all">
-<link onload="this.media='all'" media="print" rel="stylesheet" href="{% static 'fileadmin/templates/master/assets/assets_common/css/slick.min87b5.css' %}" type="text/css" >
-<link onload="this.media='all'" media="print" rel="stylesheet" href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/modules/slick_common.min0167.css' %}" type="text/css" >
-<link onload="this.media='all'" media="print" rel="stylesheet" href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/modules/bloc_alaune.min0034.css' %}" type="text/css" >
-<link onload="this.media='all'" media="print" rel="stylesheet" href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/modules/recherche_generale_decli.min0167.css' %}" type="text/css" >
-<link onload="this.media='all'" media="print" rel="stylesheet" href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/modules/bloc_agenda_culturel.min0034.css' %}" type="text/css" >
+  <link rel="stylesheet" type="text/css"
+    href="{% static 'typo3conf/ext/femanager/Resources/Public/Css/Main.minac89.css' %}" media="all">
+  <link rel="stylesheet" type="text/css"
+    href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/app_site.min1122.css' %}" media="all">
+  <link rel="stylesheet" type="text/css"
+    href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/app.minf691.css' %}" media="all">
+  <link rel="stylesheet" type="text/css"
+    href="{% static 'fileadmin/templates/master/assets/assets_common/css/tools.min87b5.css' %}" media="all">
+  <link rel="stylesheet" type="text/css"
+    href="{% static 'fileadmin/templates/master/assets/assets_common/css/print.min87b5.css' %}" media="print">
+  <link rel="stylesheet" type="text/css"
+    href="{% static 'fileadmin/templates/master/assets/assets_common/css/cim_rgpd.minbf3a.css' %}" media="all">
+  <link onload="this.media='all'" media="print" rel="stylesheet"
+    href="{% static 'fileadmin/templates/master/assets/assets_common/css/slick.min87b5.css' %}" type="text/css">
+  <link onload="this.media='all'" media="print" rel="stylesheet"
+    href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/modules/slick_common.min0167.css' %}"
+    type="text/css">
+  <link onload="this.media='all'" media="print" rel="stylesheet"
+    href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/modules/bloc_alaune.min0034.css' %}"
+    type="text/css">
+  <link onload="this.media='all'" media="print" rel="stylesheet"
+    href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/modules/recherche_generale_decli.min0167.css' %}"
+    type="text/css">
+  <link onload="this.media='all'" media="print" rel="stylesheet"
+    href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/modules/bloc_agenda_culturel.min0034.css' %}"
+    type="text/css">
 
 
 
-<script src="{% static 'fileadmin/templates/master/assets/assets_common/js/vendor/jquery.min1d41.js' %}"></script>
-<script src="{% static 'typo3conf/ext/cim_news/Resources/Public/JavaScript/SubscribeWidget0d2a.js' %}"></script>
+  <script src="{% static 'fileadmin/templates/master/assets/assets_common/js/vendor/jquery.min1d41.js' %}"></script>
+  <script src="{% static 'typo3conf/ext/cim_news/Resources/Public/JavaScript/SubscribeWidget0d2a.js' %}"></script>
 
-   <link rel="icon" type="image/x-icon" href="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/newLogo.jpeg' %}" />
-    <link rel="icon" type="image/jpeg" href="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/newLogo.jpeg' %}" />
+  <link rel="icon" type="image/x-icon"
+    href="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/newLogo.jpeg' %}" />
+  <link rel="icon" type="image/jpeg"
+    href="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/newLogo.jpeg' %}" />
 
-   <link rel="preload" href="{% static 'fileadmin/templates/master/assets/assets_common/css/font/firasans-regular-webfont.woff2' %}"
-        as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="{% static 'fileadmin/templates/master/assets/assets_common/css/font/firasans-light-webfont.woff2' %}"
-        as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="{% static 'fileadmin/templates/master/assets/assets_common/css/font/firasans-medium-webfont.woff2' %}"
-        as="font" type="font/woff2" crossorigin />
+  <link rel="preload"
+    href="{% static 'fileadmin/templates/master/assets/assets_common/css/font/firasans-regular-webfont.woff2' %}"
+    as="font" type="font/woff2" crossorigin />
+  <link rel="preload"
+    href="{% static 'fileadmin/templates/master/assets/assets_common/css/font/firasans-light-webfont.woff2' %}"
+    as="font" type="font/woff2" crossorigin />
+  <link rel="preload"
+    href="{% static 'fileadmin/templates/master/assets/assets_common/css/font/firasans-medium-webfont.woff2' %}"
+    as="font" type="font/woff2" crossorigin />
 
-    <link rel="stylesheet"
-        href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/fonts/firasans-regular-webfont.min.css' %}"
-        media="print" onload="this.media='all'" />
-    <link rel="stylesheet"
-        href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/fonts/firasans-light-webfont.min.css' %}"
-        media="print" onload="this.media='all'" />
-    <link rel="stylesheet"
-        href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/fonts/firasans-medium-webfont.min.css' %}" media="print" onload="this.media='all'" />
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link rel="stylesheet"
+    href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/fonts/firasans-regular-webfont.min.css' %}"
+    media="print" onload="this.media='all'" />
+  <link rel="stylesheet"
+    href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/fonts/firasans-light-webfont.min.css' %}"
+    media="print" onload="this.media='all'" />
+  <link rel="stylesheet"
+    href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/fonts/firasans-medium-webfont.min.css' %}"
+    media="print" onload="this.media='all'" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
-<title>{%block title %} {% endblock %}</title>
+  <title>{%block title %} {% endblock %}</title>
 
 </head>
 
 
 <style>
-/* SEARCH BAR CONTAINER */
-.search-local {
-	display: flex;
-	align-items: center;
-	height: auto;
-	border-bottom: 0.1rem solid #7C976A;
-}
+  /* SEARCH BAR CONTAINER */
+  .search-local {
+    display: flex;
+    align-items: center;
+    height: auto;
+    border-bottom: 0.1rem solid #7C976A;
+  }
 
-/* ICON */
-.icon {
-	color: var(--red);
-	font-size: 3.5rem;
-	display: flex;
-	align-items: center;
-	cursor: pointer;
-}
-
-
-@keyframes funny-icon {
-	0% {
-		scale: 1;
-	}
-
-	50% {
-		scale: 0.8;
-		transform-origin: bottom;
-		transform: rotate(-15deg);
-	}
-
-	100% {
-		scale: 1;
-	}
-}
-
-/* INPUT */
-.search-local input {
-	height: 100%;
-	width: 100%;
-	flex: 1 1 25rem;
-	background: var(--white);
-	display: flex;
-	outline: none;
-	border: none;
-	color: var(--black);
-
-}
-
-input[type="text"]::placeholder {
-	color: var(--black);
-	font-size: 2.4rem;
-}
-
-button a {
-	color: var(--white);
-}
-
-.search-local button .search-icon {
-	display: none;
-}
-
-.search-local button:hover {
-	letter-spacing: 0.5rem;
-}
+  /* ICON */
+  .icon {
+    color: var(--red);
+    font-size: 3.5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
 
 
+  @keyframes funny-icon {
+    0% {
+      scale: 1;
+    }
 
-@media (max-width: 390px) {
-	.search-local {
-		display:none;
-	}
+    50% {
+      scale: 0.8;
+      transform-origin: bottom;
+      transform: rotate(-15deg);
+    }
 
-	.search-local button {
-		width: 10rem;
-	}
+    100% {
+      scale: 1;
+    }
+  }
 
-	button a {
-		display: none;
-	}
+  /* INPUT */
+  .search-local input {
+    height: 100%;
+    width: 100%;
+    flex: 1 1 25rem;
+    background: var(--white);
+    display: flex;
+    outline: none;
+    border: none;
+    color: var(--black);
 
-	.search-local button .search-icon {
-		display: block;
-		margin-inline: auto;
-		color: var(--white);
-		font-size: 3rem;
-	}
+  }
 
-	input[type="text"]::placeholder {
-		font-size: 1.7rem;
-	}
-}
+  input[type="text"]::placeholder {
+    color: var(--black);
+    font-size: 2.4rem;
+  }
 
+  button a {
+    color: var(--white);
+  }
+
+  .search-local button .search-icon {
+    display: none;
+  }
+
+  .search-local button:hover {
+    letter-spacing: 0.5rem;
+  }
+
+
+
+  @media (max-width: 390px) {
+    .search-local {
+      display: none;
+    }
+
+    .search-local button {
+      width: 10rem;
+    }
+
+    button a {
+      display: none;
+    }
+
+    .search-local button .search-icon {
+      display: block;
+      margin-inline: auto;
+      color: var(--white);
+      font-size: 3rem;
+    }
+
+    input[type="text"]::placeholder {
+      font-size: 1.7rem;
+    }
+  }
 </style>
 {% endblock %}
 
 {% block navbar %}
-	<body>
+
+<body>
   <div class="off-canvas-wrapper">
     <div id="top" data-magellan-target="top"></div>
 
@@ -162,8 +189,8 @@ button a {
           <span aria-hidden="true">&times;</span>
         </button>
 
-        <div id="leftmenu_cont">
-           <nav id="smart_menu" role="navigation" aria-label="Menu principal">
+       <div id="leftmenu_cont">
+            <nav id="smart_menu" role="navigation" aria-label="Menu principal">
               <ul
                 class="menu vertical"
                 data-drilldown
@@ -174,28 +201,20 @@ button a {
                 data-scroll-top="true"
               >
                 <li>
-                  <a href="#"> La ville de xxxx </a>
+                  <a href="#"> Ma Mairie </a>
 
                   <ul class="sous_menu menu vertical">
                     <li class="level2">
                       <a href="#">
-                        Festivals et événements
+                        La Commune d’Arrondissement de Yaoundé IV
                       </a>
 
                       <ul class="sm">
                         <li class="level3">
                           <a
-                           href="#"
+                            href="#"
                           >
-                            Le Marché de Noël 2023
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Regalia, spectacle multimédia
+                            Historique
                           </a>
                         </li>
 
@@ -203,7 +222,7 @@ button a {
                           <a
                             href="#"
                           >
-                            Festival FARaway 2024
+                            Tradition
                           </a>
                         </li>
 
@@ -211,68 +230,25 @@ button a {
                           <a
                             href="#"
                           >
-                            Le parcours d&#039;oeuvres de Street Art des
-                            Urbanités
+                            Culture
                           </a>
                         </li>
+
                       </ul>
                     </li>
 
                     <li class="level2">
                       <a href="#">
-                        Grands projets
+                        Notre Mairie
                       </a>
 
                       <ul class="sm">
                         <li class="level3">
                           <a
-                           href="#"
+                            href="https://www.grandreims.fr/les-grands-projets/le-bus-a-haut-niveau-de-service-bhns-bientot-a-reims"
                             target="_blank"
                           >
-                            Le bus à haut niveau de service (BHNS) bientôt à
-                            xxxx !
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="la-ville-de-reims/grands-projets/2020-2023-bilan-de-mi-mandat.html"
-                          >
-                            2020-2023 Bilan de mi-mandat
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Programme d’investissements des équipements sportifs
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a href="#">
-                            Projet de réaménagement des Berges de xxxx
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a href="#">
-                            xxxx Grand Centre
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a href="#">
-                            Inventons le xxxx d&#039;après
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            xxxx Ville inclusive
+                           Evolution
                           </a>
                         </li>
 
@@ -280,105 +256,96 @@ button a {
                           <a
                             href="#"
                           >
-                            Remise du rapport de la Commission Colbert
+                            Organigramme
                           </a>
                         </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Le Maire
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Les Adjoints au Maire
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a href="#">
+                            Actualité
+                          </a>
+                        </li>
+
                       </ul>
+                    </li>
+
+                    <li class="level2">
+                      <a href="#">
+                        Coopération
+                      </a>
+
+                      <ul class="sm">
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Mairies d’ici et d’ailleurs
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Bailleurs de fonds
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Autres
+                          </a>
+                        </li>
+
+                      </ul>
+                    </li>
+
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#">Gouvernance de la Mairie </a>
+
+                  <ul class="sous_menu menu vertical">
+                    <li class="level2">
+                      <a href="#">
+                        Missions de la Mairie
+                      </a>
                     </li>
 
                     <li class="level2">
                       <a
-                       href="#"
+                        href="#"
                       >
-                        Boutique #Rémoise
-                      </a>
-                    </li>
-
-                    <li class="level2">
-                      <a href="#">
-                        Découvrez xxxx
+                        Organes délibérants
                       </a>
 
                       <ul class="sm">
                         <li class="level3">
                           <a
                             href="#"
-                          >
-                            xxxx par les Rémois
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Nouveaux Rémois, nouvelles Rémoises !
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Paris je te quitte, xxxx je t’adopte !
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            xxxx, 2 000 ans d&#039;histoire
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            xxxx et son patrimoine
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Les villes jumelées avec xxxx
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            La campagne &quot;Effervescence&quot;
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
                             target="_blank"
-                            rel="noreferrer"
                           >
-                            Découvrez xxxx à 360°
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="level2">
-                      <a href="#">
-                        xxxx et son patrimoine
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            La basilique et l&#039;ancienne abbaye Saint-Remi
+                            Appel à projet - Animation de l&#039;intérieur de la
+                            Basilique Saint-Remi de Reims
                           </a>
                         </li>
 
@@ -386,15 +353,8 @@ button a {
                           <a
                             href="#"
                           >
-                            Cathédrale Notre-Dame de xxxx et le Palais du Tau
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Maisons et caves de champagne
+                            Ateliers de la culture dans le cadre de Reims
+                            Activ’Eté
                           </a>
                         </li>
 
@@ -402,65 +362,7 @@ button a {
                           <a
                             href="#"
                           >
-                            Les cimetières et lieux de culte
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a href="#" target="_blank">
-                            Circuits touristiques dans la ville
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            Les musées de xxxx
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            L&#039;office de tourisme
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Documents utiles sur le patrimoine Rémois
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="level2">
-                      <a href="#">
-                        Le mécénat
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Les projets de mécénat de la ville
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            En savoir plus sur la mission mécénat
+                            Participez à la programmation du Cryptoportique
                           </a>
                         </li>
                       </ul>
@@ -470,198 +372,13 @@ button a {
                       <a
                         href="#"
                       >
-                        Effectuer une démarche
+                        Commune d’Arrondissement de Yaoundé IV
                       </a>
 
                       <ul class="sm">
                         <li class="level3">
                           <a
                             href="#"
-                          >
-                            Organiser un événement/une manifestation sur le
-                            domaine public
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Tournages cinéma et audiovisuel
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            La ville de xxxx agit pour votre pouvoir
-                            d&#039;achat
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Démarches en ligne
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Demande / renouvellement de carte nationale
-                            d&#039;identité
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Demande / renouvellement de passeport biométrique
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Demande d&#039;actes et formulaires d&#039;état
-                            civil
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Autres démarches à effectuer en mairie
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Les élections
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Entre 16 et 25 ans, le recensement citoyen
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Les mairies de proximité
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="level2">
-                      <a href="#"
-                        Vie institutionnelle
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Revoir les échanges des Rémois avec Arnaud Robinet
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Le maire
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Le conseil municipal
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Les élus
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                            title="Organigramme général des services (nouvelle fenêtre)"
-                            target="_blank"
-                          >
-                            Organigramme général des services
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Publications légales, Délibérations du Conseil et
-                            Actes administratifs
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Marchés publics
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Les finances
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                       href="#"
-                      >
-                        Inventons le xxxx d’Après / Conseils de territoire
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                           href="#"
-                      >
-                        Éducation Artistique et Culturelle
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                           href="#"
                           >
                             Les Itinéraires d’éducation artistique et culturelle
                           </a>
@@ -677,7 +394,7 @@ button a {
 
                         <li class="level3">
                           <a
-                           href="#"
+                            href="#"
                           >
                             Répertoire de l’offre culturelle jeune public
                           </a>
@@ -685,7 +402,7 @@ button a {
 
                         <li class="level3">
                           <a
-                           href="#"
+                            href="#"
                           >
                             Carnet de voyage culturel
                           </a>
@@ -709,7 +426,7 @@ button a {
 
                         <li class="level3">
                           <a
-                           href="#"
+                            href="#"
                           >
                             Le théâtre se promène
                           </a>
@@ -733,7 +450,7 @@ button a {
 
                         <li class="level3">
                           <a
-                           href="#"
+                            href="#"
                           >
                             Concours BD-Manga #RDVBD
                           </a>
@@ -741,7 +458,7 @@ button a {
 
                         <li class="level3">
                           <a
-                           href="#"
+                            href="#"
                           >
                             Primé des écoliers
                           </a>
@@ -749,7 +466,7 @@ button a {
 
                         <li class="level3">
                           <a
-                           href="#"
+                            href="la-culture-a-reims/education-artistique-et-culturelle/pass-culture"
                           >
                             pass Culture
                           </a>
@@ -757,261 +474,56 @@ button a {
                       </ul>
                     </li>
 
-                    <li class="level2">
-                      <a
-                       href="#"
-                      >
-                        Conservatoire à rayonnement régional de xxxx
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Les formations initiales
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Les formations supérieures
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Le conservatoire de xxxx
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="level2">
-                      <a href="#">
-                        La Fileuse
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Les résidents de la Fileuse
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Les projets de la Fileuse
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Matériothèque - Artemie
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Visiter et découvrir
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="level2">
-                      <a href="#">
-                        Le Planétarium
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Pour le grand public
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Pour les scolaires
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                        href="#"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Le site des bibliothèques municipales
-                      </a>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                        href="#"
-                      >
-                        Archives municipales et communautaires
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Venir aux Archives, informations pratiques
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Les archives en ligne
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                        href="#"
-                      >
-                        Répertoire du street art
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            ÉMILIE VAST
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            MATT x ZEKKY
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            KSY BOOMKIES
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            DASZ PANDA
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            WONE
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            CÉZ ART
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            DJOHN DOE ONER
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            MANON PAINTEAUX
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            JULIETTE LEENHARDT
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            SER ONE
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                        href="#"
-                      >
-                        Vivre la culture à xxxx
-                      </a>
-                    </li>
                   </ul>
                 </li>
 
                 <li>
                   <a href="#">
-                    Enfance, jeunesse, éducation
+                    Services pour tous
                   </a>
 
                   <ul class="sous_menu menu vertical">
                     <li class="level2">
                       <a
-                       href="#"
+                        href="#"
                       >
-                        Appels à candidature
+                        Démarche pratiques et procédure
                       </a>
 
                       <ul class="sm">
                         <li class="level3">
                           <a
-                           href="#"
+                            href="#"
                           >
-                            Appel à candidature 2023-2024 pour les postes
-                            d’animateur(trice) ou de directeur(trice)
-                            Mercredis/Vacances Scolaires
+                            Etat-civil
+                          </a>
+                        </li>
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Impôt libératoire
+                          </a>
+                        </li>
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Taxe d’hygiène
+                          </a>
+                        </li>
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Obtenir un espace commercial
+                          </a>
+                        </li>
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Location des salles
                           </a>
                         </li>
                       </ul>
@@ -1019,151 +531,105 @@ button a {
 
                     <li class="level2">
                       <a
-                       href="#"
+                        href="#"
                       >
-                        Petite Enfance et Parentalité (la Maison de la famille)
+                        Marchés Publics
                       </a>
 
                       <ul class="sm">
                         <li class="level3">
                           <a
-                           href="#"                          >
-                            Inscrire mon enfant à la crèche
+                            href="#"
+                          >
+                            Règlementation
                           </a>
                         </li>
 
                         <li class="level3">
                           <a
-                            href="#"                          >
-                            Faire accueillir mon enfant à xxxx
+                            href="#"
+                          >
+                            Appels d’Offres
                           </a>
                         </li>
 
                         <li class="level3">
                           <a
-                            href="#"                          >
-                            Animations et accompagnement des familles
+                            href="#"
+                          >
+                            Décisions d’attributions
                           </a>
                         </li>
                       </ul>
                     </li>
 
                     <li class="level2">
-                      <a href="#"
-                        A l&#039;école
+                      <a href="#">
+                       Tourisme et Loisirs
                       </a>
 
                       <ul class="sm">
                         <li class="level3">
                           <a
-                            href="#"                          >
-                            La restauration scolaire
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"                          >
-                            L&#039;accueil périscolaire
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"                          >
-                            Les mercredis
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"                          >
-                            Inscriptions à l&#039;école, la restauration
-                            scolaire et au périscolaire
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"                            target="_blank"
+                            href="#"
                           >
-                            Abonnement transports scolaires
+                            Centre commercial
                           </a>
                         </li>
 
                         <li class="level3">
                           <a
-                           href="#"                         title="Espace Famille de Reims (restauration scolaire et activités périscolaires) (nouvelle fenêtre)"
-                            target="_blank"
-                            rel="noreferrer"
+                            href="#"
                           >
-                            Espace Famille de xxxx (restauration scolaire et
-                            activités périscolaires)
+                            Centre de santé
                           </a>
                         </li>
 
                         <li class="level3">
                           <a
-                            href="#"                            target="_blank"
-                            rel="noreferrer"
+                            href="#"
                           >
-                            Les établissements scolaires
+                           Espace vert
                           </a>
                         </li>
 
                         <li class="level3">
                           <a
-                            href="#"                            title="Périmètre des écoles maternelles (nouvelle fenêtre)"
-                            target="_blank"
-                            rel="noreferrer"
+                            href="#"
                           >
-                            Périmètre des écoles maternelles
+                            Hébergement
                           </a>
                         </li>
 
-                        <li class="level3">
-                          <a
-                           href="#"                            title="Périmètre des écoles élémentaires (nouvelle fenêtre)"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            Périmètre des écoles élémentaires
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"                          >
-                            Les animations pédagogiques
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"                          >
-                            Les classes passerelles
-                          </a>
-                        </li>
                       </ul>
                     </li>
 
                     <li class="level2">
-                      <a href="#"
-                        Les vacances
+                      <a href="#">
+                        Hygiène et Salubrité
                       </a>
 
                       <ul class="sm">
                         <li class="level3">
                           <a
-                            href="#"                          >
-                            xxxx Activités Vacances (3 - 17 ans)
+                            href="#"
+                          >
+                            Enlèvement d’ordures
                           </a>
                         </li>
 
                         <li class="level3">
                           <a
-                            href="#"                          >
-                            Les séjours pour les 4 - 17 ans
+                            href="#l"
+                          >
+                            Pénalités et amendes
+                          </a>
+                        </li>
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Dégradations diverses et constructions sur les zones à risque
                           </a>
                         </li>
                       </ul>
@@ -1171,134 +637,29 @@ button a {
 
                     <li class="level2">
                       <a
-                        href="#"                      >
-                        Les actions en faveur de l&#039;éducation
+                        href="#"
+                      >
+                       Fourrière Municipale
                       </a>
 
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                            href="#"                            title="Projet Educatif de Territoire (nouvelle fenêtre)"
-                            target="_blank"
-                          >
-                            Projet Educatif de Territoire
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"                          >
-                            Réussite éducative
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"                          >
-                            Le sport à l&#039;école
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"                          >
-                            Hygiène et santé à l&#039;école
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"                          >
-                            Sport et loisirs pour les enfants
-                          </a>
-                        </li>
-                      </ul>
                     </li>
 
-                    <li class="level2">
-                      <a
-                       href="#"                      >
-                        L&#039;accompagnement des jeunes
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Le Conseil Municipal des Jeunes
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            L&#039;aide au projet de territoire
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Le service civique
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            L&#039;accompagnement au BAFA
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Le Point Ecoute Jeunes
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            La Mission Locale
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="level2">
-                      <a href="#" target="_blank">
-                        La vie universitaire
-                      </a>
-                    </li>
                   </ul>
                 </li>
 
                 <li>
-                  <a href="#"> Sports &amp; loisirs </a>
+                  <a href="#">Réalisation  </a>
 
                   <ul class="sous_menu menu vertical">
                     <li class="level2">
-                      <a href="#"> Team xxxx </a>
-                    </li>
-
-                    <li class="level2">
-                      <a href="#">
-                        Grands événements sportifs
-                      </a>
+                      <a href="#"> Grands travaux </a>
 
                       <ul class="sm">
                         <li class="level3">
                           <a
-                           href="#"
+                            href="#"
                           >
-                            La Rémoisade !
+                            Réaménagement
                           </a>
                         </li>
 
@@ -1306,25 +667,31 @@ button a {
                           <a
                             href="#"
                           >
-                            Terre de Jeux 2024
+                            Aménagement
                           </a>
                         </li>
                       </ul>
                     </li>
 
                     <li class="level2">
+                      <a href="#">
+                       Reprofilage des routes plan sécuritaire
+                      </a>
+                    </li>
+
+                    <li class="level2">
                       <a
-                       href="#"
+                        href="https://www.ucpa.com/sport-station/grand-reims"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        UCPA Sport Station Grand xxxx
+                       Eclairage public plan sanitaire
                       </a>
                     </li>
 
                     <li class="level2">
                       <a href="#">
-                        Les piscines de xxxx
+                        Plan éducatif
                       </a>
 
                       <ul class="sm">
@@ -1338,7 +705,7 @@ button a {
 
                         <li class="level3">
                           <a
-                           href="#"
+                            href="#"
                           >
                             Piscine Louvois
                           </a>
@@ -1354,7 +721,7 @@ button a {
 
                         <li class="level3">
                           <a
-                           href="#"
+                            href="#"
                           >
                             Piscine Talleyrand
                           </a>
@@ -1362,7 +729,7 @@ button a {
 
                         <li class="level3">
                           <a
-                           href="#"
+                            href="#"
                           >
                             Piscine des Thiolettes
                           </a>
@@ -1370,302 +737,39 @@ button a {
                       </ul>
                     </li>
 
-                    <li class="level2">
-                      <a href="#"> Patinoires </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Patinoire Albert 1er
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Patinoire Jacques Barot
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="level2">
-                      <a href="#">
-                        Centre équestre
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Ecole d&#039;équitation
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="level2">
-                      <a href="#">
-                        Intertennis
-                      </a>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                       href="#"
-                      >
-                        Centre Sports Nature
-                      </a>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                        href="#"
-                      >
-                        L’École Municipale des Sports (EMS)
-                      </a>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                       href="#"
-                      >
-                        Sport et loisirs pour enfants
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            xxxx Activités Vacances
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Ecole Municipale des Sports
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            xxxx Ticket Sport
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Les séjours pour les 7 - 17 ans
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Mercredis loisirs
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a href="#">
-                            Annuaire des associations
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="level2">
-                      <a href="#">
-                        Les équipements sportifs de la ville
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a href="#">
-                            Équipements sportifs en accès libre
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Centre Sports Nature
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Complexes sportifs
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Les gymnases
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a href="#">
-                            Intertennis
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a href="#"> Piscines </a>
-                        </li>
-
-                        <li class="level3">
-                          <a href="#">
-                            Patinoires
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Stades
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Autres équipements sportifs
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a href="#">
-                            Annuaire des associations
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Associations et réservations des équipements
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
                   </ul>
                 </li>
 
                 <li>
-                  <a href="#"> Économie &amp; emplois </a>
+                  <a href="#"> Projet  </a>
 
                   <ul class="sous_menu menu vertical">
                     <li class="level2">
                       <a
-                       href="#"
+                        href="#"
                       >
-                        La collectivité recrute
+                       Complexe moderne
                       </a>
 
-                      <ul class="sm">
-                        <li class="level3">
-                          <a href="#">
-                            Offres d&#039;emploi
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Offres d&#039;apprentissage
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Offres de stages
-                          </a>
-                        </li>
-                      </ul>
                     </li>
 
                     <li class="level2">
-                      <a href="#"> xxxx Commerce </a>
+                      <a href="#">Embellissement et protection de l’environnement </a>
 
-                      <ul class="sm">
-                        <li class="level3">
-                          <a href="#">
-                            Nos services
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a href="#">
-                            Boutique éphémère
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Formations et ateliers des partenaires
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a href="#">
-                            La valise du commerçant
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a href="#">
-                            Les commerces rémois
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Évènements et animations
-                          </a>
-                        </li>
-                      </ul>
                     </li>
 
                     <li class="level2">
                       <a href="#">
-                        Activités économiques
+                        Marquage des routes
                       </a>
 
                       <ul class="sm">
                         <li class="level3">
                           <a
-                           href="#"
+                            href="https://www.grandreims.fr/reimsbusiness/entreprendre-a-reims"
                             target="_blank"
                           >
-                            Entreprendre à xxxx
+                            Entreprendre à Reims
                           </a>
                         </li>
 
@@ -1680,7 +784,7 @@ button a {
 
                         <li class="level3">
                           <a
-                            href="#"
+                            href="https://www.grandreims.fr/reimsbusiness/offres-foncieres-et-immobilieres"
                             target="_blank"
                           >
                             Le portail de l&#039;immobilier
@@ -1693,13 +797,13 @@ button a {
                       <a
                         href="#"
                       >
-                        Les dispositifs d&#039;aide à l&#039;emploi
+                        Reprofilage des espaces / voiries
                       </a>
 
                       <ul class="sm">
                         <li class="level3">
                           <a
-                           href="#"
+                            href="#"
                           >
                             Charte locale d&#039;insertion
                           </a>
@@ -1707,7 +811,7 @@ button a {
 
                         <li class="level3">
                           <a
-                           href="#"
+                            href="#"
                           >
                             Le service civique
                           </a>
@@ -1717,908 +821,22 @@ button a {
 
                     <li class="level2">
                       <a href="#">
-                        Les marchés
+                       Cascades de Yaoundé
                       </a>
 
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Les marchés dans la Ville
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Les braderies et puces de xxxx
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Les Halles du Boulingrin
-                          </a>
-                        </li>
-                      </ul>
                     </li>
                   </ul>
                 </li>
 
                 <li>
-                  <a href="#">
-                    Qualité de vie &amp; Environnement
-                  </a>
-
-                  <ul class="sous_menu menu vertical">
-                    <li class="level2">
-                      <a
-                        href="#"
-                      >
-                        Parcs et jardins de la ville de xxxx
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Les parcs et jardins de la ville
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Les jardins associatifs
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Le fleurissement à xxxx
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                        href="#"
-                      >
-                        Stationnement et déplacements
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Opération &quot;Aide à l’achat d’un Vélo&quot;
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Une visite ou des achats rapides en centre-ville
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Habiter et travailler en centre-ville
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Les parkings et zones de stationnement
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Se déplacer à xxxx
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                        href="#"
-                      >
-                        Ecologie Urbaine
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                            href="#"
-                            target="_blank"
-                          >
-                            Un passeport pour demain
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            xxxx à vélo
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            xxxx nature
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            &quot;Ma ville en Vert&quot;
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                            target="_blank"
-                          >
-                            Zone à Faibles Emissions Mobilité (ZFEm) du Grand
-                            xxxx
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            La qualité de l&#039;air à xxxx
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Végétalisation de l&#039;espace public
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Les jardins partagés de la ville
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Rapport de développement durable de la ville de
-                            xxxx
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Annuaire de la consommation responsable
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            xxxx labellisée « Territoire Engagé pour la Nature
-                            »
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                       href="#"
-                        title="Travaux en cours (nouvelle fenêtre)"
-                        target="_blank"
-                      >
-                        Travaux en cours
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Travaux effectués dans les quartiers
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                       href="#"
-                      >
-                        Urbanisme
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Le Plan Local d&#039;Urbanisme
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Le site patrimonial remarquable du centre-ville
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Le site patrimonial remarquable de Saint-Nicaise
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Autorisations d&#039;urbanisme
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Projet de reconquête du quartier Port Colbert
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Droits de préemption (DIA/DAB), ravalement façade,
-                            cadastre
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Autorisations d’occupation du domaine public,
-                            déménagement...
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Avis d’enquête publique
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Les Fonds Européens Structurels et d’Investissement
-                            (FESI)
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                       href="#"
-                      >
-                        Informations sur les risques majeurs
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Les risques naturels
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Les risques technologiques
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Les risques climatiques
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Les autres risques
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Inscrivez-vous au système d&#039;alerte à la
-                            population
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                       href="#"
-                      >
-                        Autres services et informations
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Police municipale et adresses utiles
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            « STOP RODÉO », un outil au service de la
-                            tranquillité résidentielle
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Propreté et gestion des déchets
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            Le site de l&#039;eau du Grand xxxx
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                            target="_blank"
-                          >
-                            Logement et hébergement
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Etablissement recevant du public
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Viabilité hivernale
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+                  <a href="#l"> Communication  </a>
                 </li>
 
-                <li>
-                  <a href="#">
-                    Santé, hygiène
-                  </a>
-
-                  <ul class="sous_menu menu vertical">
-                    <li class="level2">
-                      <a
-                       href="#"                      >
-                        Vaccinations
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                            href="#"                          >
-                            Vaccination contre la grippe
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                        href="#"                      >
-                        Don de sang
-                      </a>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                        href="#"                      >
-                        Contrat Local de Santé 2+
-                      </a>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                       href="#"                      >
-                        Le Conseil Local de Santé Mentale (CLSM)
-                      </a>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                       href="#"                      >
-                        Lutter contre les insectes, rongeurs et autres nuisibles
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                           href="#"                          >
-                            Les abeilles et les guêpes
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"                          >
-                            Les animaux errants
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"                          >
-                            Les cafards
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"                          >
-                            Elevage familial de poules
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"                          >
-                            Le Frelon asiatique
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"                          >
-                            Les moustiques tigres
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"                          >
-                            Les pigeons et les étourneaux
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"                          >
-                            Les poux
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"                          >
-                            Les punaises de lit
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Les rats
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                       href="#"
-                      >
-                        Une équipe au service de l&#039;hygiène publique
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Intoxication au monoxyde de carbone
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Lutter contre les insectes, rongeurs et autres
-                            nuisibles
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                       href="#"
-                      >
-                        Ma commune a du coeur
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li>
-                  <a href="#">
-                    Accompagnement, solidarité, seniors
-                  </a>
-
-                  <ul class="sous_menu menu vertical">
-                    <li class="level2">
-                      <a
-                       href="#"
-                      >
-                        Inscrivez-vous au repas des seniors
-                      </a>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                        href="#"
-                      >
-                        Le Centre Communal d&#039;Action Sociale
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a href="#">
-                            L&#039;annuaire social
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Informations pratiques et ouvertures du CCAS
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            L&#039;aide sociale
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Aide à la santé pour les seniors de 65 ans et +
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Insertion et logement
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            L&#039;épicerie sociale et solidaire
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Soutiens aux projets
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Réussite éducative
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Le comité des usagers
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                        href="#"
-                      >
-                        La Maison de la Vie Associative (MVA)
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Devenir bénévole
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Les subventions et aides aux associations
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Les demandes d&#039;autorisation dans le cadre de
-                            manifestations
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Les équipements proposés
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            La location des salles municipales
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            L&#039;annuaire des associations
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                       href="#"
-                      >
-                        Dispositif 65+, pour bien vieillir à xxxx
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            La carte 65+
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Aides pour les séniors
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Etre actif à xxxx
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Prendre soin de soi
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            La dépendance
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                        href="#"
-                      >
-                        L&#039;intergénérationnel
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Générations toquées
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            Le jardin intergénérationnel Coup de Pousse
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                        href="#"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Le Crédit Municipal
-                      </a>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                        href="#"
-
-                      >
-                        Les Maisons de Quartier
-                      </a>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                       href="#"
-                      >
-                        Accueil des gens du voyage
-                      </a>
-                    </li>
-
-                    <li class="level2">
-                      <a
-                       href="#"
-                      >
-                        Dispositifs handicap
-                      </a>
-
-                      <ul class="sm">
-                        <li class="level3">
-                          <a
-                            href="#"
-                          >
-                            L&#039;accessibilité
-                          </a>
-                        </li>
-
-                        <li class="level3">
-                          <a
-                           href="#"
-                          >
-                            Les aides pour les personnes en situation de
-                            handicap
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
               </ul>
             </nav>
-        </div>
+          </div>
       </div>
-         <div id="home" class="off-canvas-content" data-off-canvas-content>
+      <div id="home" class="off-canvas-content" data-off-canvas-content>
         <header id="header" role="banner" data-sticky-container>
           <nav id="accessi" class="cell shrink" aria-label="Menu de liens d'évitement">
             <ul>
@@ -2633,16 +851,17 @@ button a {
           </nav>
 
 
-           <div id="data-sticky-header" class="" data-margin-top="0" data-sticky data-top-anchor="data-sticky-header">
+          <div id="data-sticky-header" class="" data-margin-top="0" data-sticky data-top-anchor="data-sticky-header">
             <div class="grid-container grid-x align-middle align-justify">
               <div class="grid-x grid-padding-x align-middle cell shrink">
                 <!-- [START] fileadmin/templates/master/fluid_template/Partials/Header/Logo.html -->
 
                 <div id="logo" class="logo cell shrink">
-                   <h1>
+                  <h1>
                     <a href="#">
-                      <img src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/newLogo.jpeg' %}"
-                         alt="LOGO" style="width: 100px;" height="auto"/>
+                      <img
+                        src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/newLogo.jpeg' %}"
+                        alt="LOGO" style="width: 100px;" height="auto" />
                     </a>
                   </h1>
                 </div>
@@ -2651,7 +870,7 @@ button a {
                   <button type="button" data-toggle="offCanvasLeft" class="hamburger hamburger--spring js-hamburger">
                     <span class="hamburger-box">
                       <span class="hamburger-inner"></span>
-                      <span class="menu_title" >menu</span>
+                      <span class="menu_title">menu</span>
                     </span>
                   </button>
                 </div>
@@ -2673,627 +892,158 @@ button a {
                       <span aria-hidden="true">&times;</span>
                     </button>
 
-                      <nav
-                        id="menu_principal"
-                        role="navigation"
-                        aria-label="Menu principal"
-                      >
-                        <ul
-                          class="grid-x grid-padding-x"
-                          data-accordion-menu
-                          data-submenu-toggle="true"
-                          data-submenu-toggle-text="Accès au sous-menu de"
-                        >
-                          <li class="cell large-3 small-12">
-                            <a href="#">
-                              La ville de xxxx
-                            </a>
-                            <div>
-                              <ul class="sous_menu menu vertical">
-                                <li class="level2 has_submenu">
-                                  <a
-                                   href="#"
-                                    ><span class=" "
-                                      >Festivals et événements</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                   href="#"
-                                    ><span class=" ">Grands projets</span></a
-                                  >
-                                </li>
-                                <li class="level2">
-                                  <a
-                                   href="#"
-                                    ><span class=" ">Boutique #Rémoise</span></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                   href="#"
-                                    ><span class=" ">Découvrez de xxxx</span></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                   href="#"
-                                    ><span class=" "
-                                      >Reims et son patrimoine</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a href="#"
-                                    ><span class=" ">Le mécénat</span></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                    href="#"
-                                    ><span class=" "
-                                      >Effectuer une démarche</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                    href="#"
-                                    ><span class=" "
-                                      >Vie institutionnelle</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                   href="#"
-                                    ><span class=" "
-                                      >Inventons le xxxx d’Après / Conseils de
-                                      territoire</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                    href="#"
-                                    ><span class=" "
-                                      >Services pratiques</span
-                                    ></a
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="cell large-3 small-12">
-                            <a href="#">
-                              La culture à xxxx
-                            </a>
-                            <div>
-                              <ul class="sous_menu menu vertical">
-                                <li class="level2">
-                                  <a href="#"
-                                    ><span class=" "
-                                      >Toute la culture à xxxx</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                    href="#"
-                                    ><span class=" "
-                                      >Appels à projets Culturels</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                    href="#"
-                                    ><span class=" "
-                                      >Éducation Artistique et Culturelle</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                    href="#"
-                                    ><span class=" "
-                                      >Conservatoire à rayonnement régional de
-                                      xxxx</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a href="#"
-                                    ><span class=" ">La Fileuse</span></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                    href="#"
-                                    ><span class=" ">Le Planétarium</span></a
-                                  >
-                                </li>
-                                <li class="level2">
-                                  <a
-                                    href="#"
-                                    title="Le site des bibliothèques municipales (nouvelle fenêtre)"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    ><span class=" "
-                                      >Le site des bibliothèques
-                                      municipales</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                    href="#"
-                                    ><span class=" "
-                                      >Archives municipales et
-                                      communautaires</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                   href="#"
-                                    ><span class=" "
-                                      >Répertoire du street art</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2">
-                                  <a
-                                   href="#"
-                                    ><span class=" "
-                                      >Vivre la culture à xxxx</span
-                                    ></a
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="cell large-3 small-12">
-                            <a href="#">
-                              Enfance, jeunesse, éducation
-                            </a>
-                            <div>
-                              <ul class="sous_menu menu vertical">
-                                <li class="level2 has_submenu">
-                                  <a
-                                    href="#"
-                                    ><span class=" "
-                                      >Appels à candidature</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                   href="#"
-                                    ><span class=" "
-                                      >Petite Enfance et Parentalité (la Maison
-                                      de la famille)</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                    href="#"
-                                    ><span class=" ">A l&#039;école</span></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                   href="#"
-                                    ><span class=" ">Les vacances</span></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a href="#"><span class=" "
-                                      >Les actions en faveur de
-                                      l&#039;éducation</span
-                                    >
-                                  </a>
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                    href="#"
-                                    ><span class=" "
-                                      >L&#039;accompagnement des jeunes</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2">
-                                  <a
-                                   href="#"
-                                    title="La vie universitaire (nouvelle fenêtre)"
-                                    target="_blank"
-                                    ><span class=" "
-                                      >La vie universitaire</span
-                                    ></a
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="cell large-3 small-12">
-                            <a href="#">
-                              Sports &amp; loisirs
-                            </a>
-                            <div>
-                              <ul class="sous_menu menu vertical">
-                                <li class="level2">
-                                  <a href="#"
-                                    ><span class=" ">Team xxxx</span></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                    href="#"
-                                    ><span class=" "
-                                      >Grands événements sportifs</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2">
-                                  <a
-                                   href="#"
-                                    title="UCPA Sport Station Grand Reims (nouvelle fenêtre)"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    ><span class=" "
-                                      >UCPA Sport Station Grand xxxx</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a href="#"
-                                    ><span class=" "
-                                      >Les piscines de xxxx</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a href="#"
-                                    ><span class=" ">Patinoires</span></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a href="#"
-                                    ><span class=" ">Centre équestre</span></a
-                                  >
-                                </li>
-                                <li class="level2">
-                                  <a href="#"
-                                    ><span class=" ">Intertennis</span></a
-                                  >
-                                </li>
-                                <li class="level2">
-                                  <a
-                                    href="#"
-                                    ><span class=" "
-                                      >Centre Sports Nature</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2">
-                                  <a
-                                    href="#"
-                                    ><span class=" "
-                                      >L’École Municipale des Sports (EMS)</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                   href="#"
-                                    ><span class=" "
-                                      >Sport et loisirs pour enfants</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                   href="#"
-                                    ><span class=" "
-                                      >Les équipements sportifs de la
-                                      ville</span
-                                    ></a
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="cell large-3 small-12">
-                            <a href="#">
-                              Économie &amp; emplois
-                            </a>
-                            <div>
-                              <ul class="sous_menu menu vertical">
-                                <li class="level2 has_submenu">
-                                  <a
-                                    href="#"
-                                    ><span class=" "
-                                      >La collectivité recrute</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a href="#"
-                                    ><span class=" ">xxxx Commerce</span></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                    href="#"
-                                    ><span class=" "
-                                      >Activités économiques</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                    href="#"
-                                    ><span class=" "
-                                      >Les dispositifs d&#039;aide à
-                                      l&#039;emploi</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a href="#"
-                                    ><span class=" ">Les marchés</span></a
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="cell large-3 small-12">
-                            <a href="#">
-                              Qualité de vie &amp; Environnement
-                            </a>
-                            <div>
-                              <ul class="sous_menu menu vertical">
-                                <li class="level2 has_submenu">
-                                  <a
-                                    href="#"
-                                    ><span class=" "
-                                      >Parcs et jardins de la ville de
-                                      xxxx</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                    href="#"
-                                    ><span class=" "
-                                      >Stationnement et déplacements</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                   href="#"
-                                    ><span class=" ">Ecologie Urbaine</span></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                   href="#"
-                                    target="_blank"
-                                    ><span class=" ">Travaux en cours</span></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                    href="#"
-                                    ><span class=" ">Urbanisme</span></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                    href="#"
-                                    ><span class=" "
-                                      >Informations sur les risques
-                                      majeurs</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                   href="#"
-                                    ><span class=" "
-                                      >Autres services et informations</span
-                                    ></a
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="cell large-3 small-12">
-                            <a
-                              href="#"
-                            >
-                              Santé, hygiène
-                            </a>
-                            <div>
-                              <ul class="sous_menu menu vertical">
-                                <li class="level2 has_submenu">
-                                  <a
-                                   href="#"
-                                    ><span class=" ">Vaccinations</span></a
-                                  >
-                                </li>
-                                <li class="level2">
-                                  <a
-                                   href="#"
-                                    ><span class=" ">Don de sang</span></a
-                                  >
-                                </li>
-                                <li class="level2">
-                                  <a
-                                    href="#"
-                                    ><span class=" "
-                                      >Contrat Local de Santé 2+</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2">
-                                  <a
-                                    href="#"
-                                    ><span class=" "
-                                      >Le Conseil Local de Santé Mentale
-                                      (CLSM)</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                   href="#"
-                                    ><span class=" "
-                                      >Lutter contre les insectes, rongeurs et
-                                      autres nuisibles</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                   href="#"
-                                    ><span class=" "
-                                      >Une équipe au service de l&#039;hygiène
-                                      publique</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2">
-                                  <a
-                                    href="#"
-                                    ><span class=" "
-                                      >Ma commune a du coeur</span
-                                    ></a
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="cell large-3 small-12">
-                            <a href="#">
-                              Accompagnement, solidarité, seniors
-                            </a>
-                            <div>
-                              <ul class="sous_menu menu vertical">
-                                <li class="level2">
-                                  <a
-                                    href="#"
-                                    ><span class=" "
-                                      >Inscrivez-vous au repas des seniors</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                    href="#"
-                                    ><span class=" "
-                                      >Le Centre Communal d&#039;Action
-                                      Sociale</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                    href="#"
-                                    ><span class=" "
-                                      >La Maison de la Vie Associative
-                                      (MVA)</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                    href="#"
-                                    ><span class=" "
-                                      >Dispositif 65+, pour bien vieillir à
-                                      xxxx</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                   href="#"
-                                    ><span class=" "
-                                      >L&#039;intergénérationnel</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2">
-                                  <a
-                                   href="#"
-                                    title="Le Crédit Municipal (nouvelle fenêtre)"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    ><span class=" "
-                                      >Le Crédit Municipal</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2">
-                                  <a
-                                   href="#"
-                                    ><span class=" "
-                                      >Les Maisons de Quartier</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2">
-                                  <a
-                                    href="#"
-                                    ><span class=" "
-                                      >Accueil des gens du voyage</span
-                                    ></a
-                                  >
-                                </li>
-                                <li class="level2 has_submenu">
-                                  <a
-                                   href="#"
-                                    ><span class=" "
-                                      >Dispositifs handicap</span
-                                    ></a
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                        </ul>
-                      </nav>
+                    <nav id="menu_principal" role="navigation" aria-label="Menu principal">
+                      <ul class="grid-x grid-padding-x" data-accordion-menu data-submenu-toggle="true"
+                        data-submenu-toggle-text="Accès au sous-menu de">
+                        <li class="cell large-3 small-12">
+                          <a href="#">
+                            Ma Mairie
+                          </a>
+                          <div>
+                            <ul class="sous_menu menu vertical">
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">La Commune d’Arrondissement de Yaoundé IV</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Notre Mairie</span></a>
+                              </li>
+                              <li class="level2">
+                                <a href="#"><span class=" ">Coopération</span></a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="cell large-3 small-12">
+                          <a href="#">
+                            Gouvernance de la Mairie
+                          </a>
+                          <div>
+                            <ul class="sous_menu menu vertical">
+                              <li class="level2">
+                                <a href="#"><span class=" ">Missions de la Mairie</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Organes délibérants</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Commune d’Arrondissement de Yaoundé IV</span></a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="cell large-3 small-12">
+                          <a href="#">
+                            SERVICE POUR TOUS
+                          </a>
+                          <div>
+                            <ul class="sous_menu menu vertical">
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Démarche pratiques et procédure</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Marchés Publics</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Tourisme et Loisirs</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Hygiène et Salubrité</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Fourrière Municipale</span>
+                                </a>
+                              </li>
+
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="cell large-3 small-12">
+                          <a href="#">
+                            Réalisations
+                          </a>
+                          <div>
+                            <ul class="sous_menu menu vertical">
+                              <li class="level2">
+                                <a href="#"><span class=" ">Grands travaux</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Reprofilage des routes plan sécuritaire</span></a>
+                              </li>
+                              <li class="level2">
+                                <a href="#" title="UCPA Sport Station Grand Reims (nouvelle fenêtre)" target="_blank"
+                                  rel="noreferrer"><span class=" ">Eclairage public plan sanitaire</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Plan éducatif</span></a>
+                              </li>
+
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="cell large-3 small-12">
+                          <a href="#">
+                            Projet
+                          </a>
+                          <div>
+                            <ul class="sous_menu menu vertical">
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Complexe moderne</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Embellissement et protection de l’environnement</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Marquage des routes</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Reprofilage des espaces / voiries</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Cascades de Yaoundé</span></a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="cell large-3 small-12">
+                          <a href="#">
+                            Communication
+                          </a>
+
+                        </li>
+
+                      </ul>
+                    </nav>
                   </div>
                 </div>
 
               </div>
 
 
-                 <div class="search-local">
-                   <form action="" method="">
-                      <input type="text" placeholder="Rechercher..." >
-                   </form>
+              <div class="search-local">
+                <form action="" method="">
+                  <input type="text" placeholder="Rechercher...">
+                </form>
 
-                  </div>
+              </div>
 
               <div class="grid-x grid-padding-x align-middle cell shrink">
                 <div class="cell shrink reseaux_sociaux show-for-large">
                   <ul class="grid-x align-middle">
                     <li class="cell shrink show-for-large">
                       <div class="dropdown">
-                        <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <img src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/icons8-globe-100.png' %}" style="width: 23px;" alt="">
+                        <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <img
+                            src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/icons8-globe-100.png' %}"
+                            style="width: 23px;" alt="">
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#" style="padding-right: 100px;padding-left: 5px;" >
+                          <a class="dropdown-item" href="#" style="padding-right: 100px;padding-left: 5px;">
                             <font style="vertical-align: inherit;">
                               <font class="" style="vertical-align: inherit;">Français</font>
                             </font>
                           </a>
-                          <a class="dropdown-item" href="#" style="padding-right: 100px;padding-left: 5px;" >
+                          <a class="dropdown-item" href="#" style="padding-right: 100px;padding-left: 5px;">
                             <font style="vertical-align: inherit;">
                               <font class="" style="vertical-align: inherit;">Anglais</font>
                             </font>
@@ -3302,54 +1052,54 @@ button a {
                         </div>
                       </div>
                     </li>
-                    <li class="cell shrink reseau_facebook" >
-                      <a href="#"
-                        title="Suivez-nous sur Facebook (nouvelle fenêtre)" target="_blank" rel="noreferrer" style="background-color:#ffffff;">
+                    <li class="cell shrink reseau_facebook">
+                      <a href="#" title="Suivez-nous sur Facebook (nouvelle fenêtre)" target="_blank" rel="noreferrer"
+                        style="background-color:#ffffff;">
                         <span class="show-for-sr">
                           Suivez-nous sur Facebook
                         </span>
                       </a>
                     </li>
 
-                    <li class="cell shrink reseau_twitter" >
-                      <a href="#" title="Suivez-nous sur Twitter (nouvelle fenêtre)"
-                        target="_blank" rel="noreferrer" style="background-color:#ffffff;">
+                    <li class="cell shrink reseau_twitter">
+                      <a href="#" title="Suivez-nous sur Twitter (nouvelle fenêtre)" target="_blank" rel="noreferrer"
+                        style="background-color:#ffffff;">
                         <span class="show-for-sr">
                           Suivez-nous sur Twitter
                         </span>
                       </a>
                     </li>
 
-                    <li class="cell shrink reseau_instagram" >
-                      <a href="#"
-                        title="Suivez-nous sur Instagram (nouvelle fenêtre)" target="_blank" rel="noreferrer" style="background-color:#ffffff;">
+                    <li class="cell shrink reseau_instagram">
+                      <a href="#" title="Suivez-nous sur Instagram (nouvelle fenêtre)" target="_blank" rel="noreferrer"
+                        style="background-color:#ffffff;">
                         <span class="show-for-sr">
                           Suivez-nous sur Instagram
                         </span>
                       </a>
                     </li>
 
-                    <li class="cell shrink reseau_tiktok" >
-                      <a href="#" title="Suivez-nous sur TikTok (nouvelle fenêtre)"
-                        target="_blank" rel="noreferrer" style="background-color:#ffffff;">
+                    <li class="cell shrink reseau_tiktok">
+                      <a href="#" title="Suivez-nous sur TikTok (nouvelle fenêtre)" target="_blank" rel="noreferrer"
+                        style="background-color:#ffffff;">
                         <span class="show-for-sr">
                           Suivez-nous sur TikTok
                         </span>
                       </a>
                     </li>
 
-                    <li class="cell shrink reseau_linkedin" >
-                      <a href="#"
-                        title="Suivez-nous sur LinkedIn (nouvelle fenêtre)" target="_blank" rel="noreferrer" style="background-color:#ffffff;">
+                    <li class="cell shrink reseau_linkedin">
+                      <a href="#" title="Suivez-nous sur LinkedIn (nouvelle fenêtre)" target="_blank" rel="noreferrer"
+                        style="background-color:#ffffff;">
                         <span class="show-for-sr">
                           Suivez-nous sur LinkedIn
                         </span>
                       </a>
                     </li>
 
-                    <li class="cell shrink reseau_youtube" >
-                      <a href="#"
-                        title="Suivez-nous sur Youtube (nouvelle fenêtre)" target="_blank" rel="noreferrer" style="background-color:#ffffff;">
+                    <li class="cell shrink reseau_youtube">
+                      <a href="#" title="Suivez-nous sur Youtube (nouvelle fenêtre)" target="_blank" rel="noreferrer"
+                        style="background-color:#ffffff;">
                         <span class="show-for-sr">
                           Suivez-nous sur Youtube
                         </span>
@@ -3362,318 +1112,326 @@ button a {
 
                 <div id="bloc_contact_container" class="cell shrink">
 
-    <button type="button" data-toggle="header_bloc_contact" id="btn_contact" aria-controls="header_bloc_contact" data-is-focus="false" data-yeti-box="header_bloc_contact" aria-haspopup="true" aria-expanded="false">
-        <span>Contact</span>
-    </button>
+                  <button type="button" data-toggle="header_bloc_contact" id="btn_contact"
+                    aria-controls="header_bloc_contact" data-is-focus="false" data-yeti-box="header_bloc_contact"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span>Contact</span>
+                  </button>
 
-    <div class="dropdown-pane contenu_bloc bottom has-alignment-left bloc_contact has-position-bottom has-alignment-right" id="header_bloc_contact" data-dropdown="400anb-dropdown" data-hover="false" data-close-on-click="true" data-position="bottom" data-alignment="right" aria-labelledby="btn_contact" aria-hidden="true" data-yeti-box="header_bloc_contact" data-resize="header_bloc_contact" data-events="resize">
-        <!-- [START] fileadmin/templates/master/ext/dce/Layouts/None.html -->
+                  <div
+                    class="dropdown-pane contenu_bloc bottom has-alignment-left bloc_contact has-position-bottom has-alignment-right"
+                    id="header_bloc_contact" data-dropdown="400anb-dropdown" data-hover="false"
+                    data-close-on-click="true" data-position="bottom" data-alignment="right"
+                    aria-labelledby="btn_contact" aria-hidden="true" data-yeti-box="header_bloc_contact"
+                    data-resize="header_bloc_contact" data-events="resize">
+                    <!-- [START] fileadmin/templates/master/ext/dce/Layouts/None.html -->
 
-<!-- [START] Bloc répété - Bloc Contact -->
+                    <!-- [START] Bloc répété - Bloc Contact -->
 
-<div class="bloc_contact_content text-center">
-    <p><strong>Par téléphone</strong> du lundi au vendredi de 8h30 à 12h et de 13h à 17h30 (17h le vendredi)</p>
+                    <div class="bloc_contact_content text-center">
+                      <p><strong>Par téléphone</strong> du lundi au vendredi de 8h30 à 12h et de 13h à 17h30 (17h le
+                        vendredi)</p>
 
-        <p class="button_like">
-            <a href="tel:0326777879">03 26 77 78 79</a>
-        </p>
-
-
-    <p><strong>Via le portail usagers</strong> :</p>
-
-        <p class="btn_all">
-            <a href="https://mesdemarchesenligne.reims.fr/SEWSaaS.Guichet/workflow_url?ECITIZ_ACTIVITY_PATH=Citoyen&amp;IDORG=GREIMS&amp;TS=SVE&amp;TASK=CREATION&amp;THEMATIQUE=PQ_PQ_PQAS&amp;CTX_ST=REIMS&amp;CONTEXTE=REIMS&amp;CSS=REIMS&amp;ORG_RETOUR_URL=reims.fr" title="Envoyez un e-mail (nouvelle fenêtre)" target="_blank" rel="noreferrer">Accéder au formulaire</a>
-        </p>
-
-
-    <p><strong>Par courrier</strong> à l'adresse suivante, <strong>Reims-Contact - CS 80036, 51722 Reims Cedex</strong></p>
-</div>
-
-<!-- [END] Bloc répété - Bloc Contact -->
+                      <p class="button_like">
+                        <a href="tel:0326777879">03 26 77 78 79</a>
+                      </p>
 
 
+                      <p><strong>Via le portail usagers</strong> :</p>
+
+                      <p class="btn_all">
+                        <a href="https://mesdemarchesenligne.reims.fr/SEWSaaS.Guichet/workflow_url?ECITIZ_ACTIVITY_PATH=Citoyen&amp;IDORG=GREIMS&amp;TS=SVE&amp;TASK=CREATION&amp;THEMATIQUE=PQ_PQ_PQAS&amp;CTX_ST=REIMS&amp;CONTEXTE=REIMS&amp;CSS=REIMS&amp;ORG_RETOUR_URL=reims.fr"
+                          title="Envoyez un e-mail (nouvelle fenêtre)" target="_blank" rel="noreferrer">Accéder au
+                          formulaire</a>
+                      </p>
 
 
-<!-- [END] fileadmin/templates/master/ext/dce/Layouts/None.html -->
-    </div>
-</div>
+                      <p><strong>Par courrier</strong> à l'adresse suivante, <strong>Reims-Contact - CS 80036, 51722
+                          Reims Cedex</strong></p>
+                    </div>
+
+                    <!-- [END] Bloc répété - Bloc Contact -->
+
+
+
+
+                    <!-- [END] fileadmin/templates/master/ext/dce/Layouts/None.html -->
+                  </div>
+                </div>
 
               </div>
             </div>
           </div>
         </header>
-{% endblock %}
+        {% endblock %}
 
 
-{% block central %}
+        {% block central %}
 
-{% endblock %}
-
-
-{% block footer %}
+        {% endblock %}
 
 
- 		<footer>
+        {% block footer %}
 
-  <div id="bloc_contact_info" class="grid-container">
-      <div id="info_footer" class="grid-x grid-padding-x">
-          <div class="cell large-3 large-offset-1 medium-12 small-12">
-              <img class="lazy"
+
+        <footer class="grid-container">
+
+          <div id="bloc_contact_info" class="grid-container">
+            <div id="info_footer" class="grid-x grid-padding-x">
+              <div class="cell large-3 large-offset-1 medium-12 small-12">
+                <img class="lazy"
                   src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/newLogo.jpeg' %}"
                   data-src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/newLogo.jpeg' %}"
                   width="238" height="72" alt="LOGO" />
 
-              <div class="cell shrink reseaux_sociaux">
+                <div class="cell shrink reseaux_sociaux">
 
                   <ul class="grid-x align-middle">
-                      <li class="cell shrink reseau_facebook">
-                          <a href="#"title="Suivez-nous sur Facebook (nouvelle fenêtre)" target="_blank"
-                              rel="noreferrer">
-                              <span class="show-for-sr">
-                                  Suivez-nous sur Facebook
-                              </span>
-                          </a>
-                      </li>
+                    <li class="cell shrink reseau_facebook">
+                      <a href="#" title="Suivez-nous sur Facebook (nouvelle fenêtre)" target="_blank" rel="noreferrer">
+                        <span class="show-for-sr">
+                          Suivez-nous sur Facebook
+                        </span>
+                      </a>
+                    </li>
 
-                      <li class="cell shrink reseau_twitter">
-                          <a href="#"
-                              title="Suivez-nous sur Twitter (nouvelle fenêtre)" target="_blank"
-                              rel="noreferrer">
-                              <span class="show-for-sr">
-                                  Suivez-nous sur Twitter
-                              </span>
-                          </a>
-                      </li>
+                    <li class="cell shrink reseau_twitter">
+                      <a href="#" title="Suivez-nous sur Twitter (nouvelle fenêtre)" target="_blank" rel="noreferrer">
+                        <span class="show-for-sr">
+                          Suivez-nous sur Twitter
+                        </span>
+                      </a>
+                    </li>
 
-                      <li class="cell shrink reseau_instagram">
-                          <a href="#"
-                              title="Suivez-nous sur Instagram (nouvelle fenêtre)" target="_blank"
-                              rel="noreferrer">
-                              <span class="show-for-sr">
-                                  Suivez-nous sur Instagram
-                              </span>
-                          </a>
-                      </li>
+                    <li class="cell shrink reseau_instagram">
+                      <a href="#" title="Suivez-nous sur Instagram (nouvelle fenêtre)" target="_blank" rel="noreferrer">
+                        <span class="show-for-sr">
+                          Suivez-nous sur Instagram
+                        </span>
+                      </a>
+                    </li>
 
-                      <li class="cell shrink reseau_tiktok">
-                          <a href="#"
-                              title="Suivez-nous sur TikTok (nouvelle fenêtre)" target="_blank"
-                              rel="noreferrer">
-                              <span class="show-for-sr">
-                                  Suivez-nous sur TikTok
-                              </span>
-                          </a>
-                      </li>
+                    <li class="cell shrink reseau_tiktok">
+                      <a href="#" title="Suivez-nous sur TikTok (nouvelle fenêtre)" target="_blank" rel="noreferrer">
+                        <span class="show-for-sr">
+                          Suivez-nous sur TikTok
+                        </span>
+                      </a>
+                    </li>
 
-                      <li class="cell shrink reseau_linkedin">
-                          <a href="#"
-                              title="Suivez-nous sur LinkedIn (nouvelle fenêtre)" target="_blank"
-                              rel="noreferrer">
-                              <span class="show-for-sr">
-                                  Suivez-nous sur LinkedIn
-                              </span>
-                          </a>
-                      </li>
+                    <li class="cell shrink reseau_linkedin">
+                      <a href="#" title="Suivez-nous sur LinkedIn (nouvelle fenêtre)" target="_blank" rel="noreferrer">
+                        <span class="show-for-sr">
+                          Suivez-nous sur LinkedIn
+                        </span>
+                      </a>
+                    </li>
 
-                      <li class="cell shrink reseau_youtube">
-                          <a href="#"
-                              title="Suivez-nous sur Youtube (nouvelle fenêtre)" target="_blank"
-                              rel="noreferrer">
-                              <span class="show-for-sr">
-                                  Suivez-nous sur Youtube
-                              </span>
-                          </a>
-                      </li>
+                    <li class="cell shrink reseau_youtube">
+                      <a href="#" title="Suivez-nous sur Youtube (nouvelle fenêtre)" target="_blank" rel="noreferrer">
+                        <span class="show-for-sr">
+                          Suivez-nous sur Youtube
+                        </span>
+                      </a>
+                    </li>
                   </ul>
 
+                </div>
               </div>
-          </div>
 
-          <div class="cell large-4 medium-6 small-12">
-              <p class="titre_footer" style="color:#7C976A;">Contact</p>
-              <p>Boite postale </p>
-              <p>Adresse</p>
+              <div class="cell large-4 medium-6 small-12">
+                <p class="titre_footer" style="color:#7C976A;">Contact</p>
+                <p>Boite postale </p>
+                <p>Adresse</p>
 
-              <p class="tel">
+                <p class="tel">
                   <a href="tel:99999999" style="color:#3c763d;"> 99 99 99 99 99</a>
-              </p>
+                </p>
 
-              <p class="mail">
-                  <a href="#"
-                      title="Contacter nous par mail (nouvelle fenêtre)" target="_blank" rel="noreferrer" style="color:#3c763d;">
-                      Contacter nous
+                <p class="mail">
+                  <a href="#" title="Contacter nous par mail (nouvelle fenêtre)" target="_blank" rel="noreferrer"
+                    style="color:#3c763d;">
+                    Contacter nous
                   </a>
-              </p>
+                </p>
 
+              </div>
+
+              <div class="cell large-4 medium-6 small-12 map">
+                <p class="titre_footer" style="color:#7C976A;">Localisation </p>
+
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15923.40953986857!2d11.5412476!3d3.8418485!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bc5c7d6082079%3A0x6603be3fb50f4825!2sMairie%20de%20Yaound%C3%A9%20IV%20-%20Ekounou!5e0!3m2!1sen!2scm!4v1707741587204!5m2!1sen!2scm"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
           </div>
 
-          <div class="cell large-4 medium-6 small-12 map">
-              <p class="titre_footer" style="color:#7C976A;">Localisation </p>
-
-                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15923.40953986857!2d11.5412476!3d3.8418485!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bc5c7d6082079%3A0x6603be3fb50f4825!2sMairie%20de%20Yaound%C3%A9%20IV%20-%20Ekounou!5e0!3m2!1sen!2scm!4v1707741587204!5m2!1sen!2scm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-      </div>
-  </div>
 
 
 
 
-
-  <div id="galaxie_partenaires" class="grid-container">
-      <div class="grid-x grid-padding-x align-center">
-          <div class="cell large-10 medium-12 small-12">
-              <p class="titre_footer" style="color: #7C976A;">Nos Partenaires</p>
-          </div>
-
-          <div class="grid-x cell large-10 medium-12 small-12">
-              <div class="cell shrink">
-                  <a href="#" title="Les bibliothèques (nouvelle fenêtre)"
-                      target="_blank" rel="noreferrer">
-                      <img class="lazy"
-                          src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/minpostel.jpg' %}"
-                          data-src=""
-                          width="178" height="79" alt="Partenaire 1" />
-                  </a>
+          <div id="galaxie_partenaires" class="grid-container">
+            <div class="grid-x grid-padding-x align-center">
+              <div class="cell large-10 medium-12 small-12">
+                <p class="titre_footer" style="color: #7C976A;">Nos Partenaires</p>
               </div>
 
-              <div class="cell shrink">
-                  <a href="#"
-                      title="Site de l'Eau du Grand reims (nouvelle fenêtre)" target="_blank"
-                      rel="noreferrer">
-                      <img class="lazy"
-                         src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/minsante.png' %}"
-                          data-src="" width="178" height="79" alt="Partenaire 2" />
-
+              <div class="grid-x cell large-10 medium-12 small-12">
+                <div class="cell shrink">
+                  <a href="#" title="Les bibliothèques (nouvelle fenêtre)" target="_blank" rel="noreferrer">
+                    <img class="lazy"
+                      src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/minpostel.jpg' %}"
+                      data-src="" width="178" height="79" alt="Partenaire 1" />
                   </a>
-              </div>
-
-              <div class="cell shrink">
-                  <a href="#"
-                      title="École supérieure d'art et de design de reims (nouvelle fenêtre)"
-                      target="_blank" rel="noreferrer">
-                      <img class="lazy"
-                         src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/minrex.jpeg' %}"
-                          data-src="" width="178" height="79"
-                          alt="Partenaire 3" />
-                  </a>
-              </div>
-
-              <div class="cell shrink">
-                  <a href="#" title="Grand reims (nouvelle fenêtre)"
-                      target="_blank">
-                      <img class="lazy"
-                         src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/minfi.png' %}"
-                          data-src="" width="178" height="79" alt="Partenaire 4" />
-                  </a>
-              </div>
-
-              <div class="cell shrink">
-                  <a href="#" title="reims Légend'r (nouvelle fenêtre)"
-                      target="_blank">
-                      <img class="lazy"
-                         src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/mindef.jpeg' %}"
-                          data-src="" width="178" height="79" alt="Partenaire 5" />
-                  </a>
-              </div>
-
-          </div>
-      </div>
-  </div>
-
-  <div id="menu_footer" class="grid-container grid-x grid-padding-x align-center" >
-      <ul class="cell xxlarge-10 xlarge-11 large-12 medium-12 small-12">
-          <li>
-              <a href="#" style="color:black;">Mentions légales</a>
-          </li>
-
-          <li>
-              <a href="#" style="color:black;">Politique de
-                  confidentialité</a>
-          </li>
-
-          <li>
-              <a href="#" style="color:black;">Accessibilité</a>
-          </li>
-
-          <li>
-              <a href="#" style="color:black;">Plan du site</a>
-          </li>
-
-          <li>
-              <a href="#" style="color:black;">Marchés
-                  publics</a>
-          </li>
-
-          <li>
-              <a href="#" style="color:black;">Espace Presse</a>
-          </li>
-
-          <li>
-              <a href="#"
-                  target="_blank" rel="noreferrer" style="color:black;"> Contact</a>
-          </li>
-      </ul>
-  </div>
-</footer>
-	</div>
-</div>
-
-{% endblock %}
-
-	<div class="pswp" id="pswp-wrapper" data-init="ce-gallery" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div>
-                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button><button
-                        class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button><button
-                        class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
                 </div>
 
+                <div class="cell shrink">
+                  <a href="#" title="Site de l'Eau du Grand reims (nouvelle fenêtre)" target="_blank" rel="noreferrer">
+                    <img class="lazy"
+                      src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/minsante.png' %}"
+                      data-src="" width="178" height="79" alt="Partenaire 2" />
+
+                  </a>
+                </div>
+
+                <div class="cell shrink">
+                  <a href="#" title="École supérieure d'art et de design de reims (nouvelle fenêtre)" target="_blank"
+                    rel="noreferrer">
+                    <img class="lazy"
+                      src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/minrex.jpeg' %}"
+                      data-src="" width="178" height="79" alt="Partenaire 3" />
+                  </a>
+                </div>
+
+                <div class="cell shrink">
+                  <a href="#" title="Grand reims (nouvelle fenêtre)" target="_blank">
+                    <img class="lazy"
+                      src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/minfi.png' %}"
+                      data-src="" width="178" height="79" alt="Partenaire 4" />
+                  </a>
+                </div>
+
+                <div class="cell shrink">
+                  <a href="#" title="reims Légend'r (nouvelle fenêtre)" target="_blank">
+                    <img class="lazy"
+                      src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/mindef.jpeg' %}"
+                      data-src="" width="178" height="79" alt="Partenaire 5" />
+                  </a>
+                </div>
+
+              </div>
             </div>
-        </div>
+          </div>
+
+          <div id="menu_footer" class="grid-container grid-x grid-padding-x align-center">
+            <ul class="cell xxlarge-10 xlarge-11 large-12 medium-12 small-12">
+              <li>
+                <a href="#" style="color:black;">Mentions légales</a>
+              </li>
+
+              <li>
+                <a href="#" style="color:black;">Politique de
+                  confidentialité</a>
+              </li>
+
+              <li>
+                <a href="#" style="color:black;">Accessibilité</a>
+              </li>
+
+              <li>
+                <a href="#" style="color:black;">Plan du site</a>
+              </li>
+
+              <li>
+                <a href="#" style="color:black;">Marchés
+                  publics</a>
+              </li>
+
+              <li>
+                <a href="#" style="color:black;">Espace Presse</a>
+              </li>
+
+              <li>
+                <a href="#" target="_blank" rel="noreferrer" style="color:black;"> Contact</a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
     </div>
 
-{% block script %}
-  <script src="{% static 'typo3conf/ext/cim_base/Resources/Public/JavaScript/app-dev2407.js' %}"></script>
-<script src="{% static 'typo3conf/ext/cim_elastic/Resources/Public/JavaScript/countViewsfe64.js' %}" async="async"></script>
-<script src="{% static 'typo3conf/ext/cim_search_elastic/Resources/Public/JavaScript/List898b.js' %}"></script>
-<script src="{% static 'typo3conf/ext/cim_quality/Resources/Public/JavaScript/QualityWidget3170.js' %}"></script>
-<script src="{% static 'typo3conf/ext/photoswipe/Resources/Public/JavaScript/photoswipe.min0e9f.js' %}"></script>
-<script src="{% static 'typo3conf/ext/photoswipe/Resources/Public/JavaScript/photoswipe-ui-default.min0e9f.js' %}"></script>
-<script src="{% static 'typo3conf/ext/cim_base/Resources/Public/JavaScript/photoswipe-init8034.js' %}"></script>
-<script src="{% static 'fileadmin/templates/master/assets/assets_common/js/vendor/what-input.min1d41.js' %}"></script>
-<script src="{% static 'fileadmin/templates/master/assets/assets_common/js/vendor/foundation.min1d41.js' %}"></script>
-<script src="{% static 'fileadmin/templates/master/assets/assets_common/js/foundation-datepicker.minf68d.js' %}"></script>
-<script src="{% static 'fileadmin/templates/master/assets/assets_common/js/foundation-datepicker.fr.minf68d.js' %}"></script>
-<script src="{% static 'fileadmin/templates/master/assets/assets_common/js/hunt.min092d.js' %}"></script>
-<script src="{% static 'fileadmin/templates/master/assets/assets_common/js/app.min5197.js' %}"></script>
-<script src="{% static 'fileadmin/templates/master/assets/assets_site_reims/js/app.min036f.js' %}"></script>
-<script src="{% static 'fileadmin/templates/master/assets/assets_common/js/icheck.min50b4.js' %}"></script>
-<script src="{% static 'fileadmin/templates/master/assets/assets_common/js/jquery-ui.min3d6c.js' %}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/fr.js"></script>
+    {% endblock %}
 
-<script src="{% static 'typo3conf/ext/powermail/Resources/Public/JavaScript/Libraries/jquery.datetimepicker.min9cd0.js' %}"></script>
-<script src="{% static 'typo3conf/ext/powermail/Resources/Public/JavaScript/Powermail/Tabs.min9cd0.js' %}"></script>
-<script src="{% static 'typo3conf/ext/powermail/Resources/Public/JavaScript/Powermail/Form.min9cd0.js' %}"></script>
-<script src="{% static 'typo3conf/ext/powermail_cond/Resources/Public/JavaScript/PowermailCondition.min7535.js' %}"></script>
-<script src="{% static 'typo3conf/ext/cim_base/Resources/Public/JavaScript/parsley/parsley.min7fde.js' %}"></script>
-<script src="{% static 'typo3conf/ext/cim_base/Resources/Public/JavaScript/parsley/frb366.js' %}"></script>
-<script defer="defer" src="{% static 'fileadmin/templates/master/assets/assets_common/js/slick.min50b4.js' %}"></script>
-<script defer="defer" src="{% static 'fileadmin/templates/master/assets/assets_common/js/modules/bloc_alaune.min5dc8.js' %}"></script>
-<script defer="defer" src="{% static 'fileadmin/templates/master/assets/assets_common/js/modules/recherche/placeholderTypewriter.min0c36.js' %}"></script>
-<script defer="defer" src="{% static 'fileadmin/templates/master/assets/assets_common/js/modules/recherche/section_recherche_decli.min5306.js' %}"></script>
-<script defer="defer" src="{% static 'fileadmin/templates/master/assets/assets_common/js/modules/bloc_agenda_culturel.mine8bb.js' %}"></script>
-<script defer="defer" src="{% static 'fileadmin/templates/master/assets/assets_common/js/modules/social_wall_decli.minecbf.js' %}"></script>
+    <div class="pswp" id="pswp-wrapper" data-init="ce-gallery" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
 
- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" ></script>
-	</body>
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <div class="pswp__counter"></div>
+            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button><button
+              class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button><button
+              class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    {% block script %}
+    <script src="{% static 'typo3conf/ext/cim_base/Resources/Public/JavaScript/app-dev2407.js' %}"></script>
+    <script src="{% static 'typo3conf/ext/cim_elastic/Resources/Public/JavaScript/countViewsfe64.js' %}"
+      async="async"></script>
+    <script src="{% static 'typo3conf/ext/cim_search_elastic/Resources/Public/JavaScript/List898b.js' %}"></script>
+    <script src="{% static 'typo3conf/ext/cim_quality/Resources/Public/JavaScript/QualityWidget3170.js' %}"></script>
+    <script src="{% static 'typo3conf/ext/photoswipe/Resources/Public/JavaScript/photoswipe.min0e9f.js' %}"></script>
+    <script
+      src="{% static 'typo3conf/ext/photoswipe/Resources/Public/JavaScript/photoswipe-ui-default.min0e9f.js' %}"></script>
+    <script src="{% static 'typo3conf/ext/cim_base/Resources/Public/JavaScript/photoswipe-init8034.js' %}"></script>
+    <script
+      src="{% static 'fileadmin/templates/master/assets/assets_common/js/vendor/what-input.min1d41.js' %}"></script>
+    <script
+      src="{% static 'fileadmin/templates/master/assets/assets_common/js/vendor/foundation.min1d41.js' %}"></script>
+    <script
+      src="{% static 'fileadmin/templates/master/assets/assets_common/js/foundation-datepicker.minf68d.js' %}"></script>
+    <script
+      src="{% static 'fileadmin/templates/master/assets/assets_common/js/foundation-datepicker.fr.minf68d.js' %}"></script>
+    <script src="{% static 'fileadmin/templates/master/assets/assets_common/js/hunt.min092d.js' %}"></script>
+    <script src="{% static 'fileadmin/templates/master/assets/assets_common/js/app.min5197.js' %}"></script>
+    <script src="{% static 'fileadmin/templates/master/assets/assets_site_reims/js/app.min036f.js' %}"></script>
+    <script src="{% static 'fileadmin/templates/master/assets/assets_common/js/icheck.min50b4.js' %}"></script>
+    <script src="{% static 'fileadmin/templates/master/assets/assets_common/js/jquery-ui.min3d6c.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/fr.js"></script>
+
+    <script
+      src="{% static 'typo3conf/ext/powermail/Resources/Public/JavaScript/Libraries/jquery.datetimepicker.min9cd0.js' %}"></script>
+    <script src="{% static 'typo3conf/ext/powermail/Resources/Public/JavaScript/Powermail/Tabs.min9cd0.js' %}"></script>
+    <script src="{% static 'typo3conf/ext/powermail/Resources/Public/JavaScript/Powermail/Form.min9cd0.js' %}"></script>
+    <script
+      src="{% static 'typo3conf/ext/powermail_cond/Resources/Public/JavaScript/PowermailCondition.min7535.js' %}"></script>
+    <script src="{% static 'typo3conf/ext/cim_base/Resources/Public/JavaScript/parsley/parsley.min7fde.js' %}"></script>
+    <script src="{% static 'typo3conf/ext/cim_base/Resources/Public/JavaScript/parsley/frb366.js' %}"></script>
+    <script defer="defer"
+      src="{% static 'fileadmin/templates/master/assets/assets_common/js/slick.min50b4.js' %}"></script>
+    <script defer="defer"
+      src="{% static 'fileadmin/templates/master/assets/assets_common/js/modules/bloc_alaune.min5dc8.js' %}"></script>
+    <script defer="defer"
+      src="{% static 'fileadmin/templates/master/assets/assets_common/js/modules/recherche/placeholderTypewriter.min0c36.js' %}"></script>
+    <script defer="defer"
+      src="{% static 'fileadmin/templates/master/assets/assets_common/js/modules/recherche/section_recherche_decli.min5306.js' %}"></script>
+    <script defer="defer"
+      src="{% static 'fileadmin/templates/master/assets/assets_common/js/modules/bloc_agenda_culturel.mine8bb.js' %}"></script>
+    <script defer="defer"
+      src="{% static 'fileadmin/templates/master/assets/assets_common/js/modules/social_wall_decli.minecbf.js' %}"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+</body>
 
 </html>
 
