@@ -1,0 +1,1495 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+
+{% block head %}
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" type="text/css"
+    href="{% static 'typo3conf/ext/photoswipe/Resources/Public/Css/photoswipe.min0e9f.css' %}" media="all">
+  <link rel="stylesheet" type="text/css"
+    href="{% static 'typo3conf/ext/photoswipe/Resources/Public/Css/photoswipe-default-skin.min0e9f.css' %}" media="all">
+
+  <link rel="stylesheet" type="text/css"
+    href="{% static 'typo3conf/ext/femanager/Resources/Public/Css/Main.minac89.css' %}" media="all">
+  <link rel="stylesheet" type="text/css"
+    href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/app_site.min1122.css' %}" media="all">
+  <link rel="stylesheet" type="text/css"
+    href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/app.minf691.css' %}" media="all">
+  <link rel="stylesheet" type="text/css"
+    href="{% static 'fileadmin/templates/master/assets/assets_common/css/tools.min87b5.css' %}" media="all">
+  <link rel="stylesheet" type="text/css"
+    href="{% static 'fileadmin/templates/master/assets/assets_common/css/print.min87b5.css' %}" media="print">
+  <link rel="stylesheet" type="text/css"
+    href="{% static 'fileadmin/templates/master/assets/assets_common/css/cim_rgpd.minbf3a.css' %}" media="all">
+  <link onload="this.media='all'" media="print" rel="stylesheet"
+    href="{% static 'fileadmin/templates/master/assets/assets_common/css/slick.min87b5.css' %}" type="text/css">
+  <link onload="this.media='all'" media="print" rel="stylesheet"
+    href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/modules/slick_common.min0167.css' %}"
+    type="text/css">
+  <link onload="this.media='all'" media="print" rel="stylesheet"
+    href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/modules/bloc_alaune.min0034.css' %}"
+    type="text/css">
+  <link onload="this.media='all'" media="print" rel="stylesheet"
+    href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/modules/recherche_generale_decli.min0167.css' %}"
+    type="text/css">
+  <link onload="this.media='all'" media="print" rel="stylesheet"
+    href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/modules/bloc_agenda_culturel.min0034.css' %}"
+    type="text/css">
+
+
+
+  <script src="{% static 'fileadmin/templates/master/assets/assets_common/js/vendor/jquery.min1d41.js' %}"></script>
+  <script src="{% static 'typo3conf/ext/cim_news/Resources/Public/JavaScript/SubscribeWidget0d2a.js' %}"></script>
+
+  <link rel="icon" type="image/x-icon"
+    href="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/newLogo.jpeg' %}" />
+  <link rel="icon" type="image/jpeg"
+    href="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/newLogo.jpeg' %}" />
+
+  <link rel="preload"
+    href="{% static 'fileadmin/templates/master/assets/assets_common/css/font/firasans-regular-webfont.woff2' %}"
+    as="font" type="font/woff2" crossorigin />
+  <link rel="preload"
+    href="{% static 'fileadmin/templates/master/assets/assets_common/css/font/firasans-light-webfont.woff2' %}"
+    as="font" type="font/woff2" crossorigin />
+  <link rel="preload"
+    href="{% static 'fileadmin/templates/master/assets/assets_common/css/font/firasans-medium-webfont.woff2' %}"
+    as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet"
+    href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/fonts/firasans-regular-webfont.min.css' %}"
+    media="print" onload="this.media='all'" />
+  <link rel="stylesheet"
+    href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/fonts/firasans-light-webfont.min.css' %}"
+    media="print" onload="this.media='all'" />
+  <link rel="stylesheet"
+    href="{% static 'fileadmin/templates/master/assets/assets_site_reims/scss/fonts/firasans-medium-webfont.min.css' %}"
+    media="print" onload="this.media='all'" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+  
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    
+  
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <title>{%block title %} {% endblock %}</title>
+
+</head>
+
+
+<style>
+  .cell a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+  /* SEARCH BAR CONTAINER */
+  .search-local {
+    display: flex;
+    align-items: center;
+    height: auto;
+    border-bottom: 0.1rem solid #7C976A;
+  }
+
+  /* ICON */
+  .icon {
+    color: var(--red);
+    font-size: 3.5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+
+  @keyframes funny-icon {
+    0% {
+      scale: 1;
+    }
+
+    50% {
+      scale: 0.8;
+      transform-origin: bottom;
+      transform: rotate(-15deg);
+    }
+
+    100% {
+      scale: 1;
+    }
+  }
+
+  /* INPUT */
+  .search-local input {
+    height: 100%;
+    min-width: 300px;
+    width: 100%;
+    flex: 1 1 25rem;
+    background: var(--white);
+    display: flex;
+    outline: none;
+    border: none;
+    color: var(--black);
+
+  }
+
+
+
+
+  input[type="text"]::placeholder {
+    color: var(--black);
+    font-size: 2.4rem;
+  }
+
+  button a {
+    color: var(--white);
+  }
+
+  .search-local button .search-icon {
+    display: none;
+  }
+
+  .search-local button:hover {
+    letter-spacing: 0.5rem;
+  }
+
+
+
+  @media (max-width:1200px){
+    .bloc_info{
+      display: none;
+    }
+  }
+
+
+  @media (max-width: 390px) {
+    .search-local {
+      display: none;
+    }
+
+    
+
+    .search-local button {
+      width: 10rem;
+    }
+
+    button a {
+      display: none;
+    }
+
+    .search-local button .search-icon {
+      display: block;
+      margin-inline: auto;
+      color: var(--white);
+      font-size: 3rem;
+    }
+
+    input[type="text"]::placeholder {
+      font-size: 1.7rem;
+    }
+  }
+
+  #menu_principal > ul > li > a::before{
+    
+    background-color: crimson;
+    display: block;
+  }
+
+
+
+  .menu_title{
+    color: black!important;
+    transition: all ease-in-out  0.3s;   
+  }
+
+  .menu_title:hover{
+    color: crimson!important;
+  }
+
+</style>
+{% endblock %}
+
+{% block navbar %}
+
+<body>
+  <div class="off-canvas-wrapper">
+    <div id="top" data-magellan-target="top"></div>
+
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      <div id="offCanvasLeft" class="off-canvas position-left hide-for-large" data-off-canvas data-force-top="false">
+        <button type="button" id="btn_close_menu_smart" class="close-button hide-for-large"
+          aria-label="Fermer la navigation principale" data-close="offCanvasLeft">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+       <div id="leftmenu_cont">
+            <nav id="smart_menu" role="navigation" aria-label="Menu principal">
+              <ul
+                class="menu vertical"
+                data-drilldown
+                data-close-on-click="true"
+                data-back-button="<li class='js-drilldown-back'><a tabindex='0'>Retour</a></li>"
+                data-back-button-position="top"
+                data-parent-link="true"
+                data-scroll-top="true"
+              >
+                <li>
+                  <a href="#"> Ma Mairie </a>
+
+                  <ul class="sous_menu menu vertical">
+                    <li class="level2">
+                      <a href="#">
+                        La Commune d’Arrondissement de Yaoundé IV
+                      </a>
+
+                      <ul class="sm">
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Historique
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Tradition
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Culture
+                          </a>
+                        </li>
+
+                      </ul>
+                    </li>
+
+                    <li class="level2">
+                      <a href="#">
+                        Notre Mairie
+                      </a>
+
+                      <ul class="sm">
+                        <li class="level3">
+                          <a
+                            href="https://www.grandreims.fr/les-grands-projets/le-bus-a-haut-niveau-de-service-bhns-bientot-a-reims"
+                            target="_blank"
+                          >
+                           Evolution
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Organigramme
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Le Maire
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Les Adjoints au Maire
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a href="#">
+                            Actualité
+                          </a>
+                        </li>
+
+                      </ul>
+                    </li>
+
+                    <li class="level2">
+                      <a href="#">
+                        Coopération
+                      </a>
+
+                      <ul class="sm">
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Mairies d’ici et d’ailleurs
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Bailleurs de fonds
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Autres
+                          </a>
+                        </li>
+
+                      </ul>
+                    </li>
+
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#">Gouvernance de la Mairie </a>
+
+                  <ul class="sous_menu menu vertical">
+                    <li class="level2">
+                      <a href="#">
+                        Missions de la Mairie
+                      </a>
+                    </li>
+
+                    <li class="level2">
+                      <a
+                        href="#"
+                      >
+                        Organes délibérants
+                      </a>
+
+                      <ul class="sm">
+                        <li class="level3">
+                          <a
+                            href="#"
+                            target="_blank"
+                          >
+                            Appel à projet - Animation de l&#039;intérieur de la
+                            Basilique Saint-Remi de Reims
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Ateliers de la culture dans le cadre de Reims
+                            Activ’Eté
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Participez à la programmation du Cryptoportique
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="level2">
+                      <a
+                        href="#"
+                      >
+                        Commune d’Arrondissement de Yaoundé IV
+                      </a>
+
+                      <ul class="sm">
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Les Itinéraires d’éducation artistique et culturelle
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Une fresque dans mon école
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Répertoire de l’offre culturelle jeune public
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Carnet de voyage culturel
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Les expositions itinérantes
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Le Musée nomade
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Le théâtre se promène
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Résidence de territoire
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Les Petits Biscuits
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Concours BD-Manga #RDVBD
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Primé des écoliers
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="la-culture-a-reims/education-artistique-et-culturelle/pass-culture"
+                          >
+                            pass Culture
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#">
+                    Services pour tous
+                  </a>
+
+                  <ul class="sous_menu menu vertical">
+                    <li class="level2">
+                      <a
+                        href="#"
+                      >
+                        Démarche pratiques et procédure
+                      </a>
+
+                      <ul class="sm">
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Etat-civil
+                          </a>
+                        </li>
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Impôt libératoire
+                          </a>
+                        </li>
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Taxe d’hygiène
+                          </a>
+                        </li>
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Obtenir un espace commercial
+                          </a>
+                        </li>
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Location des salles
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="level2">
+                      <a
+                        href="#"
+                      >
+                        Marchés Publics
+                      </a>
+
+                      <ul class="sm">
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Règlementation
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Appels d’Offres
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Décisions d’attributions
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="level2">
+                      <a href="#">
+                       Tourisme et Loisirs
+                      </a>
+
+                      <ul class="sm">
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Centre commercial
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Centre de santé
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                           Espace vert
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Hébergement
+                          </a>
+                        </li>
+
+                      </ul>
+                    </li>
+
+                    <li class="level2">
+                      <a href="#">
+                        Hygiène et Salubrité
+                      </a>
+
+                      <ul class="sm">
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Enlèvement d’ordures
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#l"
+                          >
+                            Pénalités et amendes
+                          </a>
+                        </li>
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Dégradations diverses et constructions sur les zones à risque
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="level2">
+                      <a
+                        href="#"
+                      >
+                       Fourrière Municipale
+                      </a>
+
+                    </li>
+
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#">Réalisation  </a>
+
+                  <ul class="sous_menu menu vertical">
+                    <li class="level2">
+                      <a href="#"> Grands travaux </a>
+
+                      <ul class="sm">
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Réaménagement
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Aménagement
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="level2">
+                      <a href="#">
+                       Reprofilage des routes plan sécuritaire
+                      </a>
+                    </li>
+
+                    <li class="level2">
+                      <a
+                        href="https://www.ucpa.com/sport-station/grand-reims"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                       Eclairage public plan sanitaire
+                      </a>
+                    </li>
+
+                    <li class="level2">
+                      <a href="#">
+                        Plan éducatif
+                      </a>
+
+                      <ul class="sm">
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Piscine Château d&#039;eau
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Piscine Louvois
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Piscine Orgeval
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Piscine Talleyrand
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Piscine des Thiolettes
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#"> Projet  </a>
+
+                  <ul class="sous_menu menu vertical">
+                    <li class="level2">
+                      <a
+                        href="#"
+                      >
+                       Complexe moderne
+                      </a>
+
+                    </li>
+
+                    <li class="level2">
+                      <a href="#">Embellissement et protection de l’environnement </a>
+
+                    </li>
+
+                    <li class="level2">
+                      <a href="#">
+                        Marquage des routes
+                      </a>
+
+                      <ul class="sm">
+                        <li class="level3">
+                          <a
+                            href="https://www.grandreims.fr/reimsbusiness/entreprendre-a-reims"
+                            target="_blank"
+                          >
+                            Entreprendre à Reims
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            INNOVACT, acteur incontournable et historique sur le
+                            territoire local de l’entrepreneuriat innovant !
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="https://www.grandreims.fr/reimsbusiness/offres-foncieres-et-immobilieres"
+                            target="_blank"
+                          >
+                            Le portail de l&#039;immobilier
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="level2">
+                      <a
+                        href="#"
+                      >
+                        Reprofilage des espaces / voiries
+                      </a>
+
+                      <ul class="sm">
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Charte locale d&#039;insertion
+                          </a>
+                        </li>
+
+                        <li class="level3">
+                          <a
+                            href="#"
+                          >
+                            Le service civique
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="level2">
+                      <a href="#">
+                       Cascades de Yaoundé
+                      </a>
+
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#l"> Communication  </a>
+                </li>
+
+              </ul>
+            </nav>
+          </div>
+      </div>
+      <div id="home" class="off-canvas-content" data-off-canvas-content>
+        <header id="header" role="banner" data-sticky-container>
+          <nav id="accessi" class="cell shrink" aria-label="Menu de liens d'évitement">
+            <ul>
+              <li>
+                <a class="show-on-focus" href="#menu_principal">Aller au menu</a>
+              </li>
+              <li>
+                <a class="show-on-focus" href="#anchor_skip_link">Aller au contenu</a>
+              </li>
+            </ul>
+            <div class="clear"></div>
+          </nav>
+
+
+          <div id="data-sticky-header" class="" data-margin-top="0" data-sticky data-top-anchor="data-sticky-header">
+            <div class="grid-container grid-x align-middle align-justify">
+              <div class="grid-x grid-padding-x align-middle cell shrink">
+                <!-- [START] fileadmin/templates/master/fluid_template/Partials/Header/Logo.html -->
+
+                <div id="logo" class="logo cell shrink">
+                  <h1>
+                    <a href="#">
+                      <img
+                        src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/newLogo.jpeg' %}"
+                        alt="LOGO" style="width: 100px;" height="auto" />
+                    </a>
+                  </h1>
+                </div>
+
+                <div class="hamburger_container cell shrink hide-for-large">
+                  <button type="button" data-toggle="offCanvasLeft" class="hamburger hamburger--spring js-hamburger">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                      <span class="menu_title">menu</span>
+                    </span>
+                  </button>
+                </div>
+
+                <div class="hamburger_container cell shrink show-for-large">
+                  <button type="button" data-toggle="popin_menu"
+                    class="hamburger hamburger--spring js-hamburger show-for-large">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                      <span class="menu_title">menu</span>
+                    </span>
+                  </button>
+                </div>
+
+                <div id="popin_menu" data-reveal class="full reveal show-for-large" data-animation-in="fade-in"
+                  aria-label="Fenêtre de navigation principale">
+                  <div class="wrap_popin grid-container">
+                    <button type="button" class="close-button" data-close aria-label="Fermer le menu principal">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+
+                    <nav id="menu_principal" role="navigation" aria-label="Menu principal">
+                      <ul class="grid-x grid-padding-x" data-accordion-menu data-submenu-toggle="true"
+                        data-submenu-toggle-text="Accès au sous-menu de">
+                        <li class="cell large-3 small-12">
+                          <a href="#">
+                            Ma Mairie
+                          </a>
+                          <div>
+                            <ul class="sous_menu menu vertical">
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">La Commune d’Arrondissement de Yaoundé IV</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Notre Mairie</span></a>
+                              </li>
+                              <li class="level2">
+                                <a href="#"><span class=" ">Coopération</span></a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="cell large-3 small-12">
+                          <a href="#">
+                            Gouvernance de la Mairie
+                          </a>
+                          <div>
+                            <ul class="sous_menu menu vertical">
+                              <li class="level2">
+                                <a href="#"><span class=" ">Missions de la Mairie</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Organes délibérants</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Commune d’Arrondissement de Yaoundé IV</span></a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="cell large-3 small-12">
+                          <a href="#">
+                            SERVICE POUR TOUS
+                          </a>
+                          <div>
+                            <ul class="sous_menu menu vertical">
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Démarche pratiques et procédure</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Marchés Publics</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Tourisme et Loisirs</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Hygiène et Salubrité</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Fourrière Municipale</span>
+                                </a>
+                              </li>
+
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="cell large-3 small-12">
+                          <a href="#">
+                            Réalisations
+                          </a>
+                          <div>
+                            <ul class="sous_menu menu vertical">
+                              <li class="level2">
+                                <a href="#"><span class=" ">Grands travaux</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Reprofilage des routes plan sécuritaire</span></a>
+                              </li>
+                              <li class="level2">
+                                <a href="#" title="UCPA Sport Station Grand Reims (nouvelle fenêtre)" target="_blank"
+                                  rel="noreferrer"><span class=" ">Eclairage public plan sanitaire</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Plan éducatif</span></a>
+                              </li>
+
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="cell large-3 small-12">
+                          <a href="#">
+                            Projet
+                          </a>
+                          <div>
+                            <ul class="sous_menu menu vertical">
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Complexe moderne</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Embellissement et protection de l’environnement</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Marquage des routes</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Reprofilage des espaces / voiries</span></a>
+                              </li>
+                              <li class="level2 has_submenu">
+                                <a href="#"><span class=" ">Cascades de Yaoundé</span></a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="cell large-3 small-12">
+                          <a href="#">
+                            Communication
+                          </a>
+
+                        </li>
+
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="search-local">
+                <form action="" method="">
+                  <input type="text" placeholder="" id="autocomplete" data-texts="Que recherchez vous?|Services?">
+                </form>
+
+              </div>
+
+              <div class="grid-x grid-padding-x align-middle cell shrink">
+                <div class="cell shrink reseaux_sociaux show-for-large">
+                  <ul class="grid-x align-middle">
+                    <li class="cell shrink show-for-large">
+                      <div class="dropdown">
+                        <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <img
+                            src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/icons8-globe-100.png' %}"
+                            style="width: 23px;" alt="">
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#" style="padding-right: 100px;padding-left: 5px;">
+                            <font style="vertical-align: inherit;">
+                              <font class="" style="vertical-align: inherit;">Français</font>
+                            </font>
+                          </a>
+                          <a class="dropdown-item" href="#" style="padding-right: 100px;padding-left: 5px;">
+                            <font style="vertical-align: inherit;">
+                              <font class="" style="vertical-align: inherit;">Anglais</font>
+                            </font>
+                          </a>
+
+                        </div>
+                      </div>
+                    </li>
+                    <li class="cell shrink reseau_facebook">
+                      <a href="#" title="Suivez-nous sur Facebook (nouvelle fenêtre)" target="_blank" rel="noreferrer"
+                        style="background-color:#ffffff;">
+                        <span class="show-for-sr">
+                          Suivez-nous sur Facebook
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="cell shrink reseau_twitter">
+                      <a href="#" title="Suivez-nous sur Twitter (nouvelle fenêtre)" target="_blank" rel="noreferrer"
+                        style="background-color:#ffffff;">
+                        <span class="show-for-sr">
+                          Suivez-nous sur Twitter
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="cell shrink reseau_instagram">
+                      <a href="#" title="Suivez-nous sur Instagram (nouvelle fenêtre)" target="_blank" rel="noreferrer"
+                        style="background-color:#ffffff;">
+                        <span class="show-for-sr">
+                          Suivez-nous sur Instagram
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="cell shrink reseau_tiktok">
+                      <a href="#" title="Suivez-nous sur TikTok (nouvelle fenêtre)" target="_blank" rel="noreferrer"
+                        style="background-color:#ffffff;">
+                        <span class="show-for-sr">
+                          Suivez-nous sur TikTok
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="cell shrink reseau_linkedin">
+                      <a href="#" title="Suivez-nous sur LinkedIn (nouvelle fenêtre)" target="_blank" rel="noreferrer"
+                        style="background-color:#ffffff;">
+                        <span class="show-for-sr">
+                          Suivez-nous sur LinkedIn
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="cell shrink reseau_youtube">
+                      <a href="#" title="Suivez-nous sur Youtube (nouvelle fenêtre)" target="_blank" rel="noreferrer"
+                        style="background-color:#ffffff;">
+                        <span class="show-for-sr">
+                          Suivez-nous sur Youtube
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+
+                </div>
+                <!-- [START] fileadmin/templates/master/fluid_template/Partials/Navigation/ContactButton.html -->
+
+                <div id="bloc_contact_container" class="cell shrink">
+
+                  <button type="button" data-toggle="header_bloc_contact" id="btn_contact"
+                    aria-controls="header_bloc_contact" data-is-focus="false" data-yeti-box="header_bloc_contact"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span>Contact</span>
+                  </button>
+
+                  <div
+                    class="dropdown-pane contenu_bloc bottom has-alignment-left bloc_contact has-position-bottom has-alignment-right"
+                    id="header_bloc_contact" data-dropdown="400anb-dropdown" data-hover="false"
+                    data-close-on-click="true" data-position="bottom" data-alignment="right"
+                    aria-labelledby="btn_contact" aria-hidden="true" data-yeti-box="header_bloc_contact"
+                    data-resize="header_bloc_contact" data-events="resize">
+                    <!-- [START] fileadmin/templates/master/ext/dce/Layouts/None.html -->
+
+                    <!-- [START] Bloc répété - Bloc Contact -->
+
+                    <div class="bloc_contact_content text-center">
+                      <p><strong>Par téléphone</strong> du lundi au vendredi de 8h30 à 12h et de 13h à 17h30 (17h le
+                        vendredi)</p>
+
+                      <p class="button_like">
+                        <a href="tel:0326777879">03 26 77 78 79</a>
+                      </p>
+
+
+                      <p><strong>Via le portail usagers</strong> :</p>
+
+                      <p class="btn_all">
+                        <a href="https://mesdemarchesenligne.reims.fr/SEWSaaS.Guichet/workflow_url?ECITIZ_ACTIVITY_PATH=Citoyen&amp;IDORG=GREIMS&amp;TS=SVE&amp;TASK=CREATION&amp;THEMATIQUE=PQ_PQ_PQAS&amp;CTX_ST=REIMS&amp;CONTEXTE=REIMS&amp;CSS=REIMS&amp;ORG_RETOUR_URL=reims.fr"
+                          title="Envoyez un e-mail (nouvelle fenêtre)" target="_blank" rel="noreferrer">Accéder au
+                          formulaire</a>
+                      </p>
+
+
+                      <p><strong>Par courrier</strong> à l'adresse suivante, <strong>Reims-Contact - CS 80036, 51722
+                          Reims Cedex</strong></p>
+                    </div>
+
+                    <!-- [END] Bloc répété - Bloc Contact -->
+
+
+
+
+                    <!-- [END] fileadmin/templates/master/ext/dce/Layouts/None.html -->
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </header>
+        {% endblock %}
+
+
+        {% block central %}
+
+        {% endblock %}
+
+
+        {% block footer %}
+
+
+        <footer class="grid-container">
+
+          <div id="bloc_contact_info" class="grid-container">
+            <div id="info_footer" class="grid-x grid-padding-x">
+              <div class="cell large-3 large-offset-1 medium-12 small-12">
+                <img class="lazy"
+                  src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/newLogo.jpeg' %}"
+                  data-src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/newLogo.jpeg' %}"
+                  width="238" height="72" alt="LOGO" />
+
+                <div class="cell shrink reseaux_sociaux">
+
+                  <ul class="grid-x align-middle">
+                    <li class="cell shrink reseau_facebook">
+                      <a href="#" title="Suivez-nous sur Facebook (nouvelle fenêtre)" target="_blank" rel="noreferrer">
+                        <span class="show-for-sr">
+                          Suivez-nous sur Facebook
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="cell shrink reseau_twitter">
+                      <a href="#" title="Suivez-nous sur Twitter (nouvelle fenêtre)" target="_blank" rel="noreferrer">
+                        <span class="show-for-sr">
+                          Suivez-nous sur Twitter
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="cell shrink reseau_instagram">
+                      <a href="#" title="Suivez-nous sur Instagram (nouvelle fenêtre)" target="_blank" rel="noreferrer">
+                        <span class="show-for-sr">
+                          Suivez-nous sur Instagram
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="cell shrink reseau_tiktok">
+                      <a href="#" title="Suivez-nous sur TikTok (nouvelle fenêtre)" target="_blank" rel="noreferrer">
+                        <span class="show-for-sr">
+                          Suivez-nous sur TikTok
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="cell shrink reseau_linkedin">
+                      <a href="#" title="Suivez-nous sur LinkedIn (nouvelle fenêtre)" target="_blank" rel="noreferrer">
+                        <span class="show-for-sr">
+                          Suivez-nous sur LinkedIn
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="cell shrink reseau_youtube">
+                      <a href="#" title="Suivez-nous sur Youtube (nouvelle fenêtre)" target="_blank" rel="noreferrer">
+                        <span class="show-for-sr">
+                          Suivez-nous sur Youtube
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+
+              <div class="cell large-4 medium-6 small-12">
+                <p class="titre_footer" style="color:#7C976A;">Contact</p>
+                <p>Boite postale </p>
+                <p>Adresse</p>
+
+                <p class="tel">
+                  <a href="tel:99999999" style="color:#3c763d;"> 99 99 99 99 99</a>
+                </p>
+
+                <p class="mail">
+                  <a href="#" title="Contacter nous par mail (nouvelle fenêtre)" target="_blank" rel="noreferrer"
+                    style="color:#3c763d;">
+                    Contacter nous
+                  </a>
+                </p>
+
+              </div>
+
+              <div class="cell large-4 medium-6 small-12 map">
+                <p class="titre_footer" style="color:#7C976A;">Localisation </p>
+
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15923.40953986857!2d11.5412476!3d3.8418485!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bc5c7d6082079%3A0x6603be3fb50f4825!2sMairie%20de%20Yaound%C3%A9%20IV%20-%20Ekounou!5e0!3m2!1sen!2scm!4v1707741587204!5m2!1sen!2scm"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div id="galaxie_partenaires" class="grid-container">
+            <div class="grid-x grid-padding-x align-center">
+              <div class="cell large-10 medium-12 small-12">
+                <p class="titre_footer" style="color: #7C976A;">Nos Partenaires</p>
+              </div>
+
+              <div class="grid-x cell large-10 medium-12 small-12">
+                <div class="cell shrink">
+                  <a href="#" title="Les bibliothèques (nouvelle fenêtre)" target="_blank" rel="noreferrer">
+                    <img class="lazy"
+                      src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/minpostel.jpg' %}"
+                      data-src="" width="178" height="79" alt="Partenaire 1" />
+                  </a>
+                </div>
+
+                <div class="cell shrink">
+                  <a href="#" title="Site de l'Eau du Grand reims (nouvelle fenêtre)" target="_blank" rel="noreferrer">
+                    <img class="lazy"
+                      src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/minsante.png' %}"
+                      data-src="" width="178" height="79" alt="Partenaire 2" />
+
+                  </a>
+                </div>
+
+                <div class="cell shrink">
+                  <a href="#" title="École supérieure d'art et de design de reims (nouvelle fenêtre)" target="_blank"
+                    rel="noreferrer">
+                    <img class="lazy"
+                      src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/minrex.jpeg' %}"
+                      data-src="" width="178" height="79" alt="Partenaire 3" />
+                  </a>
+                </div>
+
+                <div class="cell shrink">
+                  <a href="#" title="Grand reims (nouvelle fenêtre)" target="_blank">
+                    <img class="lazy"
+                      src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/minfi.png' %}"
+                      data-src="" width="178" height="79" alt="Partenaire 4" />
+                  </a>
+                </div>
+
+                <div class="cell shrink">
+                  <a href="#" title="reims Légend'r (nouvelle fenêtre)" target="_blank">
+                    <img class="lazy"
+                      src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/mindef.jpeg' %}"
+                      data-src="" width="178" height="79" alt="Partenaire 5" />
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div id="menu_footer" class="grid-container grid-x grid-padding-x align-center">
+            <ul class="cell xxlarge-10 xlarge-11 large-12 medium-12 small-12">
+              <li>
+                <a href="#" style="color:black;">Mentions légales</a>
+              </li>
+
+              <li>
+                <a href="#" style="color:black;">Politique de
+                  confidentialité</a>
+              </li>
+
+              <li>
+                <a href="#" style="color:black;">Accessibilité</a>
+              </li>
+
+              <li>
+                <a href="#" style="color:black;">Plan du site</a>
+              </li>
+
+              <li>
+                <a href="#" style="color:black;">Marchés
+                  publics</a>
+              </li>
+
+              <li>
+                <a href="#" style="color:black;">Espace Presse</a>
+              </li>
+
+              <li>
+                <a href="#" target="_blank" rel="noreferrer" style="color:black;"> Contact</a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    {% endblock %}
+
+    <div class="pswp" id="pswp-wrapper" data-init="ce-gallery" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
+
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <div class="pswp__counter"></div>
+            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button><button
+              class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button><button
+              class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    {% block script %}
+    <script src="{% static 'typo3conf/ext/cim_base/Resources/Public/JavaScript/app-dev2407.js' %}"></script>
+    <script src="{% static 'typo3conf/ext/cim_elastic/Resources/Public/JavaScript/countViewsfe64.js' %}"
+      async="async"></script>
+    <script src="{% static 'typo3conf/ext/cim_search_elastic/Resources/Public/JavaScript/List898b.js' %}"></script>
+    <script src="{% static 'typo3conf/ext/cim_quality/Resources/Public/JavaScript/QualityWidget3170.js' %}"></script>
+    <script src="{% static 'typo3conf/ext/photoswipe/Resources/Public/JavaScript/photoswipe.min0e9f.js' %}"></script>
+    <script
+      src="{% static 'typo3conf/ext/photoswipe/Resources/Public/JavaScript/photoswipe-ui-default.min0e9f.js' %}"></script>
+    <script src="{% static 'typo3conf/ext/cim_base/Resources/Public/JavaScript/photoswipe-init8034.js' %}"></script>
+    <script
+      src="{% static 'fileadmin/templates/master/assets/assets_common/js/vendor/what-input.min1d41.js' %}"></script>
+    <script
+      src="{% static 'fileadmin/templates/master/assets/assets_common/js/vendor/foundation.min1d41.js' %}"></script>
+    <script
+      src="{% static 'fileadmin/templates/master/assets/assets_common/js/foundation-datepicker.minf68d.js' %}"></script>
+    <script
+      src="{% static 'fileadmin/templates/master/assets/assets_common/js/foundation-datepicker.fr.minf68d.js' %}"></script>
+    <script src="{% static 'fileadmin/templates/master/assets/assets_common/js/hunt.min092d.js' %}"></script>
+    <script src="{% static 'fileadmin/templates/master/assets/assets_common/js/app.min5197.js' %}"></script>
+    <script src="{% static 'fileadmin/templates/master/assets/assets_site_reims/js/app.min036f.js' %}"></script>
+    <script src="{% static 'fileadmin/templates/master/assets/assets_common/js/icheck.min50b4.js' %}"></script>
+    <script src="{% static 'fileadmin/templates/master/assets/assets_common/js/jquery-ui.min3d6c.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/fr.js"></script>
+
+    <script
+      src="{% static 'typo3conf/ext/powermail/Resources/Public/JavaScript/Libraries/jquery.datetimepicker.min9cd0.js' %}"></script>
+    <script src="{% static 'typo3conf/ext/powermail/Resources/Public/JavaScript/Powermail/Tabs.min9cd0.js' %}"></script>
+    <script src="{% static 'typo3conf/ext/powermail/Resources/Public/JavaScript/Powermail/Form.min9cd0.js' %}"></script>
+    <script
+      src="{% static 'typo3conf/ext/powermail_cond/Resources/Public/JavaScript/PowermailCondition.min7535.js' %}"></script>
+    <script src="{% static 'typo3conf/ext/cim_base/Resources/Public/JavaScript/parsley/parsley.min7fde.js' %}"></script>
+    <script src="{% static 'typo3conf/ext/cim_base/Resources/Public/JavaScript/parsley/frb366.js' %}"></script>
+    <script defer="defer"
+      src="{% static 'fileadmin/templates/master/assets/assets_common/js/slick.min50b4.js' %}"></script>
+    <script defer="defer"
+      src="{% static 'fileadmin/templates/master/assets/assets_common/js/modules/bloc_alaune.min5dc8.js' %}"></script>
+    <script defer="defer"
+      src="{% static 'fileadmin/templates/master/assets/assets_common/js/modules/recherche/placeholderTypewriter.min0c36.js' %}"></script>
+    <script defer="defer"
+      src="{% static 'fileadmin/templates/master/assets/assets_common/js/modules/recherche/section_recherche_decli.min5306.js' %}"></script>
+    <script defer="defer"
+      src="{% static 'fileadmin/templates/master/assets/assets_common/js/modules/bloc_agenda_culturel.mine8bb.js' %}"></script>
+    <script defer="defer"
+      src="{% static 'fileadmin/templates/master/assets/assets_common/js/modules/social_wall_decli.minecbf.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">      
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+
+  <script src="{% static 'js/typed.js' %}" >
+  </script>
+
+  </body>
+
+
+<script src="{% static 'js/app.js' %}" >
+</script>
+</html>
+
+{% endblock %}

@@ -1,0 +1,962 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{%block title %} TEST
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">       
+
+{% endblock %}
+
+
+{% block central %}
+<style>
+    .bloc_info{
+        position:relative;
+        color: black;
+        top: -500px;
+        left: 30px;
+        width: 400px;
+        height: auto;
+        background-color: rgb(200, 216, 200);
+        opacity: 0.7;
+        font-family: "Protest Riot", sans-serif;
+        
+    }
+    .bloc_info h5{
+        
+        font-size: 20px;
+        margin: 0;
+        padding: 10px;
+        margin-left: 10px;
+    }   
+
+    .bloc_info h5::after{
+        margin-top: 10px;
+        content: "";
+        width: 40%;
+        background-color: rgb(61, 59, 59);
+        display: block;
+        height: 5px;
+    }
+
+
+    .bloc_info p{
+        padding: 20px;
+        
+    }
+
+</style>
+
+
+<main role="main" id="main">
+         <div id="global" class="" style="background-image: url('{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/bg1.png' %}');">
+                    
+            
+                <div  class="bloc_home grid-container" >
+                    
+                          <div class="grid-x grid-padding-x">
+                          
+                            <div class="content cell">
+                              <div class="big_item_container">
+                                
+                                 <div id="carouselExampleCaptions" class="carousel slide">
+                                      <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                      </div>
+                                      <div class="carousel-inner">
+                                        
+                                        <div class="carousel-item active" data-bs-interval="10000">
+                                          <img src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/assai1.jpeg' %}" class="d-block w-100" alt="...">
+                                          <div class="carousel-caption d-none d-md-block">
+                                            <h5>First slide label</h5>
+                                            <p>Some representative placeholder content for the first slide.</p>
+                                          </div>
+                                          <div class="bloc_info">
+                                            <h5> Ville propre </h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum perferendis maiores eveniet iste ipsum quis harum temporibus similique, nemo autem repellat neque. Adipisci suscipit, neque accusantium placeat quas molestias nemo!</p>
+                                          </div>    
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="20000">
+                                          <img src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/assai1.jpeg' %}" class="d-block w-100" alt="...">
+                                          <div class="carousel-caption d-none d-md-block">
+                                            <h5>Second slide label</h5>
+                                            <p>Some representative placeholder content for the second slide.</p>
+                                          </div>
+                                          <div class="bloc_info">
+                                            <h5> Communaute soudee </h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum perferendis maiores eveniet iste ipsum quis harum temporibus similique, nemo autem repellat neque. Adipisci suscipit, neque accusantium placeat quas molestias nemo!</p>
+                                          </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                          <img src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/assai1.jpeg' %}" class="d-block w-100" alt="...">
+                                          <div class="carousel-caption d-none d-md-block">
+                                            <h5>Third slide label</h5>
+                                            <p>Some representative placeholder content for the third slide.</p>
+                                          </div>
+                                          <div class="bloc_info">
+                                            <h5> Activites </h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum perferendis maiores eveniet iste ipsum quis harum temporibus similique, nemo autem repellat neque. Adipisci suscipit, neque accusantium placeat quas molestias nemo!</p>
+                                          </div>
+                                        </div>
+                                        
+                                      </div>
+                                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                      </button>
+                                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                      </button>
+                                    </div>
+                              </div>
+                            
+                            </div>
+                          </div>
+                          
+                        </div>
+                    </div>
+    <span id="c110649"></span>
+    <div  class="bloc_home grid-container">
+                            <div class="grid-x grid-padding-x">
+                                <div class="titre_btn_bloc grid-x grid-padding-x align-middle cell">
+                                    <div class="titre_bloc cell shrink">
+                                        <h2 class="bloc_home_title" style="color:#7C976A;">L'Edito de monsieur Le Maire</h2>
+                                    </div>
+                                </div>
+                                <div class="content cell">
+                                    <div class="grid-x grid-padding-x large-up-4 medium-up-2 small-up-1">
+                                      <div class="clearfix">
+                                          <img src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/le maire2.jpeg' %}" class="col-md-6 float-md-end ms-md-3" alt="...">
+
+                                          <p class="">
+                                                Chers internautes, <br>
+                                                C’est avec un immense plaisir que nous vous accueillons sur la toute première plateforme numérique de la
+                                              commune de Yaoundé IV, un site Internet qui, nous l’espérons, saura répondre aux nombreuses et pressantes
+                                              attentes des populations. Reflet des atouts et du dynamisme de notre commune, cette plateforme est le fruit
+                                              de plusieurs mois de collaboration active entre l’Exécutif Communautaire, la Cellule de la Communication de
+                                              la Commune et les différents autres services de la Municipalité. <br>
+                                              C’est donc avec une certaine fierté que nous vous proposons aujourd’hui un site Internet innovant et ergonomique,
+                                              conçu pour faciliter vos démarches administratives et vous offrir une source d’informations riches et variées sur
+                                              l’actualité de Yaoundé IV.
+
+                                          </p>
+
+                                          <p class="">
+                                                Parmi les nombreuses rubriques que nous vous invitons à découvrir dès à présent un classement thématique des actualités (Projets, Tourisme, Culture, Sports, Vie municipale, Education, Economie, etc...), un accès facilité aux démarches administratives, d’innovantes listes de diffusion, une base documentaire complète regroupant : Formulaires, Publications, Communiqués de presse et autres documents, un agenda des évènements et manifestations, une photothèque dans une rubrique dédiée et bien d’autres offres spéciales comme la coopération décentralisée entre la Commune de Yaoundé IV et d’autres communes du monde.
+                                                Bien entendu, nous continuerons à améliorer cet outil au fil du temps, en tenant compte de vos suggestions. N’hésitez pas à contacter la Cellule de la Communication de la Commune afin de faire part de vos remarques.
+                                          </p>
+
+                                          <p class="">
+                                            Nous vous souhaitons une visite à la fois instructive et agréable dans la Commune de Yaoundé IV, à travers notre site Internet.
+                                              <br> <br>  <br> <br>  <br> <br>
+                                            LE MAIRE DE LA COMMUNE DE YAOUNDE IV
+                                              <br> <br>  <br> <br> <br>
+                                             <p class="">
+                                          <strong>
+                                              BIHINA EFFILA Gabriel
+                                          </strong>
+
+                                            </p>
+                                          </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+    <div id="alaune"  class="bloc_home grid-container">
+                            <div class="grid-x grid-padding-x">
+                                <div class="titre_btn_bloc grid-x grid-padding-x align-middle cell">
+                                    <div class="titre_bloc cell shrink">
+                                        <h2 class="bloc_home_title" style="color:#7C976A;">A La Une</h2>
+                                    </div>
+
+                                    <div class="btn_all_bloc cell shrink">
+                                        <p class="btn_all">
+                                            <a href="#">
+                                                Tout voir
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="content cell">
+                                    <div class="grid-x grid-padding-x large-up-4 medium-up-2 small-up-1">
+                                       <div class="row row-cols-1 row-cols-md-2 g-4">
+                                           <div class="col-md-4">
+                                            <div class="card">
+                                              <img src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/monument-t.jpg' %}" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h5 class="card-title" style="font-size: 30px; font-weight:bold;">Card title</h5>
+                                                  <br>
+                                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                           <div class="col-md-4">
+                                            <div class="card">
+                                              <img src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/monument-t.jpg' %}" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h5 class="card-title" style="font-size: 30px; font-weight:bold;">Card title</h5>
+                                                  <br>
+                                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                           <div class="col-md-4">
+                                            <div class="card">
+                                              <img src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/monument-t.jpg' %}" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h5 class="card-title" style="font-size: 30px; font-weight:bold;">Card title</h5>
+                                                  <br>
+                                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                           <div class="col-md-4">
+                                            <div class="card">
+                                              <img src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/monument-t.jpg' %}" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h5 class="card-title" style="font-size: 30px; font-weight:bold;">Card title</h5>
+                                                  <br>
+                                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                           <div class="col-md-4">
+                                            <div class="card">
+                                              <img src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/monument-t.jpg' %}" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h5 class="card-title" style="font-size: 30px; font-weight:bold;">Card title</h5>
+                                                  <br>
+                                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                           <div class="col-md-4">
+                                            <div class="card">
+                                              <img src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/monument-t.jpg' %}" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h5 class="card-title" style="font-size: 30px; font-weight:bold;">Card title</h5>
+                                                  <br>
+                                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                           <div class="col-md-4">
+                                            <div class="card">
+                                              <img src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/monument-t.jpg' %}" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h5 class="card-title" style="font-size: 30px; font-weight:bold;">Card title</h5>
+                                                  <br>
+                                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                           <div class="col-md-4">
+                                            <div class="card">
+                                              <img src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/monument-t.jpg' %}" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h5 class="card-title" style="font-size: 30px; font-weight:bold;">Card title</h5>
+                                                  <br>
+                                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                           <div class="col-md-4">
+                                            <div class="card">
+                                              <img src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/monument-t.jpg' %}" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h5 class="card-title" style="font-size: 30px; font-weight:bold;">Card title</h5>
+                                                  <br>
+                                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                           <div class="col-md-4">
+                                            <div class="card">
+                                              <img src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/monument-t.jpg' %}" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h5 class="card-title" style="font-size: 30px; font-weight:bold;">Card title</h5>
+                                                  <br>
+                                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                           <div class="col-md-4">
+                                            <div class="card">
+                                              <img src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/monument-t.jpg' %}" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h5 class="card-title" style="font-size: 30px; font-weight:bold;">Card title</h5>
+                                                  <br>
+                                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                           <div class="col-md-4">
+                                            <div class="card">
+                                              <img src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/monument-t.jpg' %}" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h5 class="card-title" style="font-size: 30px; font-weight:bold;">Card title</h5>
+                                                  <br>
+                                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              </div>
+                                            </div>
+                                          </div>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+    <div id="bloc_contact" class="bloc_home grid-container">
+                            <div class="grid-x grid-padding-x">
+                                <div class="titre_btn_bloc grid-x grid-padding-x align-middle cell">
+                                    <div class="titre_bloc cell shrink">
+                                        <h2 class="bloc_home_title" style="color: #7C976A;">CONTACT</h2>
+                                    </div>
+                                </div>
+
+                                <div class="content cell">
+                                    <div class="grid-x grid-padding-x">
+                                        <div class="cell large-8 medium-12 small-12">
+                                         <span id="c110140"></span>
+
+                                            <div class="acces_rapides_cont">
+                                                <h3 class="bloc_home_subtitle">MES DÉMARCHES</h3>
+
+                                                <ul
+                                                    class="acces_rapides grid-x grid-padding-x xlarge-up-5 large-up-4 medium-up-4 small-up-2">
+                                                    <!--[START] fileadmin/templates/master/ext/cim_links/Partials/Item/Item.html -->
+
+                                                    <li class="cell item_acces_rapide">
+                                                        <div class="item_inner grid-x align-center align-middle">
+                                                            <div
+                                                                class="flex-container flex-dir-column-reverse text-center">
+                                                                <h4 class="titre">
+                                                                    <a
+                                                                        href="#">Démarches en ligne</a>
+                                                                </h4>
+
+                                                                <div class="img">
+                                                                    <img class="lazy"
+                                                                        src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/icons8-school-60.png' %}"
+                                                                        data-src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/icons8-school-60.png' %}"
+                                                                        width="49" height="55" alt="" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="cell item_acces_rapide">
+                                                        <div class="item_inner grid-x align-center align-middle">
+                                                            <div
+                                                                class="flex-container flex-dir-column-reverse text-center">
+                                                                <h4 class="titre">
+                                                                    <a href="#">Agenda / Actualités</a>
+                                                                </h4>
+
+                                                                <div class="img">
+                                                                    <img class="lazy"
+                                                                        src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/icons8-agenda-100.png' %}"
+                                                                       data-src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/icons8-agenda-100.png' %}"
+                                                                        width="49" height="55" alt="" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="cell item_acces_rapide">
+                                                        <div class="item_inner grid-x align-center align-middle">
+                                                            <div
+                                                                class="flex-container flex-dir-column-reverse text-center">
+                                                                <h4 class="titre">
+                                                                    <a
+                                                                        href="#">Menus scolaires</a>
+                                                                </h4>
+
+                                                                <div class="img">
+                                                                    <img class="lazy"
+                                                                        src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/icons8-school-60.png' %}"
+                                                                       data-src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/icons8-school-60.png' %}"
+                                                                        width="49" height="55" alt="" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="cell item_acces_rapide">
+                                                        <div class="item_inner grid-x align-center align-middle">
+                                                            <div
+                                                                class="flex-container flex-dir-column-reverse text-center">
+                                                                <h4 class="titre">
+                                                                    <a href="#">Espace famille</a>
+                                                                </h4>
+
+                                                                <div class="img">
+                                                                    <img class="lazy"
+                                                                        src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/icons8-school-60.png' %}"
+                                                                        data-src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/icons8-school-60.png' %}"
+                                                                         width="49" height="55" alt="" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="cell item_acces_rapide">
+                                                        <div class="item_inner grid-x align-center align-middle">
+                                                            <div
+                                                                class="flex-container flex-dir-column-reverse text-center">
+                                                                <h4 class="titre">
+                                                                    <a href="#">Piscines et patinoires</a>
+                                                                </h4>
+
+                                                                <div class="img">
+                                                                    <img class="lazy"
+                                                                        src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/icons8-pool-100.png' %}"
+                                                                        data-src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/icons8-pool-100.png' %}"
+                                                                         width="49" height="55" alt="" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="cell item_acces_rapide">
+                                                        <div class="item_inner grid-x align-center align-middle">
+                                                            <div
+                                                                class="flex-container flex-dir-column-reverse text-center">
+                                                                <h4 class="titre">
+                                                                    <a
+                                                                        href="#">Annuaire des associations</a>
+                                                                </h4>
+
+                                                                <div class="img">
+                                                                    <img class="lazy"
+                                                                        src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/icons8-book-80.png' %}"
+                                                                       data-src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/icons8-book-80.png' %}"
+                                                                         width="49" height="55" alt="" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                     <li class="cell item_acces_rapide">
+                                                        <div class="item_inner grid-x align-center align-middle">
+                                                            <div
+                                                                class="flex-container flex-dir-column-reverse text-center">
+                                                                <h4 class="titre">
+                                                                    <a
+                                                                        href="#">Offres d'emploi</a>
+                                                                </h4>
+
+                                                                <div class="img">
+                                                                    <img class="lazy"
+                                                                        src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/icons8-school-60.png' %}"
+                                                                        data-src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/icons8-school-60.png' %}"
+                                                                        width="49" height="55" alt="" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="cell item_acces_rapide">
+                                                        <div class="item_inner grid-x align-center align-middle">
+                                                            <div
+                                                                class="flex-container flex-dir-column-reverse text-center">
+                                                                <h4 class="titre">
+                                                                    <a
+                                                                        href="#">Gestion des déchets</a>
+                                                                </h4>
+
+                                                                <div class="img">
+                                                                    <img class="lazy"
+                                                                        src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/icons8-recycle-100.png' %}"
+                                                                       data-src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/icons8-recycle-100.png' %}"
+                                                                        width="49" height="55" alt="" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="cell item_acces_rapide">
+                                                        <div class="item_inner grid-x align-center align-middle">
+                                                            <div
+                                                                class="flex-container flex-dir-column-reverse text-center">
+                                                                <h4 class="titre">
+                                                                    <a href="#"
+                                                                        title="Gestion des déchets (nouvelle fenêtre)"
+                                                                        target="_blank">Plan interactif</a>
+                                                                </h4>
+
+                                                                <div class="img">
+                                                                    <img class="lazy"
+                                                                        src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/icons8-school-60.png' %}"
+                                                                       data-src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/icons8-school-60.png' %}"
+                                                                         width="49" height="55" alt="" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="cell item_acces_rapide">
+                                                        <div class="item_inner grid-x align-center align-middle">
+                                                            <div
+                                                                class="flex-container flex-dir-column-reverse text-center">
+                                                                <h4 class="titre">
+                                                                    <a href="#"
+                                                                        title="Plan interactif (nouvelle fenêtre)"
+                                                                        target="_blank" rel="noreferrer">Urbanisme</a>
+                                                                </h4>
+
+                                                                <div class="img">
+                                                                    <img class="lazy"
+                                                                        src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/icons8-school-60.png' %}"
+                                                                      data-src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/icons8-school-60.png' %}"
+                                                                        width="49" height="55" alt="" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+    <div id="agenda_culturel" class="bloc_home grid-container">
+                            <div class="grid-x grid-padding-x">
+                                <div class="titre_btn_bloc grid-x grid-padding-x align-middle cell">
+                                    <div class="titre_bloc cell shrink">
+                                        <h2 class="bloc_home_title" style="color:#7C976A;">AGENDA CULTUREL</h2>
+                                    </div>
+
+                                    <div class="btn_all_bloc cell shrink">
+                                        <p class="btn_all">
+                                            <a href="#">
+                                                Tout voir
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="content cell">
+                                    <div class="grid-x grid-padding-x large-up-4 medium-up-2 small-up-1">
+
+                                        <article
+                                            data-slick-filter-item="agenda_culturel" data-popin-id=""
+                                            data-content-element-id="1" data-pid="25393" data-uid="43238"
+                                            data-title="Jardin partagé"
+                                            class="list_item article sticky-container no_popin bandeau_item category agenda_culturel cell">
+
+                                            <div class="link grid-x flex-dir-column-reverse">
+                                                <div class="txt">
+                                                    <h3 class="titre">
+                                                        <a href="#"
+                                                            target="_blank"
+                                                            title="Voir le detail (nouvelle fenêtre)">
+                                                            <span>Lorem ipsum dolor</span>
+                                                        </a>
+                                                    </h3>
+
+                                                    <div class="date_container">
+
+                                                        <p class="date">
+                                                            <span class="contain">
+                                                                <span class="txt_moment">Du </span>
+                                                                <span class="startdate">
+                                                                    <span class="txt_day_nb">16 </span>
+                                                                    <span class="txt_month">juin </span>
+                                                                </span>
+                                                                <span class="txt_moment"> au </span>
+                                                                <span class="enddate">
+                                                                    <span class="txt_day_nb">31 </span>
+                                                                    <span class="txt_month">déc. </span>
+                                                                    <span class="txt_year">2023 </span>
+                                                                </span>
+                                                            </span>
+                                                        </p>
+                                                      </div>
+
+                                                    <div class="thumb-desc">
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                            Ut enim ad minim veniam, quis nostrud .
+                                                        </p>
+                                                    </div>
+
+                                                    <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+                                                    <p class="cat">
+                                                        <span class="show-for-sr" style="background-color: #e8e80b">Catégorie(s) : </span>Catégorie
+                                                    </p>
+                                                </div>
+
+                                                <div class="img_cont">
+
+                                                    <div class="img tresor">
+                                                        <img class="lazy"
+                                                            src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/monument-t.jpg' %}"
+                                                            data-src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/monument-t.jpg' %}"
+                                                            width="330" height="188" alt="" />
+                                                    </div>
+                                                   </div>
+                                            </div>
+                                            </article>
+
+
+                                        <article
+                                            data-counter-url-search="/?tx_cimelastic_viewcount%5Baction%5D=count&amp;tx_cimelastic_viewcount%5Bcontroller%5D=ViewCount&amp;tx_cimelastic_viewcount%5BcountType%5D=search&amp;tx_cimelastic_viewcount%5Bpid%5D=25393&amp;tx_cimelastic_viewcount%5Btable%5D=events&amp;tx_cimelastic_viewcount%5Buid%5D=44342&amp;type=1597406382&amp;cHash=380d03cd80ae7234b7a1327aa0e45c41"
+                                            data-slick-filter-item="agenda_culturel" data-popin-id=""
+                                            data-content-element-id="1" data-pid="25393" data-uid="44342"
+                                            data-title="baréphémère #34"
+                                            class="list_item article sticky-container no_popin bandeau_item category agenda_culturel cell">
+                                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+
+                                            <div class="link grid-x flex-dir-column-reverse">
+                                                <div class="txt">
+                                                    <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+                                                    <h3 class="titre">
+                                                        <a href="#"
+                                                            target="_blank"
+                                                            title="baréphémère #34, voir le detail (nouvelle fenêtre)">
+                                                            <span>Lorem ipsum dolor</span>
+                                                        </a>
+                                                    </h3>
+
+                                                    <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+                                                    <div class="date_container">
+                                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+
+                                                        <p class="date">
+                                                            <span class="contain">
+                                                                <span class="txt_moment">Du </span>
+                                                                <span class="startdate">
+                                                                    <span class="txt_day_nb">07 </span>
+                                                                    <span class="txt_month">sept. </span>
+
+                                                                    <span class="txt_year">2023 </span>
+                                                                </span>
+                                                                <span class="txt_moment"> au </span>
+                                                                <span class="enddate">
+                                                                    <span class="txt_day_nb">13 </span>
+                                                                    <span class="txt_month">juil. </span>
+                                                                    <span class="txt_year">2024 </span>
+                                                                </span>
+                                                            </span>
+                                                        </p>
+
+                                                    </div>
+
+
+                                                    <div class="thumb-desc">
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                            Ut enim ad minim veniam, quis nostrud .
+                                                        </p>
+                                                    </div>
+
+                                                    <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+                                                    <p class="cat">
+                                                        <span class="show-for-sr" style="background-color: #e8e80b">Catégorie(s) : </span>Catégorie
+                                                    </p>
+                                                </div>
+
+                                                <div class="img_cont">
+                                                    <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+                                                    <div class="img tresor">
+                                                        <img class="lazy"
+                                                             src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/monument-t.jpg' %}"
+                                                            data-src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/monument-t.jpg' %}"
+                                                            width="330" height="188" alt="" />
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </article>
+
+
+
+                                        <article
+                                            data-counter-url-search="/?tx_cimelastic_viewcount%5Baction%5D=count&amp;tx_cimelastic_viewcount%5Bcontroller%5D=ViewCount&amp;tx_cimelastic_viewcount%5BcountType%5D=search&amp;tx_cimelastic_viewcount%5Bpid%5D=25393&amp;tx_cimelastic_viewcount%5Btable%5D=events&amp;tx_cimelastic_viewcount%5Buid%5D=44282&amp;type=1597406382&amp;cHash=6be9d2ad91f5078732b9834897a3dd45"
+                                            data-slick-filter-item="agenda_culturel" data-popin-id=""
+                                            data-content-element-id="1" data-pid="25393" data-uid="44282"
+                                            data-title="Atelier d’écriture"
+                                            class="list_item article sticky-container no_popin bandeau_item category agenda_culturel cell">
+                                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+
+                                            <div class="link grid-x flex-dir-column-reverse">
+                                                <div class="txt">
+                                                    <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+                                                    <h3 class="titre">
+                                                        <a href="#"
+                                                            target="_blank"
+                                                            title="Atelier d’écriture, voir le detail (nouvelle fenêtre)">
+                                                            <span>Lorem ipsum dolor</span>
+                                                        </a>
+                                                    </h3>
+
+                                                    <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+                                                    <div class="date_container">
+                                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+
+                                                        <p class="date">
+                                                            <span class="contain">
+                                                                <span class="txt_moment">Du </span>
+                                                                <span class="startdate">
+                                                                    <span class="txt_day_nb">09 </span>
+                                                                    <span class="txt_month">oct. </span>
+
+                                                                    <span class="txt_year">2023 </span>
+                                                                </span>
+                                                                <span class="txt_moment"> au </span>
+                                                                <span class="enddate">
+                                                                    <span class="txt_day_nb">24 </span>
+                                                                    <span class="txt_month">juin </span>
+                                                                    <span class="txt_year">2024 </span>
+                                                                </span>
+                                                            </span>
+                                                        </p>
+
+                                                    </div>
+
+
+                                                    <div class="thumb-desc">
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                            Ut enim ad minim veniam, quis nostrud .
+                                                        </p>
+                                                    </div>
+
+                                                    <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+                                                     <p class="cat">
+                                                        <span class="show-for-sr" style="background-color: #e8e80b">Catégorie(s) : </span>Catégorie
+                                                    </p>
+                                                </div>
+
+                                                <div class="img_cont">
+                                                    <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+                                                    <div class="img tresor">
+                                                        <img class="lazy"
+                                                            src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/monument-t.jpg' %}"
+                                                            data-src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/monument-t.jpg' %}"
+                                                            width="330" height="188" alt="" />
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </article>
+
+
+
+                                        <article
+                                            data-counter-url-search="/?tx_cimelastic_viewcount%5Baction%5D=count&amp;tx_cimelastic_viewcount%5Bcontroller%5D=ViewCount&amp;tx_cimelastic_viewcount%5BcountType%5D=search&amp;tx_cimelastic_viewcount%5Bpid%5D=25393&amp;tx_cimelastic_viewcount%5Btable%5D=events&amp;tx_cimelastic_viewcount%5Buid%5D=43594&amp;type=1597406382&amp;cHash=1407ca0d531687fe857e1d4c8d50d69d"
+                                            data-slick-filter-item="agenda_culturel" data-popin-id=""
+                                            data-content-element-id="1" data-pid="25393" data-uid="43594"
+                                            data-title="Arcadia"
+                                            class="list_item article sticky-container no_popin bandeau_item category agenda_culturel cell">
+                                            <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+
+                                            <div class="link grid-x flex-dir-column-reverse">
+                                                <div class="txt">
+                                                    <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+                                                    <h3 class="titre">
+                                                        <a href="#"
+                                                            target="_blank"
+                                                            title="Arcadia, voir le detail (nouvelle fenêtre)">
+                                                            <span>Lorem ipsum dolor</span>
+                                                        </a>
+                                                    </h3>
+
+                                                    <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Title/Title.html -->
+
+                                                    <div class="date_container">
+                                                        <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Dates/Dates.html -->
+
+                                                        <p class="date">
+                                                            <span class="contain">
+                                                                <span class="txt_moment">Du </span>
+                                                                <span class="startdate">
+                                                                    <span class="txt_day_nb">06 </span>
+                                                                    <span class="txt_month">déc. </span>
+
+                                                                    <span class="txt_year">2023 </span>
+                                                                </span>
+                                                                <span class="txt_moment"> au </span>
+                                                                <span class="enddate">
+                                                                    <span class="txt_day_nb">03 </span>
+                                                                    <span class="txt_month">mars </span>
+                                                                    <span class="txt_year">2024 </span>
+                                                                </span>
+                                                            </span>
+                                                        </p>
+
+                                                    </div>
+
+
+                                                    <div class="thumb-desc">
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                            Ut enim ad minim veniam, quis nostrud .
+                                                        </p>
+                                                    </div>
+
+                                                    <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Content/Body.html -->
+
+                                                    <p class="cat">
+                                                        <span class="show-for-sr" style="background-color: #e8e80b">Catégorie(s) : </span>Catégorie
+                                                    </p>
+                                                </div>
+
+                                                <div class="img_cont">
+                                                    <!-- [START] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+
+                                                    <div class="img tresor">
+                                                        <img class="lazy"
+                                                            src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/monument-t.jpg' %}"
+                                                            data-src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/monument-t.jpg' %}"
+                                                            width="330" height="188" alt="" />
+                                                    </div>
+
+                                                    <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Image/Image.html -->
+                                                </div>
+                                            </div>
+
+                                            <!-- [END] fileadmin/templates/master/fluid_template/Partials/Common/List/Items/ItemListContent.html -->
+                                        </article>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+    <div id="projets" class="bloc_home grid-container">
+                            <div class="grid-x grid-padding-x">
+                                <div class="titre_btn_bloc grid-x grid-padding-x align-middle cell">
+                                    <div class="titre_bloc cell shrink">
+                                        <h2 class="bloc_home_title" style="color:#7C976A;">LES GRAND PROJETS</h2>
+                                    </div>
+
+                                    <div class="btn_all_bloc cell auto">
+                                        <p class="btn_all">
+                                            <a href="#">
+                                                Tout voir
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="content cell">
+                                    <div class="big_item_container projet grid-x align-right align-middle">
+                                        <div class="cell shrink">
+                                            <div class="txt">
+                                                <h3 class="titre">
+                                                    <a
+                                                        href="#">
+                                                        Projet de réaménagement
+                                                    </a>
+                                                </h3>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                                                </p>
+
+                                                <p class="btn_txt">
+                                                    <span style="color:red;">Lire plus</span>
+                                                </p>
+                                            </div>
+
+                                            <div class="img">
+                                                <img class="lazy"
+                                                    src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/photo patriote douala.jpg' %}"
+                                                    data-src="{% static 'fileadmin/templates/master/assets/assets_common/img/default_img/photo patriote douala.jpg' %}"
+                                                    width="1920" height="632" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="small_item_container projet grid-x grid-padding-x large-up-4 medium-up-3 small-up-1">
+                                        <div class="cell">
+                                            <div class="txt">
+                                                <h3 class="titre">
+                                                    <a href="#"
+                                                        title="voir les details (nouvelle fenêtre)" target="_blank">Programme d’investissements des équipements sportifs</a>
+                                                </h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="cell">
+                                            <div class="txt">
+                                                <h3 class="titre">
+                                                    <a href="#"
+                                                        title="voir les details (nouvelle fenêtre) (nouvelle fenêtre)"
+                                                        target="_blank">Le nouveau musée</a>
+                                                </h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="cell">
+                                            <div class="txt">
+                                                <h3 class="titre">
+                                                    <a href="#"
+                                                        title="voir les details (nouvelle fenêtre) (nouvelle fenêtre)"
+                                                        target="_blank">Grand Centre</a>
+                                                </h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="cell">
+                                            <div class="txt">
+                                                <h3 class="titre">
+                                                    <a href="#"
+                                                        title="voir les details (nouvelle fenêtre) "
+                                                        target="_blank">La voie des Sacres</a>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                    </div>
+
+    <span id="c110139"></span>
+
+
+
+    <span id="c110162"></span>
+          </main>
+{% endblock %}
