@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d912972-d835-48db-9e9d-8217d5171ed1" name="Changes" comment="" />
+    <list default="true" id="6d912972-d835-48db-9e9d-8217d5171ed1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/static/fileadmin/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/static/fileadmin/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +20,11 @@
     "git-widget-placeholder": "main"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/fileadmin" />
+    </key>
+  </component>
   <component name="TaskManager">
     <servers />
   </component>
