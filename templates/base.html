@@ -1,6 +1,10 @@
 {% load static %}
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="zxx">
+=======
+<html lang="fr">
+>>>>>>> second
 
 {% block head %}
 
@@ -9,6 +13,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
+=======
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet"> 
+>>>>>>> second
 
   <link rel="stylesheet" type="text/css"
     href="{% static 'typo3conf/ext/photoswipe/Resources/Public/Css/photoswipe.min0e9f.css' %}" media="all">
@@ -73,16 +83,41 @@
     media="print" onload="this.media='all'" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<<<<<<< HEAD
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 
+=======
+  
+  
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    
+  
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+>>>>>>> second
   <title>{%block title %} {% endblock %}</title>
 
 </head>
 
 
 <style>
+<<<<<<< HEAD
+=======
+  .cell a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+>>>>>>> second
   /* SEARCH BAR CONTAINER */
   .search-local {
     display: flex;
@@ -120,6 +155,10 @@
   /* INPUT */
   .search-local input {
     height: 100%;
+<<<<<<< HEAD
+=======
+    min-width: 300px;
+>>>>>>> second
     width: 100%;
     flex: 1 1 25rem;
     background: var(--white);
@@ -130,6 +169,12 @@
 
   }
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> second
   input[type="text"]::placeholder {
     color: var(--black);
     font-size: 2.4rem;
@@ -149,11 +194,26 @@
 
 
 
+<<<<<<< HEAD
+=======
+  @media (max-width:1200px){
+    .bloc_info{
+      display: none;
+    }
+  }
+
+
+>>>>>>> second
   @media (max-width: 390px) {
     .search-local {
       display: none;
     }
 
+<<<<<<< HEAD
+=======
+    
+
+>>>>>>> second
     .search-local button {
       width: 10rem;
     }
@@ -173,6 +233,27 @@
       font-size: 1.7rem;
     }
   }
+<<<<<<< HEAD
+=======
+
+  #menu_principal > ul > li > a::before{
+    
+    background-color: crimson;
+    display: block;
+  }
+
+
+
+  .menu_title{
+    color: black!important;
+    transition: all ease-in-out  0.3s;   
+  }
+
+  .menu_title:hover{
+    color: crimson!important;
+  }
+
+>>>>>>> second
 </style>
 {% endblock %}
 
@@ -1021,7 +1102,11 @@
 
               <div class="search-local">
                 <form action="" method="">
+<<<<<<< HEAD
                   <input type="text" placeholder="Rechercher...">
+=======
+                  <input type="text" placeholder="" id="autocomplete" data-texts="Que recherchez vous?|Services?">
+>>>>>>> second
                 </form>
 
               </div>
@@ -1427,12 +1512,29 @@
       src="{% static 'fileadmin/templates/master/assets/assets_common/js/modules/bloc_agenda_culturel.mine8bb.js' %}"></script>
     <script defer="defer"
       src="{% static 'fileadmin/templates/master/assets/assets_common/js/modules/social_wall_decli.minecbf.js' %}"></script>
+<<<<<<< HEAD
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
 </body>
 
+=======
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">      
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+
+  <script src="{% static 'js/typed.js' %}" >
+  </script>
+
+  </body>
+
+
+<script src="{% static 'js/app.js' %}" >
+</script>
+>>>>>>> second
 </html>
 
 {% endblock %}
