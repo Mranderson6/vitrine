@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d912972-d835-48db-9e9d-8217d5171ed1" name="Changes" comment="" />
+    <list default="true" id="6d912972-d835-48db-9e9d-8217d5171ed1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/services/templates/services/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/services/templates/services/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fileadmin/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/static/fileadmin/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +16,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Mranderson6"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="20801ded-1eff-44ba-8aec-899b9a3ee51f" />
+        <option name="url" value="git@github.com:Mranderson6/vitrine.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
