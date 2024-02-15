@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d912972-d835-48db-9e9d-8217d5171ed1" name="Changes" comment="" />
+    <list default="true" id="6d912972-d835-48db-9e9d-8217d5171ed1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/services/templates/services/a-la-une.html" beforeDir="false" afterPath="$PROJECT_DIR$/services/templates/services/a-la-une.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/templates/services/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/services/templates/services/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fileadmin/templates/master/assets/assets_common/img/default_img/icons8-courrier-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/fileadmin/templates/master/assets/assets_common/img/default_img/icons8-courrier-100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fileadmin/templates/master/assets/assets_common/img/default_img/icons8-globe-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/fileadmin/templates/master/assets/assets_common/img/default_img/icons8-globe-100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fileadmin/templates/master/assets/assets_site_reims/scss/app.minf691.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/fileadmin/templates/master/assets/assets_site_reims/scss/app.minf691.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fileadmin/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/static/fileadmin/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
